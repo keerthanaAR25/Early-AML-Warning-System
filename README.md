@@ -3,6 +3,12 @@
 **Early Detection of Money Laundering Rings using Temporal Transaction
 Network Analytics and Explainable Risk Scoring**
 
+Developed as part of the course on "Forensic Analytics" at Vellore Institute of Technology, Chennai. 
+by Keerthana A R , Raagav
+Subject Code: CSE4074
+Semester: Fall 2026-27
+Professor: Dr. S. Johanan Joysingh
+
 ## Status
 
 All 26 phases implemented and run end-to-end against **real AMLSim
