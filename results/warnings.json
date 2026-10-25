@@ -1,0 +1,6684 @@
+{
+ "protocol": {
+  "scored_from_day": 240,
+  "last_day": 719,
+  "first_date": "2017-01-01T00:00:00+00:00",
+  "alert_threshold": 50.0,
+  "observable_k": 4
+ },
+ "summary": {
+  "n_alerts": 11,
+  "alerts_with_ring_tx": 9,
+  "false_alerts": 2,
+  "first_alert_date": "2017-09-03T00:00:00+00:00",
+  "last_alert_date": "2018-12-17T00:00:00+00:00",
+  "median_days_creation_to_alert": 0.0,
+  "n_rings": 100,
+  "n_evaluable": 30,
+  "queue": {
+   "before": 17,
+   "at": 12,
+   "after": 0,
+   "not_seen": 1
+  },
+  "alert": {
+   "before": 5,
+   "at": 4,
+   "after": 0,
+   "not_seen": 21
+  },
+  "by_type": {
+   "fan_in": {
+    "rings": 30,
+    "evaluable": 0,
+    "queue_seen": 0,
+    "alert_seen": 0
+   },
+   "fan_out": {
+    "rings": 30,
+    "evaluable": 0,
+    "queue_seen": 0,
+    "alert_seen": 0
+   },
+   "cycle": {
+    "rings": 40,
+    "evaluable": 30,
+    "queue_seen": 29,
+    "alert_seen": 9
+   }
+  },
+  "not_evaluable_reasons": {
+   "starts before the scored period (day 240)": 70
+  },
+  "mean_tx_coverage": {
+   "queue": 0.8389682539682539,
+   "alert": 0.2585714285714286
+  }
+ },
+ "alerts": [
+  {
+   "candidate_ring_id": "RING0013",
+   "alert_day": 245,
+   "alert_date": "2017-09-03T00:00:00+00:00",
+   "score_at_alert": 60.91,
+   "level_at_alert": "HIGH",
+   "final_score": 60.91,
+   "created_day": 245,
+   "created_date": "2017-09-03T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "circular_flow"
+   ],
+   "n_accounts": 4,
+   "n_transactions": 4,
+   "contains_ring_tx": false,
+   "ring_id": null,
+   "ring_type": null,
+   "ring_tx_in_candidate": null,
+   "ring_evaluable": false,
+   "ring_completion_day": null,
+   "lead_days": null
+  },
+  {
+   "candidate_ring_id": "RING0044",
+   "alert_day": 273,
+   "alert_date": "2017-10-01T00:00:00+00:00",
+   "score_at_alert": 55.73,
+   "level_at_alert": "HIGH",
+   "final_score": 55.73,
+   "created_day": 273,
+   "created_date": "2017-10-01T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "circular_flow"
+   ],
+   "n_accounts": 6,
+   "n_transactions": 6,
+   "contains_ring_tx": true,
+   "ring_id": 86,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 6,
+   "ring_evaluable": true,
+   "ring_completion_day": 273,
+   "lead_days": 0
+  },
+  {
+   "candidate_ring_id": "RING0088",
+   "alert_day": 395,
+   "alert_date": "2018-01-31T00:00:00+00:00",
+   "score_at_alert": 62.12,
+   "level_at_alert": "HIGH",
+   "final_score": 62.12,
+   "created_day": 395,
+   "created_date": "2018-01-31T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "circular_flow"
+   ],
+   "n_accounts": 7,
+   "n_transactions": 7,
+   "contains_ring_tx": true,
+   "ring_id": 90,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 7,
+   "ring_evaluable": true,
+   "ring_completion_day": 395,
+   "lead_days": 0
+  },
+  {
+   "candidate_ring_id": "RING0101",
+   "alert_day": 438,
+   "alert_date": "2018-03-15T00:00:00+00:00",
+   "score_at_alert": 56.8,
+   "level_at_alert": "HIGH",
+   "final_score": 56.8,
+   "created_day": 438,
+   "created_date": "2018-03-15T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "layering"
+   ],
+   "n_accounts": 4,
+   "n_transactions": 3,
+   "contains_ring_tx": true,
+   "ring_id": 76,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 3,
+   "ring_evaluable": true,
+   "ring_completion_day": 439,
+   "lead_days": 1
+  },
+  {
+   "candidate_ring_id": "RING0119",
+   "alert_day": 475,
+   "alert_date": "2018-04-21T00:00:00+00:00",
+   "score_at_alert": 56.79,
+   "level_at_alert": "HIGH",
+   "final_score": 56.79,
+   "created_day": 475,
+   "created_date": "2018-04-21T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "layering"
+   ],
+   "n_accounts": 6,
+   "n_transactions": 5,
+   "contains_ring_tx": true,
+   "ring_id": 79,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 5,
+   "ring_evaluable": true,
+   "ring_completion_day": 477,
+   "lead_days": 2
+  },
+  {
+   "candidate_ring_id": "RING0136",
+   "alert_day": 575,
+   "alert_date": "2018-07-30T00:00:00+00:00",
+   "score_at_alert": 56.35,
+   "level_at_alert": "HIGH",
+   "final_score": 43.29,
+   "created_day": 562,
+   "created_date": "2018-07-17T00:00:00+00:00",
+   "days_creation_to_alert": 13,
+   "patterns": [
+    "layering",
+    "fan_in",
+    "fan_out"
+   ],
+   "n_accounts": 7,
+   "n_transactions": 5,
+   "contains_ring_tx": true,
+   "ring_id": 84,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 6,
+   "ring_evaluable": true,
+   "ring_completion_day": 580,
+   "lead_days": 5
+  },
+  {
+   "candidate_ring_id": "RING0142",
+   "alert_day": 589,
+   "alert_date": "2018-08-13T00:00:00+00:00",
+   "score_at_alert": 57.78,
+   "level_at_alert": "HIGH",
+   "final_score": 44.94,
+   "created_day": 589,
+   "created_date": "2018-08-13T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "circular_flow"
+   ],
+   "n_accounts": 5,
+   "n_transactions": 5,
+   "contains_ring_tx": true,
+   "ring_id": 65,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 5,
+   "ring_evaluable": true,
+   "ring_completion_day": 589,
+   "lead_days": 0
+  },
+  {
+   "candidate_ring_id": "RING0148",
+   "alert_day": 611,
+   "alert_date": "2018-09-04T00:00:00+00:00",
+   "score_at_alert": 50.88,
+   "level_at_alert": "HIGH",
+   "final_score": 50.88,
+   "created_day": 611,
+   "created_date": "2018-09-04T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "fan_out"
+   ],
+   "n_accounts": 3,
+   "n_transactions": 2,
+   "contains_ring_tx": false,
+   "ring_id": null,
+   "ring_type": null,
+   "ring_tx_in_candidate": null,
+   "ring_evaluable": false,
+   "ring_completion_day": null,
+   "lead_days": null
+  },
+  {
+   "candidate_ring_id": "RING0160",
+   "alert_day": 667,
+   "alert_date": "2018-10-30T00:00:00+00:00",
+   "score_at_alert": 51.85,
+   "level_at_alert": "HIGH",
+   "final_score": 47.38,
+   "created_day": 667,
+   "created_date": "2018-10-30T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "layering"
+   ],
+   "n_accounts": 6,
+   "n_transactions": 4,
+   "contains_ring_tx": true,
+   "ring_id": 95,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 9,
+   "ring_evaluable": true,
+   "ring_completion_day": 677,
+   "lead_days": 10
+  },
+  {
+   "candidate_ring_id": "RING0161",
+   "alert_day": 667,
+   "alert_date": "2018-10-30T00:00:00+00:00",
+   "score_at_alert": 55.71,
+   "level_at_alert": "HIGH",
+   "final_score": 54.55,
+   "created_day": 667,
+   "created_date": "2018-10-30T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "layering"
+   ],
+   "n_accounts": 4,
+   "n_transactions": 2,
+   "contains_ring_tx": true,
+   "ring_id": 81,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 4,
+   "ring_evaluable": true,
+   "ring_completion_day": 671,
+   "lead_days": 4
+  },
+  {
+   "candidate_ring_id": "RING0168",
+   "alert_day": 715,
+   "alert_date": "2018-12-17T00:00:00+00:00",
+   "score_at_alert": 55.84,
+   "level_at_alert": "HIGH",
+   "final_score": 55.84,
+   "created_day": 715,
+   "created_date": "2018-12-17T00:00:00+00:00",
+   "days_creation_to_alert": 0,
+   "patterns": [
+    "circular_flow"
+   ],
+   "n_accounts": 8,
+   "n_transactions": 10,
+   "contains_ring_tx": true,
+   "ring_id": 72,
+   "ring_type": "cycle",
+   "ring_tx_in_candidate": 8,
+   "ring_evaluable": true,
+   "ring_completion_day": 715,
+   "lead_days": 0
+  }
+ ],
+ "rings": [
+  {
+   "ring_id": 0,
+   "type": "fan_in",
+   "n_tx": 7,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 171,
+   "completion_date": "2017-06-21T00:00:00+00:00",
+   "last_day": 342,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 1,
+   "type": "fan_in",
+   "n_tx": 5,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 132,
+   "completion_date": "2017-05-13T00:00:00+00:00",
+   "last_day": 176,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 2,
+   "type": "fan_in",
+   "n_tx": 7,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 78,
+   "completion_date": "2017-03-20T00:00:00+00:00",
+   "last_day": 156,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 3,
+   "type": "fan_in",
+   "n_tx": 8,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 69,
+   "completion_date": "2017-03-11T00:00:00+00:00",
+   "last_day": 161,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 4,
+   "type": "fan_in",
+   "n_tx": 5,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 288,
+   "completion_date": "2017-10-16T00:00:00+00:00",
+   "last_day": 384,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 288.0,
+    "lead_days": 0.0,
+    "tx_coverage": 0.4,
+    "status": null,
+    "candidate": "RING0001",
+    "warning_date": "2017-10-16T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 5,
+   "type": "fan_in",
+   "n_tx": 6,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 337,
+   "completion_date": "2017-12-04T00:00:00+00:00",
+   "last_day": 561,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 6,
+   "type": "fan_in",
+   "n_tx": 8,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 175,
+   "completion_date": "2017-06-25T00:00:00+00:00",
+   "last_day": 407,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 7,
+   "type": "fan_in",
+   "n_tx": 8,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 237,
+   "completion_date": "2017-08-26T00:00:00+00:00",
+   "last_day": 553,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 8,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 45,
+   "completion_date": "2017-02-15T00:00:00+00:00",
+   "last_day": 120,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 9,
+   "type": "fan_in",
+   "n_tx": 4,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 472,
+   "completion_date": "2018-04-18T00:00:00+00:00",
+   "last_day": 472,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 10,
+   "type": "fan_in",
+   "n_tx": 4,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 406,
+   "completion_date": "2018-02-11T00:00:00+00:00",
+   "last_day": 406,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 271.0,
+    "lead_days": 135.0,
+    "tx_coverage": 0.75,
+    "status": null,
+    "candidate": "RING0038",
+    "warning_date": "2017-09-29T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 11,
+   "type": "fan_in",
+   "n_tx": 4,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 184,
+   "completion_date": "2017-07-04T00:00:00+00:00",
+   "last_day": 184,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 12,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 201,
+   "completion_date": "2017-07-21T00:00:00+00:00",
+   "last_day": 536,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 13,
+   "type": "fan_in",
+   "n_tx": 8,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 57,
+   "completion_date": "2017-02-27T00:00:00+00:00",
+   "last_day": 133,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 14,
+   "type": "fan_in",
+   "n_tx": 4,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 268,
+   "completion_date": "2017-09-26T00:00:00+00:00",
+   "last_day": 268,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 268.0,
+    "lead_days": 0.0,
+    "tx_coverage": 0.5,
+    "status": null,
+    "candidate": "RING0034",
+    "warning_date": "2017-09-26T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 15,
+   "type": "fan_in",
+   "n_tx": 7,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 285,
+   "completion_date": "2017-10-13T00:00:00+00:00",
+   "last_day": 570,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 380.0,
+    "lead_days": -95.0,
+    "tx_coverage": 0.5714285714285714,
+    "status": null,
+    "candidate": "RING0082",
+    "warning_date": "2018-01-16T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 16,
+   "type": "fan_in",
+   "n_tx": 6,
+   "first_day": 2,
+   "first_date": "2017-01-03T00:00:00+00:00",
+   "completion_day": 53,
+   "completion_date": "2017-02-23T00:00:00+00:00",
+   "last_day": 87,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 17,
+   "type": "fan_in",
+   "n_tx": 5,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 342,
+   "completion_date": "2017-12-09T00:00:00+00:00",
+   "last_day": 456,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 342.0,
+    "lead_days": 0.0,
+    "tx_coverage": 0.6,
+    "status": null,
+    "candidate": "RING0069",
+    "warning_date": "2017-12-09T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 18,
+   "type": "fan_in",
+   "n_tx": 4,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 132,
+   "completion_date": "2017-05-13T00:00:00+00:00",
+   "last_day": 132,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 19,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 91,
+   "completion_date": "2017-04-02T00:00:00+00:00",
+   "last_day": 241,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 20,
+   "type": "fan_in",
+   "n_tx": 5,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 292,
+   "completion_date": "2017-10-20T00:00:00+00:00",
+   "last_day": 389,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 21,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 69,
+   "completion_date": "2017-03-11T00:00:00+00:00",
+   "last_day": 184,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 22,
+   "type": "fan_in",
+   "n_tx": 7,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 300,
+   "completion_date": "2017-10-28T00:00:00+00:00",
+   "last_day": 600,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 500.0,
+    "lead_days": -200.0,
+    "tx_coverage": 0.2857142857142857,
+    "status": null,
+    "candidate": "RING0116",
+    "warning_date": "2018-05-16T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 23,
+   "type": "fan_in",
+   "n_tx": 7,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 213,
+   "completion_date": "2017-08-02T00:00:00+00:00",
+   "last_day": 497,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 24,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 66,
+   "completion_date": "2017-03-08T00:00:00+00:00",
+   "last_day": 176,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 25,
+   "type": "fan_in",
+   "n_tx": 8,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 264,
+   "completion_date": "2017-09-22T00:00:00+00:00",
+   "last_day": 616,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 352.0,
+    "lead_days": -88.0,
+    "tx_coverage": 0.625,
+    "status": null,
+    "candidate": "RING0074",
+    "warning_date": "2017-12-19T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 26,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 201,
+   "completion_date": "2017-07-21T00:00:00+00:00",
+   "last_day": 536,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 268.0,
+    "lead_days": -67.0,
+    "tx_coverage": 0.2222222222222222,
+    "status": null,
+    "candidate": "RING0035",
+    "warning_date": "2017-09-26T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 27,
+   "type": "fan_in",
+   "n_tx": 5,
+   "first_day": 1,
+   "first_date": "2017-01-02T00:00:00+00:00",
+   "completion_day": 256,
+   "completion_date": "2017-09-14T00:00:00+00:00",
+   "last_day": 341,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 28,
+   "type": "fan_in",
+   "n_tx": 4,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 483,
+   "completion_date": "2018-04-29T00:00:00+00:00",
+   "last_day": 483,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 29,
+   "type": "fan_in",
+   "n_tx": 9,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 27,
+   "completion_date": "2017-01-28T00:00:00+00:00",
+   "last_day": 72,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 30,
+   "type": "fan_out",
+   "n_tx": 8,
+   "first_day": 52,
+   "first_date": "2017-02-22T00:00:00+00:00",
+   "completion_day": 155,
+   "completion_date": "2017-06-05T00:00:00+00:00",
+   "last_day": 382,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 31,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 117,
+   "first_date": "2017-04-28T00:00:00+00:00",
+   "completion_day": 291,
+   "completion_date": "2017-10-19T00:00:00+00:00",
+   "last_day": 314,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 32,
+   "type": "fan_out",
+   "n_tx": 7,
+   "first_day": 12,
+   "first_date": "2017-01-13T00:00:00+00:00",
+   "completion_day": 133,
+   "completion_date": "2017-05-14T00:00:00+00:00",
+   "last_day": 298,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 33,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 36,
+   "first_date": "2017-02-06T00:00:00+00:00",
+   "completion_day": 262,
+   "completion_date": "2017-09-20T00:00:00+00:00",
+   "last_day": 338,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 34,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 100,
+   "first_date": "2017-04-11T00:00:00+00:00",
+   "completion_day": 245,
+   "completion_date": "2017-09-03T00:00:00+00:00",
+   "last_day": 245,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 35,
+   "type": "fan_out",
+   "n_tx": 9,
+   "first_day": 5,
+   "first_date": "2017-01-06T00:00:00+00:00",
+   "completion_day": 307,
+   "completion_date": "2017-11-04T00:00:00+00:00",
+   "last_day": 465,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 271.0,
+    "lead_days": 36.0,
+    "tx_coverage": 0.8888888888888888,
+    "status": null,
+    "candidate": "RING0037",
+    "warning_date": "2017-09-29T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 36,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 34,
+   "first_date": "2017-02-04T00:00:00+00:00",
+   "completion_day": 239,
+   "completion_date": "2017-08-28T00:00:00+00:00",
+   "last_day": 362,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 37,
+   "type": "fan_out",
+   "n_tx": 6,
+   "first_day": 0,
+   "first_date": "2017-01-01T00:00:00+00:00",
+   "completion_day": 56,
+   "completion_date": "2017-02-26T00:00:00+00:00",
+   "last_day": 180,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 38,
+   "type": "fan_out",
+   "n_tx": 7,
+   "first_day": 3,
+   "first_date": "2017-01-04T00:00:00+00:00",
+   "completion_day": 11,
+   "completion_date": "2017-01-12T00:00:00+00:00",
+   "last_day": 17,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 39,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 63,
+   "first_date": "2017-03-05T00:00:00+00:00",
+   "completion_day": 137,
+   "completion_date": "2017-05-18T00:00:00+00:00",
+   "last_day": 137,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 40,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 43,
+   "first_date": "2017-02-13T00:00:00+00:00",
+   "completion_day": 451,
+   "completion_date": "2018-03-28T00:00:00+00:00",
+   "last_day": 586,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 586.0,
+    "lead_days": -135.0,
+    "tx_coverage": 0.4,
+    "status": null,
+    "candidate": "RING0141",
+    "warning_date": "2018-08-10T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 41,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 29,
+   "first_date": "2017-01-30T00:00:00+00:00",
+   "completion_day": 159,
+   "completion_date": "2017-06-09T00:00:00+00:00",
+   "last_day": 159,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 42,
+   "type": "fan_out",
+   "n_tx": 8,
+   "first_day": 16,
+   "first_date": "2017-01-17T00:00:00+00:00",
+   "completion_day": 124,
+   "completion_date": "2017-05-05T00:00:00+00:00",
+   "last_day": 172,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 43,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 50,
+   "first_date": "2017-02-20T00:00:00+00:00",
+   "completion_day": 286,
+   "completion_date": "2017-10-14T00:00:00+00:00",
+   "last_day": 286,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 286.0,
+    "lead_days": 0.0,
+    "tx_coverage": 0.5,
+    "status": null,
+    "candidate": "RING0051",
+    "warning_date": "2017-10-14T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 44,
+   "type": "fan_out",
+   "n_tx": 9,
+   "first_day": 31,
+   "first_date": "2017-02-01T00:00:00+00:00",
+   "completion_day": 97,
+   "completion_date": "2017-04-08T00:00:00+00:00",
+   "last_day": 339,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 245.0,
+    "lead_days": -148.0,
+    "tx_coverage": 0.4444444444444444,
+    "status": null,
+    "candidate": "RING0012",
+    "warning_date": "2017-09-03T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 45,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 185,
+   "first_date": "2017-07-05T00:00:00+00:00",
+   "completion_day": 405,
+   "completion_date": "2018-02-10T00:00:00+00:00",
+   "last_day": 405,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 46,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 30,
+   "first_date": "2017-01-31T00:00:00+00:00",
+   "completion_day": 180,
+   "completion_date": "2017-06-30T00:00:00+00:00",
+   "last_day": 343,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 47,
+   "type": "fan_out",
+   "n_tx": 9,
+   "first_day": 103,
+   "first_date": "2017-04-14T00:00:00+00:00",
+   "completion_day": 210,
+   "completion_date": "2017-07-30T00:00:00+00:00",
+   "last_day": 577,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 48,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 36,
+   "first_date": "2017-02-06T00:00:00+00:00",
+   "completion_day": 76,
+   "completion_date": "2017-03-18T00:00:00+00:00",
+   "last_day": 76,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 49,
+   "type": "fan_out",
+   "n_tx": 6,
+   "first_day": 15,
+   "first_date": "2017-01-16T00:00:00+00:00",
+   "completion_day": 28,
+   "completion_date": "2017-01-29T00:00:00+00:00",
+   "last_day": 47,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 50,
+   "type": "fan_out",
+   "n_tx": 6,
+   "first_day": 196,
+   "first_date": "2017-07-16T00:00:00+00:00",
+   "completion_day": 250,
+   "completion_date": "2017-09-08T00:00:00+00:00",
+   "last_day": 387,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 51,
+   "type": "fan_out",
+   "n_tx": 5,
+   "first_day": 3,
+   "first_date": "2017-01-04T00:00:00+00:00",
+   "completion_day": 53,
+   "completion_date": "2017-02-23T00:00:00+00:00",
+   "last_day": 72,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 52,
+   "type": "fan_out",
+   "n_tx": 8,
+   "first_day": 139,
+   "first_date": "2017-05-20T00:00:00+00:00",
+   "completion_day": 297,
+   "completion_date": "2017-10-25T00:00:00+00:00",
+   "last_day": 592,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 553.0,
+    "lead_days": -256.0,
+    "tx_coverage": 0.125,
+    "status": null,
+    "candidate": "RING0134",
+    "warning_date": "2018-07-08T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 53,
+   "type": "fan_out",
+   "n_tx": 6,
+   "first_day": 70,
+   "first_date": "2017-03-12T00:00:00+00:00",
+   "completion_day": 110,
+   "completion_date": "2017-04-21T00:00:00+00:00",
+   "last_day": 171,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 54,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 112,
+   "first_date": "2017-04-23T00:00:00+00:00",
+   "completion_day": 200,
+   "completion_date": "2017-07-20T00:00:00+00:00",
+   "last_day": 200,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 55,
+   "type": "fan_out",
+   "n_tx": 8,
+   "first_day": 4,
+   "first_date": "2017-01-05T00:00:00+00:00",
+   "completion_day": 84,
+   "completion_date": "2017-03-26T00:00:00+00:00",
+   "last_day": 233,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 56,
+   "type": "fan_out",
+   "n_tx": 4,
+   "first_day": 62,
+   "first_date": "2017-03-04T00:00:00+00:00",
+   "completion_day": 147,
+   "completion_date": "2017-05-28T00:00:00+00:00",
+   "last_day": 147,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 57,
+   "type": "fan_out",
+   "n_tx": 6,
+   "first_day": 8,
+   "first_date": "2017-01-09T00:00:00+00:00",
+   "completion_day": 135,
+   "completion_date": "2017-05-16T00:00:00+00:00",
+   "last_day": 201,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 58,
+   "type": "fan_out",
+   "n_tx": 8,
+   "first_day": 17,
+   "first_date": "2017-01-18T00:00:00+00:00",
+   "completion_day": 61,
+   "completion_date": "2017-03-03T00:00:00+00:00",
+   "last_day": 106,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 59,
+   "type": "fan_out",
+   "n_tx": 7,
+   "first_day": 72,
+   "first_date": "2017-03-14T00:00:00+00:00",
+   "completion_day": 356,
+   "completion_date": "2017-12-23T00:00:00+00:00",
+   "last_day": 485,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 473.0,
+    "lead_days": -117.0,
+    "tx_coverage": 0.42857142857142855,
+    "status": null,
+    "candidate": "RING0117",
+    "warning_date": "2018-04-19T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 60,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 419,
+   "first_date": "2018-02-24T00:00:00+00:00",
+   "completion_day": 432,
+   "completion_date": "2018-03-09T00:00:00+00:00",
+   "last_day": 432,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 423.0,
+    "lead_days": 9.0,
+    "tx_coverage": 0.8333333333333334,
+    "status": "before",
+    "candidate": "RING0096",
+    "warning_date": "2018-02-28T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 61,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 132,
+   "first_date": "2017-05-13T00:00:00+00:00",
+   "completion_day": 142,
+   "completion_date": "2017-05-23T00:00:00+00:00",
+   "last_day": 142,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 62,
+   "type": "cycle",
+   "n_tx": 10,
+   "first_day": 273,
+   "first_date": "2017-10-01T00:00:00+00:00",
+   "completion_day": 292,
+   "completion_date": "2017-10-20T00:00:00+00:00",
+   "last_day": 292,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 275.0,
+    "lead_days": 17.0,
+    "tx_coverage": 0.8,
+    "status": "before",
+    "candidate": "RING0019",
+    "warning_date": "2017-10-03T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 63,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 563,
+   "first_date": "2018-07-18T00:00:00+00:00",
+   "completion_day": 576,
+   "completion_date": "2018-07-31T00:00:00+00:00",
+   "last_day": 576,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 565.0,
+    "lead_days": 11.0,
+    "tx_coverage": 1.0,
+    "status": "before",
+    "candidate": "RING0137",
+    "warning_date": "2018-07-20T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 64,
+   "type": "cycle",
+   "n_tx": 3,
+   "first_day": 554,
+   "first_date": "2018-07-09T00:00:00+00:00",
+   "completion_day": 555,
+   "completion_date": "2018-07-10T00:00:00+00:00",
+   "last_day": 555,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 555.0,
+    "lead_days": 0.0,
+    "tx_coverage": 0.6666666666666666,
+    "status": "at",
+    "candidate": "RING0135",
+    "warning_date": "2018-07-10T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 65,
+   "type": "cycle",
+   "n_tx": 5,
+   "first_day": 584,
+   "first_date": "2018-08-08T00:00:00+00:00",
+   "completion_day": 589,
+   "completion_date": "2018-08-13T00:00:00+00:00",
+   "last_day": 589,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 589.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0142",
+    "warning_date": "2018-08-13T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 589.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0142",
+    "warning_date": "2018-08-13T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 66,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 377,
+   "first_date": "2018-01-13T00:00:00+00:00",
+   "completion_day": 396,
+   "completion_date": "2018-02-01T00:00:00+00:00",
+   "last_day": 396,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 396.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0089",
+    "warning_date": "2018-02-01T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 67,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 503,
+   "first_date": "2018-05-19T00:00:00+00:00",
+   "completion_day": 514,
+   "completion_date": "2018-05-30T00:00:00+00:00",
+   "last_day": 514,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 509.0,
+    "lead_days": 5.0,
+    "tx_coverage": 0.8333333333333334,
+    "status": "before",
+    "candidate": "RING0125",
+    "warning_date": "2018-05-25T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 68,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 320,
+   "first_date": "2017-11-17T00:00:00+00:00",
+   "completion_day": 325,
+   "completion_date": "2017-11-22T00:00:00+00:00",
+   "last_day": 325,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 320.0,
+    "lead_days": 5.0,
+    "tx_coverage": 0.8333333333333334,
+    "status": "before",
+    "candidate": "RING0050",
+    "warning_date": "2017-11-17T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 69,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 113,
+   "first_date": "2017-04-24T00:00:00+00:00",
+   "completion_day": 130,
+   "completion_date": "2017-05-11T00:00:00+00:00",
+   "last_day": 130,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 70,
+   "type": "cycle",
+   "n_tx": 5,
+   "first_day": 493,
+   "first_date": "2018-05-09T00:00:00+00:00",
+   "completion_day": 511,
+   "completion_date": "2018-05-27T00:00:00+00:00",
+   "last_day": 511,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 511.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0126",
+    "warning_date": "2018-05-27T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 71,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 542,
+   "first_date": "2018-06-27T00:00:00+00:00",
+   "completion_day": 554,
+   "completion_date": "2018-07-09T00:00:00+00:00",
+   "last_day": 554,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 542.0,
+    "lead_days": 12.0,
+    "tx_coverage": 1.0,
+    "status": "before",
+    "candidate": "RING0062",
+    "warning_date": "2018-06-27T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 72,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 703,
+   "first_date": "2018-12-05T00:00:00+00:00",
+   "completion_day": 715,
+   "completion_date": "2018-12-17T00:00:00+00:00",
+   "last_day": 715,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 715.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0168",
+    "warning_date": "2018-12-17T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 715.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0168",
+    "warning_date": "2018-12-17T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 73,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 463,
+   "first_date": "2018-04-09T00:00:00+00:00",
+   "completion_day": 477,
+   "completion_date": "2018-04-23T00:00:00+00:00",
+   "last_day": 477,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 468.0,
+    "lead_days": 9.0,
+    "tx_coverage": 0.6666666666666666,
+    "status": "before",
+    "candidate": "RING0114",
+    "warning_date": "2018-04-14T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 74,
+   "type": "cycle",
+   "n_tx": 10,
+   "first_day": 114,
+   "first_date": "2017-04-25T00:00:00+00:00",
+   "completion_day": 124,
+   "completion_date": "2017-05-05T00:00:00+00:00",
+   "last_day": 124,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 75,
+   "type": "cycle",
+   "n_tx": 5,
+   "first_day": 617,
+   "first_date": "2018-09-10T00:00:00+00:00",
+   "completion_day": 630,
+   "completion_date": "2018-09-23T00:00:00+00:00",
+   "last_day": 630,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 619.0,
+    "lead_days": 11.0,
+    "tx_coverage": 0.8,
+    "status": "before",
+    "candidate": "RING0149",
+    "warning_date": "2018-09-12T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 76,
+   "type": "cycle",
+   "n_tx": 5,
+   "first_day": 436,
+   "first_date": "2018-03-13T00:00:00+00:00",
+   "completion_day": 439,
+   "completion_date": "2018-03-16T00:00:00+00:00",
+   "last_day": 439,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 438.0,
+    "lead_days": 1.0,
+    "tx_coverage": 0.6,
+    "status": "before",
+    "candidate": "RING0101",
+    "warning_date": "2018-03-15T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 438.0,
+    "lead_days": 1.0,
+    "tx_coverage": 0.6,
+    "status": "before",
+    "candidate": "RING0101",
+    "warning_date": "2018-03-15T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 77,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 253,
+   "first_date": "2017-09-11T00:00:00+00:00",
+   "completion_day": 270,
+   "completion_date": "2017-09-28T00:00:00+00:00",
+   "last_day": 270,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 78,
+   "type": "cycle",
+   "n_tx": 10,
+   "first_day": 238,
+   "first_date": "2017-08-27T00:00:00+00:00",
+   "completion_day": 243,
+   "completion_date": "2017-09-01T00:00:00+00:00",
+   "last_day": 243,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": true,
+    "warning_day": 243.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": null,
+    "candidate": "RING0010",
+    "warning_date": "2017-09-01T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 79,
+   "type": "cycle",
+   "n_tx": 10,
+   "first_day": 472,
+   "first_date": "2018-04-18T00:00:00+00:00",
+   "completion_day": 477,
+   "completion_date": "2018-04-23T00:00:00+00:00",
+   "last_day": 477,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 475.0,
+    "lead_days": 2.0,
+    "tx_coverage": 0.5,
+    "status": "before",
+    "candidate": "RING0119",
+    "warning_date": "2018-04-21T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 475.0,
+    "lead_days": 2.0,
+    "tx_coverage": 0.5,
+    "status": "before",
+    "candidate": "RING0119",
+    "warning_date": "2018-04-21T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 80,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 685,
+   "first_date": "2018-11-17T00:00:00+00:00",
+   "completion_day": 697,
+   "completion_date": "2018-11-29T00:00:00+00:00",
+   "last_day": 697,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 687.0,
+    "lead_days": 10.0,
+    "tx_coverage": 1.0,
+    "status": "before",
+    "candidate": "RING0162",
+    "warning_date": "2018-11-19T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 81,
+   "type": "cycle",
+   "n_tx": 5,
+   "first_day": 667,
+   "first_date": "2018-10-30T00:00:00+00:00",
+   "completion_day": 671,
+   "completion_date": "2018-11-03T00:00:00+00:00",
+   "last_day": 671,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 667.0,
+    "lead_days": 4.0,
+    "tx_coverage": 0.8,
+    "status": "before",
+    "candidate": "RING0161",
+    "warning_date": "2018-10-30T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 667.0,
+    "lead_days": 4.0,
+    "tx_coverage": 0.8,
+    "status": "before",
+    "candidate": "RING0161",
+    "warning_date": "2018-10-30T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 82,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 258,
+   "first_date": "2017-09-16T00:00:00+00:00",
+   "completion_day": 272,
+   "completion_date": "2017-09-30T00:00:00+00:00",
+   "last_day": 272,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 272.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0040",
+    "warning_date": "2017-09-30T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 83,
+   "type": "cycle",
+   "n_tx": 10,
+   "first_day": 143,
+   "first_date": "2017-05-24T00:00:00+00:00",
+   "completion_day": 149,
+   "completion_date": "2017-05-30T00:00:00+00:00",
+   "last_day": 149,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 84,
+   "type": "cycle",
+   "n_tx": 7,
+   "first_day": 575,
+   "first_date": "2018-07-30T00:00:00+00:00",
+   "completion_day": 580,
+   "completion_date": "2018-08-04T00:00:00+00:00",
+   "last_day": 580,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 575.0,
+    "lead_days": 5.0,
+    "tx_coverage": 0.8571428571428571,
+    "status": "before",
+    "candidate": "RING0136",
+    "warning_date": "2018-07-30T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 575.0,
+    "lead_days": 5.0,
+    "tx_coverage": 0.8571428571428571,
+    "status": "before",
+    "candidate": "RING0136",
+    "warning_date": "2018-07-30T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 85,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 420,
+   "first_date": "2018-02-25T00:00:00+00:00",
+   "completion_day": 430,
+   "completion_date": "2018-03-07T00:00:00+00:00",
+   "last_day": 430,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 423.0,
+    "lead_days": 7.0,
+    "tx_coverage": 0.75,
+    "status": "before",
+    "candidate": "RING0097",
+    "warning_date": "2018-02-28T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 86,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 264,
+   "first_date": "2017-09-22T00:00:00+00:00",
+   "completion_day": 273,
+   "completion_date": "2017-10-01T00:00:00+00:00",
+   "last_day": 273,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 273.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0044",
+    "warning_date": "2017-10-01T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 273.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0044",
+    "warning_date": "2017-10-01T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 87,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 528,
+   "first_date": "2018-06-13T00:00:00+00:00",
+   "completion_day": 542,
+   "completion_date": "2018-06-27T00:00:00+00:00",
+   "last_day": 542,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 542.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0129",
+    "warning_date": "2018-06-27T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 88,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 698,
+   "first_date": "2018-11-30T00:00:00+00:00",
+   "completion_day": 717,
+   "completion_date": "2018-12-19T00:00:00+00:00",
+   "last_day": 717,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 717.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0170",
+    "warning_date": "2018-12-19T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 89,
+   "type": "cycle",
+   "n_tx": 7,
+   "first_day": 145,
+   "first_date": "2017-05-26T00:00:00+00:00",
+   "completion_day": 163,
+   "completion_date": "2017-06-13T00:00:00+00:00",
+   "last_day": 163,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 90,
+   "type": "cycle",
+   "n_tx": 7,
+   "first_day": 377,
+   "first_date": "2018-01-13T00:00:00+00:00",
+   "completion_day": 395,
+   "completion_date": "2018-01-31T00:00:00+00:00",
+   "last_day": 395,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 395.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0088",
+    "warning_date": "2018-01-31T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 395.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0088",
+    "warning_date": "2018-01-31T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 91,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 113,
+   "first_date": "2017-04-24T00:00:00+00:00",
+   "completion_day": 119,
+   "completion_date": "2017-04-30T00:00:00+00:00",
+   "last_day": 119,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 92,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 633,
+   "first_date": "2018-09-26T00:00:00+00:00",
+   "completion_day": 649,
+   "completion_date": "2018-10-12T00:00:00+00:00",
+   "last_day": 649,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 649.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0153",
+    "warning_date": "2018-10-12T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 93,
+   "type": "cycle",
+   "n_tx": 5,
+   "first_day": 647,
+   "first_date": "2018-10-10T00:00:00+00:00",
+   "completion_day": 661,
+   "completion_date": "2018-10-24T00:00:00+00:00",
+   "last_day": 661,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 657.0,
+    "lead_days": 4.0,
+    "tx_coverage": 0.8,
+    "status": "before",
+    "candidate": "RING0156",
+    "warning_date": "2018-10-20T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 94,
+   "type": "cycle",
+   "n_tx": 7,
+   "first_day": 296,
+   "first_date": "2017-10-24T00:00:00+00:00",
+   "completion_day": 307,
+   "completion_date": "2017-11-04T00:00:00+00:00",
+   "last_day": 307,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 300.0,
+    "lead_days": 7.0,
+    "tx_coverage": 0.42857142857142855,
+    "status": "before",
+    "candidate": "RING0056",
+    "warning_date": "2017-10-28T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 95,
+   "type": "cycle",
+   "n_tx": 9,
+   "first_day": 667,
+   "first_date": "2018-10-30T00:00:00+00:00",
+   "completion_day": 677,
+   "completion_date": "2018-11-09T00:00:00+00:00",
+   "last_day": 677,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 667.0,
+    "lead_days": 10.0,
+    "tx_coverage": 1.0,
+    "status": "before",
+    "candidate": "RING0160",
+    "warning_date": "2018-10-30T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": true,
+    "warning_day": 667.0,
+    "lead_days": 10.0,
+    "tx_coverage": 1.0,
+    "status": "before",
+    "candidate": "RING0160",
+    "warning_date": "2018-10-30T00:00:00+00:00"
+   }
+  },
+  {
+   "ring_id": 96,
+   "type": "cycle",
+   "n_tx": 8,
+   "first_day": 150,
+   "first_date": "2017-05-31T00:00:00+00:00",
+   "completion_day": 164,
+   "completion_date": "2017-06-14T00:00:00+00:00",
+   "last_day": 164,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 97,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 43,
+   "first_date": "2017-02-13T00:00:00+00:00",
+   "completion_day": 50,
+   "completion_date": "2017-02-20T00:00:00+00:00",
+   "last_day": 50,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 98,
+   "type": "cycle",
+   "n_tx": 6,
+   "first_day": 564,
+   "first_date": "2018-07-19T00:00:00+00:00",
+   "completion_day": 571,
+   "completion_date": "2018-07-26T00:00:00+00:00",
+   "last_day": 571,
+   "evaluable": true,
+   "not_evaluable_reason": null,
+   "queue": {
+    "seen": true,
+    "warning_day": 571.0,
+    "lead_days": 0.0,
+    "tx_coverage": 1.0,
+    "status": "at",
+    "candidate": "RING0139",
+    "warning_date": "2018-07-26T00:00:00+00:00"
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": "not_seen",
+    "candidate": null,
+    "warning_date": null
+   }
+  },
+  {
+   "ring_id": 99,
+   "type": "cycle",
+   "n_tx": 7,
+   "first_day": 140,
+   "first_date": "2017-05-21T00:00:00+00:00",
+   "completion_day": 153,
+   "completion_date": "2017-06-03T00:00:00+00:00",
+   "last_day": 153,
+   "evaluable": false,
+   "not_evaluable_reason": "starts before the scored period (day 240)",
+   "queue": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   },
+   "alert": {
+    "seen": false,
+    "warning_day": null,
+    "lead_days": null,
+    "tx_coverage": 0.0,
+    "status": null,
+    "candidate": null,
+    "warning_date": null
+   }
+  }
+ ],
+ "daily": [
+  {
+   "day": 240,
+   "date": "2017-08-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 4,
+   "ring_completions": 0
+  },
+  {
+   "day": 241,
+   "date": "2017-08-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 242,
+   "date": "2017-08-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 243,
+   "date": "2017-09-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 244,
+   "date": "2017-09-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 245,
+   "date": "2017-09-03T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 246,
+   "date": "2017-09-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 247,
+   "date": "2017-09-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 248,
+   "date": "2017-09-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 3,
+   "ring_completions": 0
+  },
+  {
+   "day": 249,
+   "date": "2017-09-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 250,
+   "date": "2017-09-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 251,
+   "date": "2017-09-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 252,
+   "date": "2017-09-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 253,
+   "date": "2017-09-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 254,
+   "date": "2017-09-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 255,
+   "date": "2017-09-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 256,
+   "date": "2017-09-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 257,
+   "date": "2017-09-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 258,
+   "date": "2017-09-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 259,
+   "date": "2017-09-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 260,
+   "date": "2017-09-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 261,
+   "date": "2017-09-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 262,
+   "date": "2017-09-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 263,
+   "date": "2017-09-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 264,
+   "date": "2017-09-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 265,
+   "date": "2017-09-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 266,
+   "date": "2017-09-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 267,
+   "date": "2017-09-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 268,
+   "date": "2017-09-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 4,
+   "ring_completions": 0
+  },
+  {
+   "day": 269,
+   "date": "2017-09-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 270,
+   "date": "2017-09-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 271,
+   "date": "2017-09-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 272,
+   "date": "2017-09-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 1
+  },
+  {
+   "day": 273,
+   "date": "2017-10-01T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 4,
+   "ring_completions": 1
+  },
+  {
+   "day": 274,
+   "date": "2017-10-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 275,
+   "date": "2017-10-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 276,
+   "date": "2017-10-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 277,
+   "date": "2017-10-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 278,
+   "date": "2017-10-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 3,
+   "ring_completions": 0
+  },
+  {
+   "day": 279,
+   "date": "2017-10-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 280,
+   "date": "2017-10-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 281,
+   "date": "2017-10-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 282,
+   "date": "2017-10-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 283,
+   "date": "2017-10-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 284,
+   "date": "2017-10-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 285,
+   "date": "2017-10-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 286,
+   "date": "2017-10-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 287,
+   "date": "2017-10-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 288,
+   "date": "2017-10-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 289,
+   "date": "2017-10-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 290,
+   "date": "2017-10-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 291,
+   "date": "2017-10-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 292,
+   "date": "2017-10-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 293,
+   "date": "2017-10-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 294,
+   "date": "2017-10-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 295,
+   "date": "2017-10-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 296,
+   "date": "2017-10-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 297,
+   "date": "2017-10-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 298,
+   "date": "2017-10-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 299,
+   "date": "2017-10-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 300,
+   "date": "2017-10-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 301,
+   "date": "2017-10-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 302,
+   "date": "2017-10-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 303,
+   "date": "2017-10-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 304,
+   "date": "2017-11-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 305,
+   "date": "2017-11-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 306,
+   "date": "2017-11-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 307,
+   "date": "2017-11-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 308,
+   "date": "2017-11-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 309,
+   "date": "2017-11-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 310,
+   "date": "2017-11-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 311,
+   "date": "2017-11-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 312,
+   "date": "2017-11-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 313,
+   "date": "2017-11-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 314,
+   "date": "2017-11-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 315,
+   "date": "2017-11-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 316,
+   "date": "2017-11-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 317,
+   "date": "2017-11-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 318,
+   "date": "2017-11-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 319,
+   "date": "2017-11-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 320,
+   "date": "2017-11-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 321,
+   "date": "2017-11-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 322,
+   "date": "2017-11-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 323,
+   "date": "2017-11-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 324,
+   "date": "2017-11-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 325,
+   "date": "2017-11-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 326,
+   "date": "2017-11-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 327,
+   "date": "2017-11-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 328,
+   "date": "2017-11-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 329,
+   "date": "2017-11-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 330,
+   "date": "2017-11-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 331,
+   "date": "2017-11-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 332,
+   "date": "2017-11-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 333,
+   "date": "2017-11-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 334,
+   "date": "2017-12-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 335,
+   "date": "2017-12-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 336,
+   "date": "2017-12-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 337,
+   "date": "2017-12-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 338,
+   "date": "2017-12-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 339,
+   "date": "2017-12-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 340,
+   "date": "2017-12-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 341,
+   "date": "2017-12-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 342,
+   "date": "2017-12-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 343,
+   "date": "2017-12-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 344,
+   "date": "2017-12-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 345,
+   "date": "2017-12-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 346,
+   "date": "2017-12-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 347,
+   "date": "2017-12-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 348,
+   "date": "2017-12-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 349,
+   "date": "2017-12-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 350,
+   "date": "2017-12-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 351,
+   "date": "2017-12-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 352,
+   "date": "2017-12-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 353,
+   "date": "2017-12-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 354,
+   "date": "2017-12-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 355,
+   "date": "2017-12-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 356,
+   "date": "2017-12-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 357,
+   "date": "2017-12-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 358,
+   "date": "2017-12-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 359,
+   "date": "2017-12-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 360,
+   "date": "2017-12-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 361,
+   "date": "2017-12-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 362,
+   "date": "2017-12-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 363,
+   "date": "2017-12-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 364,
+   "date": "2017-12-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 365,
+   "date": "2018-01-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 366,
+   "date": "2018-01-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 367,
+   "date": "2018-01-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 368,
+   "date": "2018-01-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 369,
+   "date": "2018-01-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 370,
+   "date": "2018-01-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 371,
+   "date": "2018-01-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 372,
+   "date": "2018-01-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 373,
+   "date": "2018-01-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 374,
+   "date": "2018-01-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 375,
+   "date": "2018-01-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 376,
+   "date": "2018-01-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 377,
+   "date": "2018-01-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 378,
+   "date": "2018-01-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 379,
+   "date": "2018-01-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 380,
+   "date": "2018-01-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 381,
+   "date": "2018-01-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 382,
+   "date": "2018-01-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 383,
+   "date": "2018-01-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 384,
+   "date": "2018-01-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 385,
+   "date": "2018-01-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 386,
+   "date": "2018-01-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 387,
+   "date": "2018-01-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 388,
+   "date": "2018-01-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 389,
+   "date": "2018-01-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 390,
+   "date": "2018-01-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 391,
+   "date": "2018-01-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 392,
+   "date": "2018-01-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 393,
+   "date": "2018-01-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 394,
+   "date": "2018-01-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 395,
+   "date": "2018-01-31T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 396,
+   "date": "2018-02-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 397,
+   "date": "2018-02-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 398,
+   "date": "2018-02-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 399,
+   "date": "2018-02-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 400,
+   "date": "2018-02-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 401,
+   "date": "2018-02-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 402,
+   "date": "2018-02-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 403,
+   "date": "2018-02-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 404,
+   "date": "2018-02-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 405,
+   "date": "2018-02-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 406,
+   "date": "2018-02-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 407,
+   "date": "2018-02-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 408,
+   "date": "2018-02-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 409,
+   "date": "2018-02-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 410,
+   "date": "2018-02-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 411,
+   "date": "2018-02-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 412,
+   "date": "2018-02-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 413,
+   "date": "2018-02-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 414,
+   "date": "2018-02-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 415,
+   "date": "2018-02-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 416,
+   "date": "2018-02-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 417,
+   "date": "2018-02-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 418,
+   "date": "2018-02-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 419,
+   "date": "2018-02-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 420,
+   "date": "2018-02-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 421,
+   "date": "2018-02-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 422,
+   "date": "2018-02-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 423,
+   "date": "2018-02-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 424,
+   "date": "2018-03-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 425,
+   "date": "2018-03-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 426,
+   "date": "2018-03-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 427,
+   "date": "2018-03-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 428,
+   "date": "2018-03-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 429,
+   "date": "2018-03-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 430,
+   "date": "2018-03-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 431,
+   "date": "2018-03-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 432,
+   "date": "2018-03-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 433,
+   "date": "2018-03-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 434,
+   "date": "2018-03-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 435,
+   "date": "2018-03-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 436,
+   "date": "2018-03-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 437,
+   "date": "2018-03-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 438,
+   "date": "2018-03-15T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 439,
+   "date": "2018-03-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 440,
+   "date": "2018-03-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 441,
+   "date": "2018-03-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 442,
+   "date": "2018-03-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 443,
+   "date": "2018-03-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 444,
+   "date": "2018-03-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 445,
+   "date": "2018-03-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 446,
+   "date": "2018-03-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 447,
+   "date": "2018-03-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 448,
+   "date": "2018-03-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 449,
+   "date": "2018-03-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 450,
+   "date": "2018-03-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 451,
+   "date": "2018-03-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 452,
+   "date": "2018-03-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 453,
+   "date": "2018-03-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 454,
+   "date": "2018-03-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 455,
+   "date": "2018-04-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 456,
+   "date": "2018-04-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 457,
+   "date": "2018-04-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 458,
+   "date": "2018-04-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 459,
+   "date": "2018-04-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 460,
+   "date": "2018-04-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 461,
+   "date": "2018-04-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 462,
+   "date": "2018-04-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 463,
+   "date": "2018-04-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 464,
+   "date": "2018-04-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 465,
+   "date": "2018-04-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 466,
+   "date": "2018-04-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 467,
+   "date": "2018-04-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 468,
+   "date": "2018-04-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 469,
+   "date": "2018-04-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 470,
+   "date": "2018-04-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 471,
+   "date": "2018-04-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 472,
+   "date": "2018-04-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 473,
+   "date": "2018-04-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 474,
+   "date": "2018-04-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 475,
+   "date": "2018-04-21T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 476,
+   "date": "2018-04-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 477,
+   "date": "2018-04-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 2
+  },
+  {
+   "day": 478,
+   "date": "2018-04-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 479,
+   "date": "2018-04-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 480,
+   "date": "2018-04-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 481,
+   "date": "2018-04-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 482,
+   "date": "2018-04-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 483,
+   "date": "2018-04-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 484,
+   "date": "2018-04-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 485,
+   "date": "2018-05-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 486,
+   "date": "2018-05-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 487,
+   "date": "2018-05-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 488,
+   "date": "2018-05-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 489,
+   "date": "2018-05-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 490,
+   "date": "2018-05-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 491,
+   "date": "2018-05-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 492,
+   "date": "2018-05-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 493,
+   "date": "2018-05-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 494,
+   "date": "2018-05-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 495,
+   "date": "2018-05-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 496,
+   "date": "2018-05-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 497,
+   "date": "2018-05-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 498,
+   "date": "2018-05-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 499,
+   "date": "2018-05-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 500,
+   "date": "2018-05-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 501,
+   "date": "2018-05-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 502,
+   "date": "2018-05-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 503,
+   "date": "2018-05-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 504,
+   "date": "2018-05-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 505,
+   "date": "2018-05-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 506,
+   "date": "2018-05-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 507,
+   "date": "2018-05-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 508,
+   "date": "2018-05-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 509,
+   "date": "2018-05-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 510,
+   "date": "2018-05-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 511,
+   "date": "2018-05-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 512,
+   "date": "2018-05-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 513,
+   "date": "2018-05-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 514,
+   "date": "2018-05-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 515,
+   "date": "2018-05-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 516,
+   "date": "2018-06-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 517,
+   "date": "2018-06-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 518,
+   "date": "2018-06-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 519,
+   "date": "2018-06-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 520,
+   "date": "2018-06-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 521,
+   "date": "2018-06-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 522,
+   "date": "2018-06-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 523,
+   "date": "2018-06-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 524,
+   "date": "2018-06-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 525,
+   "date": "2018-06-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 526,
+   "date": "2018-06-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 527,
+   "date": "2018-06-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 528,
+   "date": "2018-06-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 529,
+   "date": "2018-06-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 530,
+   "date": "2018-06-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 531,
+   "date": "2018-06-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 532,
+   "date": "2018-06-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 533,
+   "date": "2018-06-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 534,
+   "date": "2018-06-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 535,
+   "date": "2018-06-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 536,
+   "date": "2018-06-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 537,
+   "date": "2018-06-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 538,
+   "date": "2018-06-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 539,
+   "date": "2018-06-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 540,
+   "date": "2018-06-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 541,
+   "date": "2018-06-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 542,
+   "date": "2018-06-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 543,
+   "date": "2018-06-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 544,
+   "date": "2018-06-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 545,
+   "date": "2018-06-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 546,
+   "date": "2018-07-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 547,
+   "date": "2018-07-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 548,
+   "date": "2018-07-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 549,
+   "date": "2018-07-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 550,
+   "date": "2018-07-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 551,
+   "date": "2018-07-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 552,
+   "date": "2018-07-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 553,
+   "date": "2018-07-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 554,
+   "date": "2018-07-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 555,
+   "date": "2018-07-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 556,
+   "date": "2018-07-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 557,
+   "date": "2018-07-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 558,
+   "date": "2018-07-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 559,
+   "date": "2018-07-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 560,
+   "date": "2018-07-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 561,
+   "date": "2018-07-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 562,
+   "date": "2018-07-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 563,
+   "date": "2018-07-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 564,
+   "date": "2018-07-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 565,
+   "date": "2018-07-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 566,
+   "date": "2018-07-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 567,
+   "date": "2018-07-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 568,
+   "date": "2018-07-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 569,
+   "date": "2018-07-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 570,
+   "date": "2018-07-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 571,
+   "date": "2018-07-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 572,
+   "date": "2018-07-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 573,
+   "date": "2018-07-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 574,
+   "date": "2018-07-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 575,
+   "date": "2018-07-30T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 576,
+   "date": "2018-07-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 577,
+   "date": "2018-08-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 578,
+   "date": "2018-08-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 579,
+   "date": "2018-08-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 580,
+   "date": "2018-08-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 581,
+   "date": "2018-08-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 582,
+   "date": "2018-08-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 583,
+   "date": "2018-08-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 584,
+   "date": "2018-08-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 585,
+   "date": "2018-08-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 586,
+   "date": "2018-08-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 587,
+   "date": "2018-08-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 588,
+   "date": "2018-08-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 589,
+   "date": "2018-08-13T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 590,
+   "date": "2018-08-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 591,
+   "date": "2018-08-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 592,
+   "date": "2018-08-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 593,
+   "date": "2018-08-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 594,
+   "date": "2018-08-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 595,
+   "date": "2018-08-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 596,
+   "date": "2018-08-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 597,
+   "date": "2018-08-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 598,
+   "date": "2018-08-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 599,
+   "date": "2018-08-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 600,
+   "date": "2018-08-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 601,
+   "date": "2018-08-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 602,
+   "date": "2018-08-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 603,
+   "date": "2018-08-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 604,
+   "date": "2018-08-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 605,
+   "date": "2018-08-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 606,
+   "date": "2018-08-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 607,
+   "date": "2018-08-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 608,
+   "date": "2018-09-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 609,
+   "date": "2018-09-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 610,
+   "date": "2018-09-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 611,
+   "date": "2018-09-04T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 612,
+   "date": "2018-09-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 613,
+   "date": "2018-09-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 614,
+   "date": "2018-09-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 615,
+   "date": "2018-09-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 616,
+   "date": "2018-09-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 617,
+   "date": "2018-09-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 618,
+   "date": "2018-09-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 619,
+   "date": "2018-09-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 620,
+   "date": "2018-09-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 621,
+   "date": "2018-09-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 622,
+   "date": "2018-09-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 623,
+   "date": "2018-09-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 624,
+   "date": "2018-09-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 625,
+   "date": "2018-09-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 626,
+   "date": "2018-09-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 627,
+   "date": "2018-09-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 628,
+   "date": "2018-09-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 629,
+   "date": "2018-09-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 630,
+   "date": "2018-09-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 631,
+   "date": "2018-09-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 632,
+   "date": "2018-09-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 633,
+   "date": "2018-09-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 634,
+   "date": "2018-09-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 635,
+   "date": "2018-09-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 636,
+   "date": "2018-09-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 637,
+   "date": "2018-09-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 638,
+   "date": "2018-10-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 639,
+   "date": "2018-10-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 640,
+   "date": "2018-10-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 641,
+   "date": "2018-10-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 642,
+   "date": "2018-10-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 643,
+   "date": "2018-10-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 644,
+   "date": "2018-10-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 645,
+   "date": "2018-10-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 646,
+   "date": "2018-10-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 647,
+   "date": "2018-10-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 648,
+   "date": "2018-10-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 649,
+   "date": "2018-10-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 650,
+   "date": "2018-10-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 651,
+   "date": "2018-10-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 652,
+   "date": "2018-10-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 653,
+   "date": "2018-10-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 654,
+   "date": "2018-10-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 655,
+   "date": "2018-10-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 656,
+   "date": "2018-10-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 657,
+   "date": "2018-10-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 658,
+   "date": "2018-10-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 659,
+   "date": "2018-10-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 660,
+   "date": "2018-10-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 661,
+   "date": "2018-10-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 662,
+   "date": "2018-10-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 663,
+   "date": "2018-10-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 664,
+   "date": "2018-10-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 665,
+   "date": "2018-10-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 666,
+   "date": "2018-10-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 667,
+   "date": "2018-10-30T00:00:00+00:00",
+   "alerts": 2,
+   "new_candidates": 3,
+   "ring_completions": 0
+  },
+  {
+   "day": 668,
+   "date": "2018-10-31T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 669,
+   "date": "2018-11-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 670,
+   "date": "2018-11-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 671,
+   "date": "2018-11-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 672,
+   "date": "2018-11-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 673,
+   "date": "2018-11-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 674,
+   "date": "2018-11-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 675,
+   "date": "2018-11-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 676,
+   "date": "2018-11-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 677,
+   "date": "2018-11-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 678,
+   "date": "2018-11-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 679,
+   "date": "2018-11-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 680,
+   "date": "2018-11-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 681,
+   "date": "2018-11-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 682,
+   "date": "2018-11-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 683,
+   "date": "2018-11-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 684,
+   "date": "2018-11-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 685,
+   "date": "2018-11-17T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 686,
+   "date": "2018-11-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 687,
+   "date": "2018-11-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 688,
+   "date": "2018-11-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 689,
+   "date": "2018-11-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 690,
+   "date": "2018-11-22T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 691,
+   "date": "2018-11-23T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 692,
+   "date": "2018-11-24T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 693,
+   "date": "2018-11-25T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 694,
+   "date": "2018-11-26T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 695,
+   "date": "2018-11-27T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 696,
+   "date": "2018-11-28T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 697,
+   "date": "2018-11-29T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 1
+  },
+  {
+   "day": 698,
+   "date": "2018-11-30T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 699,
+   "date": "2018-12-01T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 700,
+   "date": "2018-12-02T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 701,
+   "date": "2018-12-03T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 702,
+   "date": "2018-12-04T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 703,
+   "date": "2018-12-05T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 0
+  },
+  {
+   "day": 704,
+   "date": "2018-12-06T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 705,
+   "date": "2018-12-07T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 706,
+   "date": "2018-12-08T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 707,
+   "date": "2018-12-09T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 708,
+   "date": "2018-12-10T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 709,
+   "date": "2018-12-11T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 710,
+   "date": "2018-12-12T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 711,
+   "date": "2018-12-13T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 712,
+   "date": "2018-12-14T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 713,
+   "date": "2018-12-15T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 714,
+   "date": "2018-12-16T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 715,
+   "date": "2018-12-17T00:00:00+00:00",
+   "alerts": 1,
+   "new_candidates": 1,
+   "ring_completions": 1
+  },
+  {
+   "day": 716,
+   "date": "2018-12-18T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  },
+  {
+   "day": 717,
+   "date": "2018-12-19T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 2,
+   "ring_completions": 1
+  },
+  {
+   "day": 718,
+   "date": "2018-12-20T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 1,
+   "ring_completions": 0
+  },
+  {
+   "day": 719,
+   "date": "2018-12-21T00:00:00+00:00",
+   "alerts": 0,
+   "new_candidates": 0,
+   "ring_completions": 0
+  }
+ ],
+ "caveats": [
+  "Ring fields (id, type, first transaction, completion, lead, coverage) are AMLSim ground truth and are used only to evaluate.",
+  "Lead is the ring's completion day minus the day the alert was given. A positive lead means the alert came before the ring was complete.",
+  "Only rings that start in the scored period and complete inside the data are evaluable; the others are listed with the reason."
+ ]
+}

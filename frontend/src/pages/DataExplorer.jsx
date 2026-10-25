@@ -42,7 +42,7 @@ function LabelBadge({ label }) {
 
   return (
     <span className="text-xs text-muted">
-      Unlabelled
+      Not in an alert
     </span>
   );
 }
@@ -50,6 +50,7 @@ function LabelBadge({ label }) {
 export default function DataExplorer() {
   const [accountId, setAccountId] = React.useState("");
   const [search, setSearch] = React.useState("");
+  const { data: pipeline } = useApi(() => api.pipelineStats(), []);
 
   const { data, loading, error } = useApi(
     () =>
@@ -91,8 +92,11 @@ export default function DataExplorer() {
     0
   );
 
-  // AMLSim ground truth contains 671 alert-linked transactions.
-  const amlsimAlertTransactionCount = 671;
+  // number of alert-linked (label = 1) transactions, counted from the database
+  const amlsimAlertTransactionCount = Number(pipeline?.n_alert_transactions);
+  const alertCountText = Number.isFinite(amlsimAlertTransactionCount)
+    ? amlsimAlertTransactionCount.toLocaleString("en-IN")
+    : "—";
 
   return (
     <div className="space-y-5">
@@ -181,7 +185,7 @@ export default function DataExplorer() {
             </div>
 
             <div className="text-2xl font-bold mt-1">
-              {amlsimAlertTransactionCount.toLocaleString("en-IN")}
+              {alertCountText}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -337,7 +341,7 @@ export default function DataExplorer() {
         <p className="text-xs text-muted mt-1 leading-relaxed">
           Transaction records provide the underlying evidence used by the
           temporal transaction graph, behavioural features and suspicious
-          pattern detectors. The AMLSim dataset contains 671 transactions
+          pattern detectors. The AMLSim dataset contains {alertCountText} transactions
           linked to the known alert ground truth. The alert-linked count is
           separate from the transaction-level label field returned by the
           explorer API. A known alert linkage does not by itself establish

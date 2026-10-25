@@ -10,6 +10,12 @@ import TemporalEvolution from "./pages/TemporalEvolution.jsx";
 import PatternAnalytics from "./pages/PatternAnalytics.jsx";
 import LeadTimeAnalytics from "./pages/LeadTimeAnalytics.jsx";
 import ModelPerformance from "./pages/ModelPerformance.jsx";
+import RingEarlyWarning from "./pages/RingEarlyWarning.jsx";
+import WarningTimeline from "./pages/WarningTimeline.jsx";
+import AlertLog from "./pages/AlertLog.jsx";
+import PatternEvidence from "./pages/PatternEvidence.jsx";
+import { api } from "./api.js";
+import { useApi } from "./components/ui.jsx";
 import DataExplorer from "./pages/DataExplorer.jsx";
 
 const nav = [
@@ -20,16 +26,25 @@ const nav = [
   ["/temporal", "Temporal Evolution"],
   ["/patterns", "Pattern Analytics"],
   ["/lead-time", "Lead-Time Analytics"],
+  ["/warning-timeline", "Warning Timeline"],
+  ["/alert-log", "Alert Log"],
+  ["/pattern-evidence", "Pattern Evidence"],
   ["/models", "Model Performance"],
+  ["/early-warning", "Ablations & Controls"],
   ["/explorer", "Data Explorer"],
 ];
 
 function Shell() {
+  // dataset label from the database (synthetic data must be labelled as such)
+  const { data: stats } = useApi(() => api.pipelineStats(), []);
+  const src = stats?.dataset_source;
+  const datasetLabel =
+    src === "amlsim" ? "REAL AMLSim data" : src === "demo" ? "DEMO / SYNTHETIC DATA" : src ? `Dataset: ${src}` : "Dataset: \u2014";
   return (
     <div className="min-h-screen flex">
       <aside className="w-60 shrink-0 border-r border-border bg-panel p-4">
         <div className="text-sm font-bold text-accent mb-1">Early-AML-Warning-System</div>
-        <div className="text-xs text-muted mb-4">DEMO / REAL AMLSim data</div>
+        <div className="text-xs text-muted mb-4">{datasetLabel}</div>
         <nav className="flex flex-col gap-1">
           {nav.map(([to, label]) => (
             <NavLink
@@ -53,7 +68,11 @@ function Shell() {
           <Route path="/temporal" element={<TemporalEvolution />} />
           <Route path="/patterns" element={<PatternAnalytics />} />
           <Route path="/lead-time" element={<LeadTimeAnalytics />} />
+          <Route path="/warning-timeline" element={<WarningTimeline />} />
+          <Route path="/alert-log" element={<AlertLog />} />
+          <Route path="/pattern-evidence" element={<PatternEvidence />} />
           <Route path="/models" element={<ModelPerformance />} />
+          <Route path="/early-warning" element={<RingEarlyWarning />} />
           <Route path="/explorer" element={<DataExplorer />} />
         </Routes>
       </main>

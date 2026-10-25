@@ -1,5 +1,6 @@
 import React from "react";
 import { api } from "../api.js";
+import ScoreCalculationCard from "../components/ScoreCalculation.jsx";
 import {
   Card,
   Loading,
@@ -45,7 +46,16 @@ function parsePatterns(value) {
 
 export default function TemporalEvolution() {
   const { data: ringsData, loading: ringsLoading, error: ringsError } =
-    useApi(() => api.rings({ limit: 142 }), []);
+    useApi(() => api.rings({ limit: 1000 }), []);
+  const { data: pipeline } = useApi(() => api.pipelineStats(), []);
+
+  // calendar dates for window ids, from the window length and first window start stored in the database
+  const windowDays = Number(pipeline?.window_days);
+  const windowDate = (w) => {
+    const d0 = new Date(pipeline?.first_window_start);
+    if (Number.isNaN(d0.getTime()) || !Number.isFinite(windowDays) || !Number.isFinite(Number(w))) return null;
+    return new Date(d0.getTime() + Number(w) * windowDays * 86400000).toISOString().slice(0, 10);
+  };
 
   const rings = Array.isArray(ringsData)
     ? ringsData
@@ -75,6 +85,12 @@ export default function TemporalEvolution() {
       selectedRing
         ? api.ringTimeline(selectedRing)
         : Promise.resolve(null),
+    [selectedRing]
+  );
+
+  // how the selected candidate's risk score was calculated (file written by scripts/rebuild_v2.py)
+  const { data: calc } = useApi(
+    () => (selectedRing ? api.scoreCalculation(selectedRing) : Promise.resolve(null)),
     [selectedRing]
   );
 
@@ -283,6 +299,8 @@ export default function TemporalEvolution() {
         </p>
       </Card>
 
+      <ScoreCalculationCard calc={calc} />
+
       {/* SUSPICIOUS PATTERN SEQUENCE */}
       <Card title="Suspicious Pattern Sequence">
 
@@ -364,8 +382,9 @@ export default function TemporalEvolution() {
 
         <p className="text-xs text-muted mt-2">
           Analytical graph-window range associated with the candidate.
-          Window identifiers should not automatically be interpreted as
-          calendar days.
+          {Array.isArray(windowSpan) && windowDate(windowSpan[0]) && windowDate(windowSpan[windowSpan.length - 1])
+            ? ` In this run one window = ${windowDays} calendar day(s): ${windowDate(windowSpan[0])} → ${windowDate(windowSpan[windowSpan.length - 1])}.`
+            : " The window length is not available in the loaded results."}
         </p>
       </Card>
 

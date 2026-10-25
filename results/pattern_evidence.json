@@ -1,0 +1,421 @@
+{
+ "n_candidates": 171,
+ "component_weights": {
+  "behavioural": 0.35,
+  "network": 0.2,
+  "fund_flow": 0.25,
+  "persistence": 0.2
+ },
+ "alert_threshold": 50.0,
+ "single_pattern_candidates": 165,
+ "multi_pattern_candidates": 6,
+ "alerts_on_single_pattern": 10,
+ "alerts_on_multi_pattern": 1,
+ "spearman_count_vs_score": {
+  "rho": 0.02664034981130997,
+  "p": 0.7294373900515388
+ },
+ "multi_vs_single_contain_ring_tx": {
+  "table": [
+   [
+    6,
+    0
+   ],
+   [
+    41,
+    124
+   ]
+  ],
+  "fisher_p": 0.00033788821812444033
+ },
+ "by_count": [
+  {
+   "n_patterns": 1,
+   "candidates": 165,
+   "mean_score": 40.904909090909086,
+   "min_score": 28.29,
+   "max_score": 62.12,
+   "alerts_given": 10,
+   "high": 8,
+   "critical": 0,
+   "moderate": 153,
+   "low": 4,
+   "contain_ring_tx": 41,
+   "share_containing_ring_tx": 0.24848484848484848,
+   "mean_evidence_tx": 4.260606060606061,
+   "mean_behavioural": 36.28672727272727,
+   "mean_network": 82.84848484848484,
+   "mean_fund_flow": 12.666666666666666,
+   "mean_persistence": 42.34018181818181
+  },
+  {
+   "n_patterns": 2,
+   "candidates": 5,
+   "mean_score": 40.233999999999995,
+   "min_score": 37.9,
+   "max_score": 42.21,
+   "alerts_given": 0,
+   "high": 0,
+   "critical": 0,
+   "moderate": 5,
+   "low": 0,
+   "contain_ring_tx": 5,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 14.6,
+   "mean_behavioural": 12.616,
+   "mean_network": 100.0,
+   "mean_fund_flow": 26.0,
+   "mean_persistence": 46.589999999999996
+  },
+  {
+   "n_patterns": 3,
+   "candidates": 1,
+   "mean_score": 43.29,
+   "min_score": 43.29,
+   "max_score": 43.29,
+   "alerts_given": 1,
+   "high": 0,
+   "critical": 0,
+   "moderate": 1,
+   "low": 0,
+   "contain_ring_tx": 1,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 11.0,
+   "mean_behavioural": 11.53,
+   "mean_network": 100.0,
+   "mean_fund_flow": 40.0,
+   "mean_persistence": 46.26
+  }
+ ],
+ "by_set": [
+  {
+   "patterns": [
+    "circular_flow"
+   ],
+   "candidates": 14,
+   "mean_score": 50.434285714285714,
+   "min_score": 44.51,
+   "max_score": 62.12,
+   "alerts_given": 6,
+   "high": 4,
+   "critical": 0,
+   "moderate": 8,
+   "low": 2,
+   "contain_ring_tx": 13,
+   "share_containing_ring_tx": 0.9285714285714286,
+   "mean_evidence_tx": 7.357142857142857,
+   "mean_behavioural": 37.38357142857143,
+   "mean_network": 100.0,
+   "mean_fund_flow": 30.0,
+   "mean_persistence": 49.24428571428571
+  },
+  {
+   "patterns": [
+    "layering"
+   ],
+   "candidates": 16,
+   "mean_score": 45.30625,
+   "min_score": 33.97,
+   "max_score": 56.8,
+   "alerts_given": 3,
+   "high": 3,
+   "critical": 0,
+   "moderate": 11,
+   "low": 2,
+   "contain_ring_tx": 16,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 4.4375,
+   "mean_behavioural": 46.760625,
+   "mean_network": 76.875,
+   "mean_fund_flow": 20.0,
+   "mean_persistence": 42.825625
+  },
+  {
+   "patterns": [
+    "fan_in",
+    "fan_out",
+    "layering"
+   ],
+   "candidates": 1,
+   "mean_score": 43.29,
+   "min_score": 43.29,
+   "max_score": 43.29,
+   "alerts_given": 1,
+   "high": 0,
+   "critical": 0,
+   "moderate": 1,
+   "low": 0,
+   "contain_ring_tx": 1,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 11.0,
+   "mean_behavioural": 11.53,
+   "mean_network": 100.0,
+   "mean_fund_flow": 40.0,
+   "mean_persistence": 46.26
+  },
+  {
+   "patterns": [
+    "fan_in"
+   ],
+   "candidates": 6,
+   "mean_score": 42.653333333333336,
+   "min_score": 40.29,
+   "max_score": 44.84,
+   "alerts_given": 0,
+   "high": 0,
+   "critical": 0,
+   "moderate": 6,
+   "low": 0,
+   "contain_ring_tx": 6,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 3.1666666666666665,
+   "mean_behavioural": 45.57333333333333,
+   "mean_network": 80.0,
+   "mean_fund_flow": 10.0,
+   "mean_persistence": 41.01333333333333
+  },
+  {
+   "patterns": [
+    "fan_out",
+    "layering"
+   ],
+   "candidates": 3,
+   "mean_score": 40.81,
+   "min_score": 39.47,
+   "max_score": 42.21,
+   "alerts_given": 0,
+   "high": 0,
+   "critical": 0,
+   "moderate": 3,
+   "low": 0,
+   "contain_ring_tx": 3,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 17.333333333333332,
+   "mean_behavioural": 11.06,
+   "mean_network": 100.0,
+   "mean_fund_flow": 30.0,
+   "mean_persistence": 47.18666666666667
+  },
+  {
+   "patterns": [
+    "fan_in",
+    "fan_out"
+   ],
+   "candidates": 2,
+   "mean_score": 39.370000000000005,
+   "min_score": 37.9,
+   "max_score": 40.84,
+   "alerts_given": 0,
+   "high": 0,
+   "critical": 0,
+   "moderate": 2,
+   "low": 0,
+   "contain_ring_tx": 2,
+   "share_containing_ring_tx": 1.0,
+   "mean_evidence_tx": 10.5,
+   "mean_behavioural": 14.95,
+   "mean_network": 100.0,
+   "mean_fund_flow": 20.0,
+   "mean_persistence": 45.695
+  },
+  {
+   "patterns": [
+    "fan_out"
+   ],
+   "candidates": 129,
+   "mean_score": 39.243488372093026,
+   "min_score": 28.29,
+   "max_score": 50.88,
+   "alerts_given": 1,
+   "high": 1,
+   "critical": 0,
+   "moderate": 128,
+   "low": 0,
+   "contain_ring_tx": 6,
+   "share_containing_ring_tx": 0.046511627906976744,
+   "mean_evidence_tx": 3.953488372093023,
+   "mean_behavioural": 34.43666666666667,
+   "mean_network": 81.86046511627907,
+   "mean_fund_flow": 10.0,
+   "mean_persistence": 41.59240310077519
+  }
+ ],
+ "by_size": [
+  {
+   "size": "2-3 transactions",
+   "single_pattern": 82,
+   "single_contain": 13,
+   "multi_pattern": 0,
+   "multi_contain": 0
+  },
+  {
+   "size": "4-6 transactions",
+   "single_pattern": 53,
+   "single_contain": 17,
+   "multi_pattern": 1,
+   "multi_contain": 1
+  },
+  {
+   "size": "7-10 transactions",
+   "single_pattern": 29,
+   "single_contain": 11,
+   "multi_pattern": 1,
+   "multi_contain": 1
+  },
+  {
+   "size": "11 or more",
+   "single_pattern": 1,
+   "single_contain": 0,
+   "multi_pattern": 4,
+   "multi_contain": 4
+  }
+ ],
+ "pattern_contributions": [
+  {
+   "pattern": "circular_flow",
+   "weight": 3.0,
+   "fund_flow_points": 30.0,
+   "score_points": 7.5
+  },
+  {
+   "pattern": "layering",
+   "weight": 2.0,
+   "fund_flow_points": 20.0,
+   "score_points": 5.0
+  },
+  {
+   "pattern": "fan_in",
+   "weight": 1.0,
+   "fund_flow_points": 10.0,
+   "score_points": 2.5
+  },
+  {
+   "pattern": "fan_out",
+   "weight": 1.0,
+   "fund_flow_points": 10.0,
+   "score_points": 2.5
+  }
+ ],
+ "multi_pattern": [
+  {
+   "candidate_ring_id": "RING0136",
+   "patterns": [
+    "fan_in",
+    "fan_out",
+    "layering"
+   ],
+   "current_score": 43.29,
+   "current_level": "MODERATE",
+   "alert_date": "2018-07-30T00:00:00+00:00",
+   "score_at_alert": 56.35,
+   "contains_ring_tx": true,
+   "n_tx": 11,
+   "components": {
+    "behavioural": 11.53,
+    "network": 100.0,
+    "fund_flow": 40.0,
+    "persistence": 46.26
+   }
+  },
+  {
+   "candidate_ring_id": "RING0019",
+   "patterns": [
+    "fan_out",
+    "layering"
+   ],
+   "current_score": 42.21,
+   "current_level": "MODERATE",
+   "alert_date": null,
+   "score_at_alert": null,
+   "contains_ring_tx": true,
+   "n_tx": 8,
+   "components": {
+    "behavioural": 16.04,
+    "network": 100.0,
+    "fund_flow": 30.0,
+    "persistence": 45.47
+   }
+  },
+  {
+   "candidate_ring_id": "RING0116",
+   "patterns": [
+    "fan_in",
+    "fan_out"
+   ],
+   "current_score": 40.84,
+   "current_level": "MODERATE",
+   "alert_date": null,
+   "score_at_alert": null,
+   "contains_ring_tx": true,
+   "n_tx": 6,
+   "components": {
+    "behavioural": 19.8,
+    "network": 100.0,
+    "fund_flow": 20.0,
+    "persistence": 44.55
+   }
+  },
+  {
+   "candidate_ring_id": "RING0062",
+   "patterns": [
+    "fan_out",
+    "layering"
+   ],
+   "current_score": 40.75,
+   "current_level": "MODERATE",
+   "alert_date": null,
+   "score_at_alert": null,
+   "contains_ring_tx": true,
+   "n_tx": 17,
+   "components": {
+    "behavioural": 10.13,
+    "network": 100.0,
+    "fund_flow": 30.0,
+    "persistence": 48.52
+   }
+  },
+  {
+   "candidate_ring_id": "RING0050",
+   "patterns": [
+    "fan_out",
+    "layering"
+   ],
+   "current_score": 39.47,
+   "current_level": "MODERATE",
+   "alert_date": null,
+   "score_at_alert": null,
+   "contains_ring_tx": true,
+   "n_tx": 27,
+   "components": {
+    "behavioural": 7.01,
+    "network": 100.0,
+    "fund_flow": 30.0,
+    "persistence": 47.57
+   }
+  },
+  {
+   "candidate_ring_id": "RING0001",
+   "patterns": [
+    "fan_in",
+    "fan_out"
+   ],
+   "current_score": 37.9,
+   "current_level": "MODERATE",
+   "alert_date": null,
+   "score_at_alert": null,
+   "contains_ring_tx": true,
+   "n_tx": 15,
+   "components": {
+    "behavioural": 10.1,
+    "network": 100.0,
+    "fund_flow": 20.0,
+    "persistence": 46.84
+   }
+  }
+ ],
+ "notes": [
+  "Ring-transaction fields are AMLSim ground truth and are used only to evaluate.",
+  "Every AMLSim ring has a single type (cycle, fan-in or fan-out), so one pattern is the expected shape of a ring.",
+  "Candidates with several patterns are also the largest ones, so pattern count and size cannot be separated with this few cases."
+ ]
+}

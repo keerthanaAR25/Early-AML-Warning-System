@@ -1,0 +1,4249 @@
+{
+ "protocol": {
+  "source": "original pattern detectors (results/v1_backup/pattern_events.json)",
+  "events_used": 39869,
+  "lookback_days": 7,
+  "window": "from 7 days before the candidate's first evidence to its latest evidence"
+ },
+ "summary": {
+  "n_candidates": 171,
+  "with_any_supporting_pattern": 170,
+  "distribution_of_types_per_candidate": {
+   "0": 1,
+   "1": 18,
+   "2": 88,
+   "3": 38,
+   "4+": 26
+  },
+  "candidates_with_ring_tx": 47,
+  "share_with_supporting_pattern": {
+   "ring_containing": 0.9787234042553191,
+   "others": 1.0
+  },
+  "mean_types": {
+   "ring_containing": 2.0638297872340425,
+   "others": 2.596774193548387
+  },
+  "auc_types_vs_ring_containing": 0.342570350034317,
+  "mannwhitney_p_more_types_in_ring_containing": 0.9997142175880458,
+  "sender_level": {
+   "ring_transactions": 320,
+   "normal_transactions_sampled": 30000,
+   "share_ring": 0.43125,
+   "share_normal": 0.5557,
+   "lift": 0.7760482274608602
+  }
+ },
+ "candidates": {
+  "RING0010": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 6,
+     "accounts_involved": 6,
+     "first_date": "2017-08-20T00:00:00+00:00",
+     "last_date": "2017-09-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-08-21T00:00:00+00:00",
+     "last_date": "2017-08-21T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0013": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 9,
+     "accounts_involved": 4,
+     "first_date": "2017-08-09T00:00:00+00:00",
+     "last_date": "2017-08-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 3,
+     "first_date": "2017-08-09T00:00:00+00:00",
+     "last_date": "2017-08-31T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-08-11T00:00:00+00:00",
+     "last_date": "2017-08-11T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0040": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-09-24T00:00:00+00:00",
+     "last_date": "2017-09-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-09-15T00:00:00+00:00",
+     "last_date": "2017-09-15T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0044": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-09-30T00:00:00+00:00",
+     "last_date": "2017-09-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 3,
+     "first_date": "2017-10-01T00:00:00+00:00",
+     "last_date": "2017-10-01T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0056": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 3,
+     "first_date": "2017-10-27T00:00:00+00:00",
+     "last_date": "2017-10-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0088": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2018-01-09T00:00:00+00:00",
+     "last_date": "2018-01-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 3,
+     "first_date": "2018-01-13T00:00:00+00:00",
+     "last_date": "2018-01-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0089": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2018-01-08T00:00:00+00:00",
+     "last_date": "2018-01-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 3,
+     "first_date": "2018-01-15T00:00:00+00:00",
+     "last_date": "2018-01-29T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0101": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 3,
+     "first_date": "2018-03-15T00:00:00+00:00",
+     "last_date": "2018-03-15T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0114": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 6,
+     "first_date": "2018-04-14T00:00:00+00:00",
+     "last_date": "2018-04-15T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0119": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 3,
+     "first_date": "2018-04-21T00:00:00+00:00",
+     "last_date": "2018-04-21T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0126": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 6,
+     "accounts_involved": 4,
+     "first_date": "2018-05-03T00:00:00+00:00",
+     "last_date": "2018-05-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2018-05-03T00:00:00+00:00",
+     "last_date": "2018-05-24T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0129": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 6,
+     "first_date": "2018-06-24T00:00:00+00:00",
+     "last_date": "2018-06-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0133": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 5,
+     "first_date": "2018-06-29T00:00:00+00:00",
+     "last_date": "2018-07-08T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0139": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 4,
+     "accounts_involved": 6,
+     "first_date": "2018-07-19T00:00:00+00:00",
+     "last_date": "2018-07-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-07-13T00:00:00+00:00",
+     "last_date": "2018-07-13T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0142": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-08-02T00:00:00+00:00",
+     "last_date": "2018-08-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 3,
+     "first_date": "2018-08-08T00:00:00+00:00",
+     "last_date": "2018-08-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-08-19T00:00:00+00:00",
+     "last_date": "2018-08-19T00:00:00+00:00",
+     "also_in_candidate": true
+    }
+   ]
+  },
+  "RING0153": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-10-02T00:00:00+00:00",
+     "last_date": "2018-10-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0160": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 5,
+     "accounts_involved": 6,
+     "first_date": "2018-10-30T00:00:00+00:00",
+     "last_date": "2018-11-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-10-28T00:00:00+00:00",
+     "last_date": "2018-11-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0168": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 6,
+     "first_date": "2018-12-05T00:00:00+00:00",
+     "last_date": "2018-12-17T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-20T00:00:00+00:00",
+     "last_date": "2018-11-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0170": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-11-28T00:00:00+00:00",
+     "last_date": "2018-12-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 3,
+     "first_date": "2018-12-05T00:00:00+00:00",
+     "last_date": "2018-12-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0021": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 99,
+     "accounts_involved": 3,
+     "first_date": "2017-04-25T00:00:00+00:00",
+     "last_date": "2017-12-05T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 90,
+     "accounts_involved": 3,
+     "first_date": "2017-04-25T00:00:00+00:00",
+     "last_date": "2017-12-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0015": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 31,
+     "accounts_involved": 1,
+     "first_date": "2017-04-25T00:00:00+00:00",
+     "last_date": "2017-12-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 8,
+     "accounts_involved": 1,
+     "first_date": "2017-05-16T00:00:00+00:00",
+     "last_date": "2017-11-28T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0009": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 34,
+     "accounts_involved": 4,
+     "first_date": "2017-04-28T00:00:00+00:00",
+     "last_date": "2017-09-22T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 27,
+     "accounts_involved": 2,
+     "first_date": "2017-05-03T00:00:00+00:00",
+     "last_date": "2017-09-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0011": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 28,
+     "accounts_involved": 2,
+     "first_date": "2017-04-29T00:00:00+00:00",
+     "last_date": "2017-10-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 1,
+     "first_date": "2017-04-29T00:00:00+00:00",
+     "last_date": "2017-09-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0005": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 11,
+     "accounts_involved": 1,
+     "first_date": "2017-05-24T00:00:00+00:00",
+     "last_date": "2017-08-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2017-05-03T00:00:00+00:00",
+     "last_date": "2017-07-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-06-26T00:00:00+00:00",
+     "last_date": "2017-06-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0022": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 77,
+     "accounts_involved": 4,
+     "first_date": "2017-05-05T00:00:00+00:00",
+     "last_date": "2018-03-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 37,
+     "accounts_involved": 2,
+     "first_date": "2017-05-17T00:00:00+00:00",
+     "last_date": "2017-12-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-07-09T00:00:00+00:00",
+     "last_date": "2018-02-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-08-02T00:00:00+00:00",
+     "last_date": "2017-08-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0018": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 55,
+     "accounts_involved": 4,
+     "first_date": "2017-05-10T00:00:00+00:00",
+     "last_date": "2017-10-17T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 22,
+     "accounts_involved": 3,
+     "first_date": "2017-05-25T00:00:00+00:00",
+     "last_date": "2017-10-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-06-11T00:00:00+00:00",
+     "last_date": "2017-08-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0038": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 14,
+     "accounts_involved": 1,
+     "first_date": "2017-05-16T00:00:00+00:00",
+     "last_date": "2017-12-26T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 13,
+     "accounts_involved": 2,
+     "first_date": "2017-05-11T00:00:00+00:00",
+     "last_date": "2018-01-31T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0029": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 57,
+     "accounts_involved": 6,
+     "first_date": "2017-05-13T00:00:00+00:00",
+     "last_date": "2018-02-17T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 8,
+     "accounts_involved": 1,
+     "first_date": "2017-05-13T00:00:00+00:00",
+     "last_date": "2017-12-23T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0003": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 66,
+     "accounts_involved": 2,
+     "first_date": "2017-05-16T00:00:00+00:00",
+     "last_date": "2017-09-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 53,
+     "accounts_involved": 4,
+     "first_date": "2017-05-16T00:00:00+00:00",
+     "last_date": "2017-10-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0016": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 125,
+     "accounts_involved": 3,
+     "first_date": "2017-05-22T00:00:00+00:00",
+     "last_date": "2018-09-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 106,
+     "accounts_involved": 5,
+     "first_date": "2017-05-17T00:00:00+00:00",
+     "last_date": "2018-09-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-02-05T00:00:00+00:00",
+     "last_date": "2018-02-05T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-06-14T00:00:00+00:00",
+     "last_date": "2017-06-14T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0032": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 103,
+     "accounts_involved": 8,
+     "first_date": "2017-05-23T00:00:00+00:00",
+     "last_date": "2018-04-17T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 81,
+     "accounts_involved": 3,
+     "first_date": "2017-05-28T00:00:00+00:00",
+     "last_date": "2018-04-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-02-27T00:00:00+00:00",
+     "last_date": "2018-02-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0023": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 219,
+     "accounts_involved": 11,
+     "first_date": "2017-05-25T00:00:00+00:00",
+     "last_date": "2018-08-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 73,
+     "accounts_involved": 1,
+     "first_date": "2017-05-25T00:00:00+00:00",
+     "last_date": "2018-07-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "split_merge",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-08-04T00:00:00+00:00",
+     "last_date": "2017-10-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-28T00:00:00+00:00",
+     "last_date": "2017-12-28T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-02T00:00:00+00:00",
+     "last_date": "2017-12-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0025": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 24,
+     "accounts_involved": 4,
+     "first_date": "2017-05-27T00:00:00+00:00",
+     "last_date": "2017-11-18T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 22,
+     "accounts_involved": 2,
+     "first_date": "2017-05-27T00:00:00+00:00",
+     "last_date": "2017-11-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-05-27T00:00:00+00:00",
+     "last_date": "2017-05-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0001": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 147,
+     "accounts_involved": 12,
+     "first_date": "2017-05-30T00:00:00+00:00",
+     "last_date": "2018-12-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 40,
+     "accounts_involved": 2,
+     "first_date": "2017-06-20T00:00:00+00:00",
+     "last_date": "2018-10-14T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "layering",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-08-01T00:00:00+00:00",
+     "last_date": "2018-02-08T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0007": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 85,
+     "accounts_involved": 5,
+     "first_date": "2017-06-01T00:00:00+00:00",
+     "last_date": "2017-12-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 58,
+     "accounts_involved": 1,
+     "first_date": "2017-06-02T00:00:00+00:00",
+     "last_date": "2017-12-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-20T00:00:00+00:00",
+     "last_date": "2017-10-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0031": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 40,
+     "accounts_involved": 4,
+     "first_date": "2017-06-24T00:00:00+00:00",
+     "last_date": "2018-02-06T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 24,
+     "accounts_involved": 2,
+     "first_date": "2017-06-04T00:00:00+00:00",
+     "last_date": "2018-01-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-01-09T00:00:00+00:00",
+     "last_date": "2018-01-11T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0045": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 15,
+     "accounts_involved": 3,
+     "first_date": "2017-06-21T00:00:00+00:00",
+     "last_date": "2017-11-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 8,
+     "accounts_involved": 1,
+     "first_date": "2017-06-05T00:00:00+00:00",
+     "last_date": "2017-11-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0039": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 90,
+     "accounts_involved": 4,
+     "first_date": "2017-06-17T00:00:00+00:00",
+     "last_date": "2018-01-06T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 55,
+     "accounts_involved": 1,
+     "first_date": "2017-06-19T00:00:00+00:00",
+     "last_date": "2017-12-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-07-23T00:00:00+00:00",
+     "last_date": "2017-12-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "split_merge",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-07T00:00:00+00:00",
+     "last_date": "2017-10-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0014": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 65,
+     "accounts_involved": 6,
+     "first_date": "2017-06-19T00:00:00+00:00",
+     "last_date": "2018-01-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 11,
+     "accounts_involved": 1,
+     "first_date": "2017-06-19T00:00:00+00:00",
+     "last_date": "2018-01-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-11-05T00:00:00+00:00",
+     "last_date": "2017-11-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0034": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 11,
+     "accounts_involved": 2,
+     "first_date": "2017-06-30T00:00:00+00:00",
+     "last_date": "2017-09-22T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2017-07-21T00:00:00+00:00",
+     "last_date": "2017-09-22T00:00:00+00:00",
+     "also_in_candidate": true
+    }
+   ]
+  },
+  "RING0049": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 10,
+     "accounts_involved": 2,
+     "first_date": "2017-06-25T00:00:00+00:00",
+     "last_date": "2017-10-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2017-08-26T00:00:00+00:00",
+     "last_date": "2017-09-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-06-28T00:00:00+00:00",
+     "last_date": "2017-09-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0004": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-06-27T00:00:00+00:00",
+     "last_date": "2017-08-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 4,
+     "accounts_involved": 2,
+     "first_date": "2017-06-27T00:00:00+00:00",
+     "last_date": "2017-08-08T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0006": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 7,
+     "accounts_involved": 2,
+     "first_date": "2017-06-28T00:00:00+00:00",
+     "last_date": "2017-08-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-08-02T00:00:00+00:00",
+     "last_date": "2017-08-09T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0047": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 5,
+     "first_date": "2017-06-30T00:00:00+00:00",
+     "last_date": "2018-01-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 1,
+     "first_date": "2017-07-14T00:00:00+00:00",
+     "last_date": "2018-01-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0019": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 67,
+     "accounts_involved": 8,
+     "first_date": "2017-06-30T00:00:00+00:00",
+     "last_date": "2018-02-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 22,
+     "accounts_involved": 3,
+     "first_date": "2017-06-30T00:00:00+00:00",
+     "last_date": "2018-02-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-10-27T00:00:00+00:00",
+     "last_date": "2017-10-27T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2017-10-06T00:00:00+00:00",
+     "last_date": "2017-10-06T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0012": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 17,
+     "accounts_involved": 3,
+     "first_date": "2017-07-01T00:00:00+00:00",
+     "last_date": "2017-11-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-07-22T00:00:00+00:00",
+     "last_date": "2017-11-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2017-11-12T00:00:00+00:00",
+     "last_date": "2017-11-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0057": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 2,
+     "first_date": "2017-07-10T00:00:00+00:00",
+     "last_date": "2017-11-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 10,
+     "accounts_involved": 2,
+     "first_date": "2017-07-11T00:00:00+00:00",
+     "last_date": "2017-11-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0030": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 8,
+     "accounts_involved": 2,
+     "first_date": "2017-07-10T00:00:00+00:00",
+     "last_date": "2017-12-17T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 1,
+     "first_date": "2017-07-23T00:00:00+00:00",
+     "last_date": "2017-12-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0002": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 40,
+     "accounts_involved": 4,
+     "first_date": "2017-07-11T00:00:00+00:00",
+     "last_date": "2018-01-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 7,
+     "accounts_involved": 1,
+     "first_date": "2017-08-15T00:00:00+00:00",
+     "last_date": "2017-12-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0035": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-07-14T00:00:00+00:00",
+     "last_date": "2017-09-08T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2017-07-18T00:00:00+00:00",
+     "last_date": "2017-08-13T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0042": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 11,
+     "accounts_involved": 1,
+     "first_date": "2017-08-16T00:00:00+00:00",
+     "last_date": "2017-11-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 1,
+     "first_date": "2017-08-06T00:00:00+00:00",
+     "last_date": "2017-12-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0062": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 181,
+     "accounts_involved": 15,
+     "first_date": "2017-07-18T00:00:00+00:00",
+     "last_date": "2018-12-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 17,
+     "accounts_involved": 1,
+     "first_date": "2017-07-18T00:00:00+00:00",
+     "last_date": "2018-11-13T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-09-10T00:00:00+00:00",
+     "last_date": "2017-09-10T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-08-25T00:00:00+00:00",
+     "last_date": "2017-08-25T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0063": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 132,
+     "accounts_involved": 4,
+     "first_date": "2017-07-20T00:00:00+00:00",
+     "last_date": "2018-01-31T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 2,
+     "first_date": "2017-07-20T00:00:00+00:00",
+     "last_date": "2018-01-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2017-11-25T00:00:00+00:00",
+     "last_date": "2017-12-15T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0041": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 100,
+     "accounts_involved": 9,
+     "first_date": "2017-07-23T00:00:00+00:00",
+     "last_date": "2018-07-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 1,
+     "first_date": "2017-10-29T00:00:00+00:00",
+     "last_date": "2018-02-04T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0065": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 68,
+     "accounts_involved": 3,
+     "first_date": "2017-07-27T00:00:00+00:00",
+     "last_date": "2017-11-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 51,
+     "accounts_involved": 1,
+     "first_date": "2017-07-27T00:00:00+00:00",
+     "last_date": "2017-11-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0024": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 8,
+     "accounts_involved": 1,
+     "first_date": "2017-07-28T00:00:00+00:00",
+     "last_date": "2017-11-25T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-08-11T00:00:00+00:00",
+     "last_date": "2017-10-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0033": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 42,
+     "accounts_involved": 3,
+     "first_date": "2017-08-01T00:00:00+00:00",
+     "last_date": "2018-01-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 26,
+     "accounts_involved": 3,
+     "first_date": "2017-08-04T00:00:00+00:00",
+     "last_date": "2018-01-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0036": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 82,
+     "accounts_involved": 3,
+     "first_date": "2017-08-04T00:00:00+00:00",
+     "last_date": "2018-10-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 16,
+     "accounts_involved": 2,
+     "first_date": "2017-08-17T00:00:00+00:00",
+     "last_date": "2018-10-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-03-01T00:00:00+00:00",
+     "last_date": "2018-03-01T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0008": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 79,
+     "accounts_involved": 2,
+     "first_date": "2017-08-03T00:00:00+00:00",
+     "last_date": "2017-11-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 57,
+     "accounts_involved": 6,
+     "first_date": "2017-08-03T00:00:00+00:00",
+     "last_date": "2017-11-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-08-11T00:00:00+00:00",
+     "last_date": "2017-11-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2017-08-31T00:00:00+00:00",
+     "last_date": "2017-08-31T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0046": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 41,
+     "accounts_involved": 4,
+     "first_date": "2017-08-04T00:00:00+00:00",
+     "last_date": "2018-02-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 41,
+     "accounts_involved": 6,
+     "first_date": "2017-08-04T00:00:00+00:00",
+     "last_date": "2018-02-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0059": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 97,
+     "accounts_involved": 4,
+     "first_date": "2017-08-07T00:00:00+00:00",
+     "last_date": "2017-12-22T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 77,
+     "accounts_involved": 6,
+     "first_date": "2017-08-07T00:00:00+00:00",
+     "last_date": "2017-12-25T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-09-05T00:00:00+00:00",
+     "last_date": "2017-11-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2017-10-17T00:00:00+00:00",
+     "last_date": "2017-11-11T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0069": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 23,
+     "accounts_involved": 1,
+     "first_date": "2017-09-12T00:00:00+00:00",
+     "last_date": "2018-03-27T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 16,
+     "accounts_involved": 3,
+     "first_date": "2017-08-12T00:00:00+00:00",
+     "last_date": "2018-03-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0055": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 173,
+     "accounts_involved": 6,
+     "first_date": "2017-08-16T00:00:00+00:00",
+     "last_date": "2018-10-10T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 76,
+     "accounts_involved": 3,
+     "first_date": "2017-08-22T00:00:00+00:00",
+     "last_date": "2018-10-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-08-31T00:00:00+00:00",
+     "last_date": "2018-07-14T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-05-27T00:00:00+00:00",
+     "last_date": "2018-05-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "split_merge",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-08-26T00:00:00+00:00",
+     "last_date": "2017-08-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0017": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 54,
+     "accounts_involved": 7,
+     "first_date": "2017-08-16T00:00:00+00:00",
+     "last_date": "2018-10-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 17,
+     "accounts_involved": 2,
+     "first_date": "2017-08-17T00:00:00+00:00",
+     "last_date": "2018-07-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 4,
+     "accounts_involved": 2,
+     "first_date": "2017-10-13T00:00:00+00:00",
+     "last_date": "2018-07-11T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0028": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 9,
+     "accounts_involved": 3,
+     "first_date": "2017-08-16T00:00:00+00:00",
+     "last_date": "2017-09-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-08-16T00:00:00+00:00",
+     "last_date": "2017-09-13T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0020": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 33,
+     "accounts_involved": 4,
+     "first_date": "2017-08-20T00:00:00+00:00",
+     "last_date": "2018-06-10T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 22,
+     "accounts_involved": 3,
+     "first_date": "2017-08-19T00:00:00+00:00",
+     "last_date": "2018-05-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-02-26T00:00:00+00:00",
+     "last_date": "2018-02-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-09-05T00:00:00+00:00",
+     "last_date": "2017-09-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0050": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 369,
+     "accounts_involved": 27,
+     "first_date": "2017-08-20T00:00:00+00:00",
+     "last_date": "2018-12-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 161,
+     "accounts_involved": 6,
+     "first_date": "2017-08-20T00:00:00+00:00",
+     "last_date": "2018-12-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 9,
+     "accounts_involved": 3,
+     "first_date": "2017-10-07T00:00:00+00:00",
+     "last_date": "2018-10-06T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 5,
+     "accounts_involved": 4,
+     "first_date": "2017-11-17T00:00:00+00:00",
+     "last_date": "2018-12-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "split_merge",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-07T00:00:00+00:00",
+     "last_date": "2017-10-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0037": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 30,
+     "accounts_involved": 4,
+     "first_date": "2017-08-29T00:00:00+00:00",
+     "last_date": "2018-03-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 16,
+     "accounts_involved": 1,
+     "first_date": "2017-08-24T00:00:00+00:00",
+     "last_date": "2018-03-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-20T00:00:00+00:00",
+     "last_date": "2017-10-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0027": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 13,
+     "accounts_involved": 3,
+     "first_date": "2017-08-22T00:00:00+00:00",
+     "last_date": "2017-09-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-08-22T00:00:00+00:00",
+     "last_date": "2017-08-22T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0067": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 24,
+     "accounts_involved": 4,
+     "first_date": "2017-08-22T00:00:00+00:00",
+     "last_date": "2017-12-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 12,
+     "accounts_involved": 2,
+     "first_date": "2017-08-22T00:00:00+00:00",
+     "last_date": "2017-09-29T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0078": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 215,
+     "accounts_involved": 7,
+     "first_date": "2017-08-25T00:00:00+00:00",
+     "last_date": "2018-11-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 111,
+     "accounts_involved": 2,
+     "first_date": "2017-08-25T00:00:00+00:00",
+     "last_date": "2018-10-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 4,
+     "accounts_involved": 2,
+     "first_date": "2017-09-22T00:00:00+00:00",
+     "last_date": "2018-07-14T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-10-20T00:00:00+00:00",
+     "last_date": "2018-09-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-06-15T00:00:00+00:00",
+     "last_date": "2018-06-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0026": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-10-23T00:00:00+00:00",
+     "last_date": "2017-12-06T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-10-16T00:00:00+00:00",
+     "last_date": "2017-11-13T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0064": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 10,
+     "accounts_involved": 1,
+     "first_date": "2017-09-11T00:00:00+00:00",
+     "last_date": "2017-11-14T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-08-29T00:00:00+00:00",
+     "last_date": "2017-11-14T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0043": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 251,
+     "accounts_involved": 8,
+     "first_date": "2017-09-03T00:00:00+00:00",
+     "last_date": "2018-12-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 232,
+     "accounts_involved": 1,
+     "first_date": "2017-09-03T00:00:00+00:00",
+     "last_date": "2018-12-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-16T00:00:00+00:00",
+     "last_date": "2017-12-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-09-03T00:00:00+00:00",
+     "last_date": "2018-09-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-22T00:00:00+00:00",
+     "last_date": "2017-12-22T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0074": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 22,
+     "accounts_involved": 4,
+     "first_date": "2017-09-24T00:00:00+00:00",
+     "last_date": "2018-09-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 10,
+     "accounts_involved": 1,
+     "first_date": "2017-09-24T00:00:00+00:00",
+     "last_date": "2018-09-09T00:00:00+00:00",
+     "also_in_candidate": true
+    }
+   ]
+  },
+  "RING0054": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 40,
+     "accounts_involved": 5,
+     "first_date": "2017-09-19T00:00:00+00:00",
+     "last_date": "2018-03-13T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-10-03T00:00:00+00:00",
+     "last_date": "2018-02-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0053": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 38,
+     "accounts_involved": 6,
+     "first_date": "2017-09-19T00:00:00+00:00",
+     "last_date": "2018-01-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-09-19T00:00:00+00:00",
+     "last_date": "2018-01-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0048": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-04T00:00:00+00:00",
+     "last_date": "2017-10-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2017-10-06T00:00:00+00:00",
+     "last_date": "2017-10-06T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0076": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 23,
+     "accounts_involved": 2,
+     "first_date": "2017-09-22T00:00:00+00:00",
+     "last_date": "2018-06-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 12,
+     "accounts_involved": 3,
+     "first_date": "2017-09-22T00:00:00+00:00",
+     "last_date": "2018-06-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-06-16T00:00:00+00:00",
+     "last_date": "2018-06-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-05-11T00:00:00+00:00",
+     "last_date": "2018-05-11T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0051": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-01T00:00:00+00:00",
+     "last_date": "2017-10-01T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0052": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-10-17T00:00:00+00:00",
+     "last_date": "2017-10-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-10-12T00:00:00+00:00",
+     "last_date": "2017-10-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0075": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 48,
+     "accounts_involved": 4,
+     "first_date": "2017-10-04T00:00:00+00:00",
+     "last_date": "2018-01-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 24,
+     "accounts_involved": 3,
+     "first_date": "2017-10-05T00:00:00+00:00",
+     "last_date": "2018-01-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2017-10-11T00:00:00+00:00",
+     "last_date": "2017-10-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-27T00:00:00+00:00",
+     "last_date": "2017-12-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0068": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 48,
+     "accounts_involved": 6,
+     "first_date": "2017-10-04T00:00:00+00:00",
+     "last_date": "2018-03-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 7,
+     "accounts_involved": 2,
+     "first_date": "2017-11-22T00:00:00+00:00",
+     "last_date": "2018-03-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-03-18T00:00:00+00:00",
+     "last_date": "2018-03-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0082": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 17,
+     "accounts_involved": 4,
+     "first_date": "2017-10-15T00:00:00+00:00",
+     "last_date": "2018-07-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 8,
+     "accounts_involved": 1,
+     "first_date": "2017-10-29T00:00:00+00:00",
+     "last_date": "2018-07-15T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-04-23T00:00:00+00:00",
+     "last_date": "2018-04-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-03T00:00:00+00:00",
+     "last_date": "2017-12-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0084": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 23,
+     "accounts_involved": 3,
+     "first_date": "2017-10-07T00:00:00+00:00",
+     "last_date": "2018-01-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-11-11T00:00:00+00:00",
+     "last_date": "2017-11-25T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0071": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 24,
+     "accounts_involved": 4,
+     "first_date": "2017-10-13T00:00:00+00:00",
+     "last_date": "2018-01-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 12,
+     "accounts_involved": 2,
+     "first_date": "2017-10-13T00:00:00+00:00",
+     "last_date": "2018-01-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0058": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 34,
+     "accounts_involved": 4,
+     "first_date": "2017-10-24T00:00:00+00:00",
+     "last_date": "2018-04-28T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 24,
+     "accounts_involved": 3,
+     "first_date": "2017-10-17T00:00:00+00:00",
+     "last_date": "2018-04-25T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 3,
+     "accounts_involved": 3,
+     "first_date": "2017-11-08T00:00:00+00:00",
+     "last_date": "2018-02-23T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0060": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 14,
+     "accounts_involved": 3,
+     "first_date": "2017-11-01T00:00:00+00:00",
+     "last_date": "2018-01-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-12-08T00:00:00+00:00",
+     "last_date": "2018-01-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0061": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 65,
+     "accounts_involved": 7,
+     "first_date": "2017-11-14T00:00:00+00:00",
+     "last_date": "2018-10-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 7,
+     "accounts_involved": 1,
+     "first_date": "2017-12-12T00:00:00+00:00",
+     "last_date": "2018-07-31T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-01-30T00:00:00+00:00",
+     "last_date": "2018-01-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-09-07T00:00:00+00:00",
+     "last_date": "2018-09-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0080": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 18,
+     "accounts_involved": 3,
+     "first_date": "2017-11-08T00:00:00+00:00",
+     "last_date": "2018-01-10T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 13,
+     "accounts_involved": 2,
+     "first_date": "2017-11-11T00:00:00+00:00",
+     "last_date": "2018-01-06T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-11-22T00:00:00+00:00",
+     "last_date": "2017-11-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-11-23T00:00:00+00:00",
+     "last_date": "2017-11-23T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0090": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 15,
+     "accounts_involved": 3,
+     "first_date": "2017-11-10T00:00:00+00:00",
+     "last_date": "2018-04-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-12-01T00:00:00+00:00",
+     "last_date": "2018-03-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-11-10T00:00:00+00:00",
+     "last_date": "2017-11-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0083": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 12,
+     "accounts_involved": 1,
+     "first_date": "2017-11-11T00:00:00+00:00",
+     "last_date": "2018-01-13T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 2,
+     "first_date": "2017-11-15T00:00:00+00:00",
+     "last_date": "2017-12-23T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0115": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 18,
+     "accounts_involved": 2,
+     "first_date": "2017-11-14T00:00:00+00:00",
+     "last_date": "2018-04-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-11-12T00:00:00+00:00",
+     "last_date": "2018-03-04T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0085": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-11-13T00:00:00+00:00",
+     "last_date": "2018-01-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2017-12-18T00:00:00+00:00",
+     "last_date": "2018-01-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0066": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 84,
+     "accounts_involved": 4,
+     "first_date": "2017-11-19T00:00:00+00:00",
+     "last_date": "2018-04-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 82,
+     "accounts_involved": 3,
+     "first_date": "2017-11-20T00:00:00+00:00",
+     "last_date": "2018-04-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2017-12-03T00:00:00+00:00",
+     "last_date": "2017-12-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2017-12-03T00:00:00+00:00",
+     "last_date": "2017-12-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0079": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 36,
+     "accounts_involved": 1,
+     "first_date": "2017-11-21T00:00:00+00:00",
+     "last_date": "2018-01-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 21,
+     "accounts_involved": 3,
+     "first_date": "2017-11-21T00:00:00+00:00",
+     "last_date": "2018-01-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-24T00:00:00+00:00",
+     "last_date": "2017-12-24T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0105": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 20,
+     "accounts_involved": 2,
+     "first_date": "2017-11-22T00:00:00+00:00",
+     "last_date": "2018-03-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-11-22T00:00:00+00:00",
+     "last_date": "2018-02-21T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0070": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 5,
+     "accounts_involved": 4,
+     "first_date": "2017-11-28T00:00:00+00:00",
+     "last_date": "2017-12-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2017-11-28T00:00:00+00:00",
+     "last_date": "2017-12-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0072": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 22,
+     "accounts_involved": 3,
+     "first_date": "2017-12-08T00:00:00+00:00",
+     "last_date": "2018-03-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-01-07T00:00:00+00:00",
+     "last_date": "2018-01-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0110": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 69,
+     "accounts_involved": 3,
+     "first_date": "2017-12-03T00:00:00+00:00",
+     "last_date": "2018-04-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 53,
+     "accounts_involved": 1,
+     "first_date": "2017-12-04T00:00:00+00:00",
+     "last_date": "2018-03-31T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2018-02-05T00:00:00+00:00",
+     "last_date": "2018-03-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-01-26T00:00:00+00:00",
+     "last_date": "2018-01-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0095": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 44,
+     "accounts_involved": 1,
+     "first_date": "2017-12-04T00:00:00+00:00",
+     "last_date": "2018-02-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 43,
+     "accounts_involved": 3,
+     "first_date": "2017-12-04T00:00:00+00:00",
+     "last_date": "2018-02-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2017-12-04T00:00:00+00:00",
+     "last_date": "2018-01-01T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0073": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2017-12-18T00:00:00+00:00",
+     "last_date": "2017-12-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2017-12-05T00:00:00+00:00",
+     "last_date": "2017-12-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0077": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2017-12-17T00:00:00+00:00",
+     "last_date": "2017-12-24T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0081": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 71,
+     "accounts_involved": 8,
+     "first_date": "2017-12-11T00:00:00+00:00",
+     "last_date": "2018-10-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2018-02-12T00:00:00+00:00",
+     "last_date": "2018-09-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2017-12-11T00:00:00+00:00",
+     "last_date": "2017-12-18T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0104": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 18,
+     "accounts_involved": 2,
+     "first_date": "2017-12-11T00:00:00+00:00",
+     "last_date": "2018-03-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-02-26T00:00:00+00:00",
+     "last_date": "2018-02-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0091": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 105,
+     "accounts_involved": 8,
+     "first_date": "2017-12-16T00:00:00+00:00",
+     "last_date": "2018-12-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 11,
+     "accounts_involved": 3,
+     "first_date": "2018-02-04T00:00:00+00:00",
+     "last_date": "2018-11-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-12-01T00:00:00+00:00",
+     "last_date": "2018-12-01T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0106": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 126,
+     "accounts_involved": 7,
+     "first_date": "2017-12-19T00:00:00+00:00",
+     "last_date": "2018-12-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2017-12-19T00:00:00+00:00",
+     "last_date": "2018-11-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-08-14T00:00:00+00:00",
+     "last_date": "2018-09-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-07T00:00:00+00:00",
+     "last_date": "2018-11-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-02-04T00:00:00+00:00",
+     "last_date": "2018-02-04T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0117": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2017-12-25T00:00:00+00:00",
+     "last_date": "2018-01-23T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 4,
+     "accounts_involved": 2,
+     "first_date": "2017-12-28T00:00:00+00:00",
+     "last_date": "2018-04-23T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0093": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 7,
+     "accounts_involved": 3,
+     "first_date": "2017-12-22T00:00:00+00:00",
+     "last_date": "2018-02-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-01-05T00:00:00+00:00",
+     "last_date": "2018-01-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0102": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 89,
+     "accounts_involved": 8,
+     "first_date": "2017-12-24T00:00:00+00:00",
+     "last_date": "2018-10-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 14,
+     "accounts_involved": 1,
+     "first_date": "2017-12-24T00:00:00+00:00",
+     "last_date": "2018-09-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-07-08T00:00:00+00:00",
+     "last_date": "2018-07-08T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0118": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 32,
+     "accounts_involved": 3,
+     "first_date": "2017-12-28T00:00:00+00:00",
+     "last_date": "2018-09-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 2,
+     "first_date": "2018-01-10T00:00:00+00:00",
+     "last_date": "2018-08-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-09-01T00:00:00+00:00",
+     "last_date": "2018-09-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0087": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2018-01-03T00:00:00+00:00",
+     "last_date": "2018-01-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 4,
+     "accounts_involved": 3,
+     "first_date": "2018-01-10T00:00:00+00:00",
+     "last_date": "2018-01-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0086": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 7,
+     "accounts_involved": 2,
+     "first_date": "2018-01-04T00:00:00+00:00",
+     "last_date": "2018-01-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0092": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 6,
+     "accounts_involved": 2,
+     "first_date": "2018-01-04T00:00:00+00:00",
+     "last_date": "2018-01-25T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-01-25T00:00:00+00:00",
+     "last_date": "2018-01-25T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0103": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 16,
+     "accounts_involved": 2,
+     "first_date": "2018-01-16T00:00:00+00:00",
+     "last_date": "2018-03-14T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 2,
+     "first_date": "2018-01-09T00:00:00+00:00",
+     "last_date": "2018-03-13T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0094": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 72,
+     "accounts_involved": 9,
+     "first_date": "2018-01-29T00:00:00+00:00",
+     "last_date": "2018-10-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-09-10T00:00:00+00:00",
+     "last_date": "2018-09-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-02-05T00:00:00+00:00",
+     "last_date": "2018-02-05T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-05-19T00:00:00+00:00",
+     "last_date": "2018-05-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0116": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 102,
+     "accounts_involved": 5,
+     "first_date": "2018-01-30T00:00:00+00:00",
+     "last_date": "2018-08-28T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 27,
+     "accounts_involved": 2,
+     "first_date": "2018-01-31T00:00:00+00:00",
+     "last_date": "2018-08-21T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "layering",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2018-03-13T00:00:00+00:00",
+     "last_date": "2018-07-17T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0099": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 71,
+     "accounts_involved": 7,
+     "first_date": "2018-02-04T00:00:00+00:00",
+     "last_date": "2018-12-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 18,
+     "accounts_involved": 2,
+     "first_date": "2018-02-09T00:00:00+00:00",
+     "last_date": "2018-10-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-25T00:00:00+00:00",
+     "last_date": "2018-11-25T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0100": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 92,
+     "accounts_involved": 7,
+     "first_date": "2018-02-08T00:00:00+00:00",
+     "last_date": "2018-10-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 11,
+     "accounts_involved": 1,
+     "first_date": "2018-02-21T00:00:00+00:00",
+     "last_date": "2018-09-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-02-22T00:00:00+00:00",
+     "last_date": "2018-02-22T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0109": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2018-02-17T00:00:00+00:00",
+     "last_date": "2018-03-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2018-02-17T00:00:00+00:00",
+     "last_date": "2018-03-17T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0096": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 7,
+     "accounts_involved": 6,
+     "first_date": "2018-02-21T00:00:00+00:00",
+     "last_date": "2018-03-05T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-02-21T00:00:00+00:00",
+     "last_date": "2018-02-21T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0097": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-02-25T00:00:00+00:00",
+     "last_date": "2018-02-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0098": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 3,
+     "first_date": "2018-02-25T00:00:00+00:00",
+     "last_date": "2018-02-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0112": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 15,
+     "accounts_involved": 2,
+     "first_date": "2018-02-20T00:00:00+00:00",
+     "last_date": "2018-04-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0122": {
+   "n_types": 5,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 52,
+     "accounts_involved": 4,
+     "first_date": "2018-03-03T00:00:00+00:00",
+     "last_date": "2018-07-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 12,
+     "accounts_involved": 1,
+     "first_date": "2018-03-06T00:00:00+00:00",
+     "last_date": "2018-06-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-05-19T00:00:00+00:00",
+     "last_date": "2018-06-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-06-05T00:00:00+00:00",
+     "last_date": "2018-06-05T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-04-22T00:00:00+00:00",
+     "last_date": "2018-04-22T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0141": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 17,
+     "accounts_involved": 1,
+     "first_date": "2018-03-14T00:00:00+00:00",
+     "last_date": "2018-08-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 7,
+     "accounts_involved": 1,
+     "first_date": "2018-03-21T00:00:00+00:00",
+     "last_date": "2018-07-04T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0111": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 35,
+     "accounts_involved": 6,
+     "first_date": "2018-03-10T00:00:00+00:00",
+     "last_date": "2018-07-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-04-21T00:00:00+00:00",
+     "last_date": "2018-06-09T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0113": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 55,
+     "accounts_involved": 8,
+     "first_date": "2018-03-17T00:00:00+00:00",
+     "last_date": "2018-12-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 2,
+     "first_date": "2018-03-30T00:00:00+00:00",
+     "last_date": "2018-10-24T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0107": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 19,
+     "accounts_involved": 4,
+     "first_date": "2018-03-15T00:00:00+00:00",
+     "last_date": "2018-05-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 7,
+     "accounts_involved": 1,
+     "first_date": "2018-03-15T00:00:00+00:00",
+     "last_date": "2018-05-01T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0108": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 5,
+     "accounts_involved": 3,
+     "first_date": "2018-03-15T00:00:00+00:00",
+     "last_date": "2018-03-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-03-18T00:00:00+00:00",
+     "last_date": "2018-03-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0120": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 51,
+     "accounts_involved": 7,
+     "first_date": "2018-03-16T00:00:00+00:00",
+     "last_date": "2018-10-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 7,
+     "accounts_involved": 1,
+     "first_date": "2018-03-16T00:00:00+00:00",
+     "last_date": "2018-09-28T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0132": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 41,
+     "accounts_involved": 5,
+     "first_date": "2018-03-26T00:00:00+00:00",
+     "last_date": "2018-10-13T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 26,
+     "accounts_involved": 2,
+     "first_date": "2018-03-28T00:00:00+00:00",
+     "last_date": "2018-09-26T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0123": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 55,
+     "accounts_involved": 4,
+     "first_date": "2018-04-05T00:00:00+00:00",
+     "last_date": "2018-11-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 24,
+     "accounts_involved": 2,
+     "first_date": "2018-04-05T00:00:00+00:00",
+     "last_date": "2018-11-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-08T00:00:00+00:00",
+     "last_date": "2018-11-08T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0121": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 42,
+     "accounts_involved": 4,
+     "first_date": "2018-04-13T00:00:00+00:00",
+     "last_date": "2018-11-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 1,
+     "first_date": "2018-06-19T00:00:00+00:00",
+     "last_date": "2018-09-21T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-06-16T00:00:00+00:00",
+     "last_date": "2018-06-20T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0127": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 25,
+     "accounts_involved": 3,
+     "first_date": "2018-04-16T00:00:00+00:00",
+     "last_date": "2018-09-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 2,
+     "first_date": "2018-04-23T00:00:00+00:00",
+     "last_date": "2018-09-02T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0128": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 18,
+     "accounts_involved": 3,
+     "first_date": "2018-04-15T00:00:00+00:00",
+     "last_date": "2018-06-24T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 3,
+     "first_date": "2018-04-23T00:00:00+00:00",
+     "last_date": "2018-06-18T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0124": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-04-28T00:00:00+00:00",
+     "last_date": "2018-04-28T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0138": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 47,
+     "accounts_involved": 4,
+     "first_date": "2018-04-28T00:00:00+00:00",
+     "last_date": "2018-12-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 11,
+     "accounts_involved": 3,
+     "first_date": "2018-06-03T00:00:00+00:00",
+     "last_date": "2018-09-22T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0144": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 53,
+     "accounts_involved": 5,
+     "first_date": "2018-05-05T00:00:00+00:00",
+     "last_date": "2018-11-10T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2018-05-30T00:00:00+00:00",
+     "last_date": "2018-09-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-07-08T00:00:00+00:00",
+     "last_date": "2018-07-08T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0151": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 60,
+     "accounts_involved": 4,
+     "first_date": "2018-05-14T00:00:00+00:00",
+     "last_date": "2018-10-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 17,
+     "accounts_involved": 2,
+     "first_date": "2018-05-16T00:00:00+00:00",
+     "last_date": "2018-10-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-08-20T00:00:00+00:00",
+     "last_date": "2018-08-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-08-10T00:00:00+00:00",
+     "last_date": "2018-08-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0125": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 6,
+     "accounts_involved": 5,
+     "first_date": "2018-05-19T00:00:00+00:00",
+     "last_date": "2018-05-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-05-19T00:00:00+00:00",
+     "last_date": "2018-05-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0130": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 24,
+     "accounts_involved": 4,
+     "first_date": "2018-05-24T00:00:00+00:00",
+     "last_date": "2018-07-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 10,
+     "accounts_involved": 1,
+     "first_date": "2018-05-24T00:00:00+00:00",
+     "last_date": "2018-07-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0150": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 30,
+     "accounts_involved": 4,
+     "first_date": "2018-06-13T00:00:00+00:00",
+     "last_date": "2018-10-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2018-06-29T00:00:00+00:00",
+     "last_date": "2018-09-14T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-07-04T00:00:00+00:00",
+     "last_date": "2018-07-04T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0131": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 50,
+     "accounts_involved": 8,
+     "first_date": "2018-06-14T00:00:00+00:00",
+     "last_date": "2018-11-08T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 14,
+     "accounts_involved": 1,
+     "first_date": "2018-06-30T00:00:00+00:00",
+     "last_date": "2018-11-01T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-10-25T00:00:00+00:00",
+     "last_date": "2018-10-25T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0140": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 39,
+     "accounts_involved": 6,
+     "first_date": "2018-06-18T00:00:00+00:00",
+     "last_date": "2018-11-05T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-09-06T00:00:00+00:00",
+     "last_date": "2018-10-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-07-10T00:00:00+00:00",
+     "last_date": "2018-07-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0134": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 3,
+     "accounts_involved": 2,
+     "first_date": "2018-06-30T00:00:00+00:00",
+     "last_date": "2018-07-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0135": {
+   "n_types": 0,
+   "types": []
+  },
+  "RING0136": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 40,
+     "accounts_involved": 7,
+     "first_date": "2018-07-07T00:00:00+00:00",
+     "last_date": "2018-12-18T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 5,
+     "accounts_involved": 2,
+     "first_date": "2018-07-24T00:00:00+00:00",
+     "last_date": "2018-12-11T00:00:00+00:00",
+     "also_in_candidate": true
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-27T00:00:00+00:00",
+     "last_date": "2018-11-27T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-07-10T00:00:00+00:00",
+     "last_date": "2018-07-10T00:00:00+00:00",
+     "also_in_candidate": true
+    }
+   ]
+  },
+  "RING0145": {
+   "n_types": 4,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 82,
+     "accounts_involved": 4,
+     "first_date": "2018-07-09T00:00:00+00:00",
+     "last_date": "2018-12-10T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 32,
+     "accounts_involved": 1,
+     "first_date": "2018-07-11T00:00:00+00:00",
+     "last_date": "2018-11-30T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-09-23T00:00:00+00:00",
+     "last_date": "2018-11-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-10T00:00:00+00:00",
+     "last_date": "2018-11-10T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0157": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 3,
+     "first_date": "2018-07-12T00:00:00+00:00",
+     "last_date": "2018-12-11T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-08-21T00:00:00+00:00",
+     "last_date": "2018-10-16T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0137": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 2,
+     "first_date": "2018-07-11T00:00:00+00:00",
+     "last_date": "2018-07-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 4,
+     "first_date": "2018-07-19T00:00:00+00:00",
+     "last_date": "2018-07-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0147": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 17,
+     "accounts_involved": 3,
+     "first_date": "2018-07-16T00:00:00+00:00",
+     "last_date": "2018-09-03T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 2,
+     "first_date": "2018-07-16T00:00:00+00:00",
+     "last_date": "2018-09-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0143": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 10,
+     "accounts_involved": 3,
+     "first_date": "2018-07-31T00:00:00+00:00",
+     "last_date": "2018-09-25T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0148": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 17,
+     "accounts_involved": 3,
+     "first_date": "2018-07-31T00:00:00+00:00",
+     "last_date": "2018-09-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-08-14T00:00:00+00:00",
+     "last_date": "2018-08-14T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0165": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 45,
+     "accounts_involved": 3,
+     "first_date": "2018-07-31T00:00:00+00:00",
+     "last_date": "2018-12-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 1,
+     "first_date": "2018-08-11T00:00:00+00:00",
+     "last_date": "2018-11-15T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-08-07T00:00:00+00:00",
+     "last_date": "2018-08-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0163": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 24,
+     "accounts_involved": 1,
+     "first_date": "2018-08-10T00:00:00+00:00",
+     "last_date": "2018-11-17T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-10-12T00:00:00+00:00",
+     "last_date": "2018-10-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0155": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 14,
+     "accounts_involved": 3,
+     "first_date": "2018-08-10T00:00:00+00:00",
+     "last_date": "2018-10-19T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0146": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 6,
+     "first_date": "2018-08-10T00:00:00+00:00",
+     "last_date": "2018-12-07T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-09-22T00:00:00+00:00",
+     "last_date": "2018-09-22T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0152": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 3,
+     "first_date": "2018-08-21T00:00:00+00:00",
+     "last_date": "2018-10-09T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 4,
+     "accounts_involved": 2,
+     "first_date": "2018-08-31T00:00:00+00:00",
+     "last_date": "2018-09-28T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0154": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 41,
+     "accounts_involved": 5,
+     "first_date": "2018-08-23T00:00:00+00:00",
+     "last_date": "2018-11-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 15,
+     "accounts_involved": 1,
+     "first_date": "2018-08-23T00:00:00+00:00",
+     "last_date": "2018-11-16T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 2,
+     "first_date": "2018-11-29T00:00:00+00:00",
+     "last_date": "2018-11-29T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0149": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-09-08T00:00:00+00:00",
+     "last_date": "2018-09-22T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-09-17T00:00:00+00:00",
+     "last_date": "2018-09-17T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0158": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 24,
+     "accounts_involved": 3,
+     "first_date": "2018-09-10T00:00:00+00:00",
+     "last_date": "2018-10-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 17,
+     "accounts_involved": 1,
+     "first_date": "2018-09-11T00:00:00+00:00",
+     "last_date": "2018-10-27T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0169": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 28,
+     "accounts_involved": 2,
+     "first_date": "2018-09-19T00:00:00+00:00",
+     "last_date": "2018-12-12T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 6,
+     "accounts_involved": 1,
+     "first_date": "2018-09-23T00:00:00+00:00",
+     "last_date": "2018-12-16T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0171": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 27,
+     "accounts_involved": 3,
+     "first_date": "2018-09-27T00:00:00+00:00",
+     "last_date": "2018-12-20T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 3,
+     "accounts_involved": 1,
+     "first_date": "2018-10-24T00:00:00+00:00",
+     "last_date": "2018-12-12T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0156": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 4,
+     "accounts_involved": 2,
+     "first_date": "2018-10-04T00:00:00+00:00",
+     "last_date": "2018-10-18T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-10-03T00:00:00+00:00",
+     "last_date": "2018-10-24T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0164": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 20,
+     "accounts_involved": 3,
+     "first_date": "2018-10-08T00:00:00+00:00",
+     "last_date": "2018-11-26T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-10-29T00:00:00+00:00",
+     "last_date": "2018-10-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "layering",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-10-30T00:00:00+00:00",
+     "last_date": "2018-10-30T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0159": {
+   "n_types": 3,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 14,
+     "accounts_involved": 5,
+     "first_date": "2018-10-09T00:00:00+00:00",
+     "last_date": "2018-12-04T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "circular_flow",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-11-27T00:00:00+00:00",
+     "last_date": "2018-12-02T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "repeated_intermediary",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-07T00:00:00+00:00",
+     "last_date": "2018-11-07T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0166": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 8,
+     "accounts_involved": 3,
+     "first_date": "2018-10-10T00:00:00+00:00",
+     "last_date": "2018-12-19T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "fan_in",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-14T00:00:00+00:00",
+     "last_date": "2018-11-14T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0161": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-10-24T00:00:00+00:00",
+     "last_date": "2018-10-31T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 1,
+     "accounts_involved": 1,
+     "first_date": "2018-11-03T00:00:00+00:00",
+     "last_date": "2018-11-03T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0162": {
+   "n_types": 2,
+   "types": [
+    {
+     "pattern": "fan_in",
+     "events": 2,
+     "accounts_involved": 1,
+     "first_date": "2018-11-22T00:00:00+00:00",
+     "last_date": "2018-11-29T00:00:00+00:00",
+     "also_in_candidate": false
+    },
+    {
+     "pattern": "rapid_pass_through",
+     "events": 2,
+     "accounts_involved": 5,
+     "first_date": "2018-11-24T00:00:00+00:00",
+     "last_date": "2018-11-29T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  },
+  "RING0167": {
+   "n_types": 1,
+   "types": [
+    {
+     "pattern": "rapid_pass_through",
+     "events": 5,
+     "accounts_involved": 3,
+     "first_date": "2018-11-16T00:00:00+00:00",
+     "last_date": "2018-12-05T00:00:00+00:00",
+     "also_in_candidate": false
+    }
+   ]
+  }
+ },
+ "caveats": [
+  "These patterns are shown for context and are not used in any candidate or score.",
+  "Ring fields are AMLSim ground truth and are used only to evaluate."
+ ]
+}

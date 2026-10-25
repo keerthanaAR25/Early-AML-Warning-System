@@ -1,0 +1,108 @@
+{
+ "horizon_days": 14,
+ "burn_in_days": 120,
+ "scored_from_day": 240,
+ "block_len_days": 120,
+ "purge": "H days at every boundary",
+ "threshold_rule": "max F1 on validation",
+ "model_protocols": {
+  "static_graph_anomaly_isolation_forest": {
+   "model_family": "isolation_forest",
+   "features": [
+    "out_to_date",
+    "in_to_date",
+    "cp_to_date",
+    "age"
+   ],
+   "horizon_days": 14,
+   "train_days": [
+    120,
+    417
+   ],
+   "validation_days": [
+    432,
+    561
+   ],
+   "test_days": [
+    576,
+    719
+   ]
+  },
+  "behavioural_logistic_regression": {
+   "model_family": "logistic",
+   "features": [
+    "n_today",
+    "out_today",
+    "in_today"
+   ],
+   "horizon_days": 14,
+   "train_days": [
+    120,
+    417
+   ],
+   "validation_days": [
+    432,
+    561
+   ],
+   "test_days": [
+    576,
+    719
+   ]
+  },
+  "temporal_random_forest": {
+   "model_family": "random_forest",
+   "features": [
+    "n_today",
+    "out_today",
+    "in_today",
+    "n_7d",
+    "n_30d",
+    "idle"
+   ],
+   "horizon_days": 14,
+   "train_days": [
+    120,
+    417
+   ],
+   "validation_days": [
+    432,
+    561
+   ],
+   "test_days": [
+    576,
+    719
+   ]
+  },
+  "proposed_gradient_boosting": {
+   "model_family": "xgboost",
+   "features": [
+    "n_today",
+    "out_today",
+    "in_today",
+    "n_7d",
+    "n_30d",
+    "age",
+    "idle",
+    "out_to_date",
+    "in_to_date",
+    "cp_to_date",
+    "new_cp_today",
+    "first_out_today",
+    "first_in_today"
+   ],
+   "horizon_days": 14,
+   "train_days": [
+    120,
+    417
+   ],
+   "validation_days": [
+    432,
+    561
+   ],
+   "test_days": [
+    576,
+    719
+   ]
+  }
+ }
+}

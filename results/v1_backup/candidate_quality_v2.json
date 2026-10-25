@@ -1,0 +1,402 @@
+{
+  "parameters": {
+    "burn_in": 120,
+    "window_days": 21,
+    "seed_gap": 30,
+    "hub_gap": 150,
+    "observable_k": 4,
+    "seed": 42
+  },
+  "results": [
+    {
+      "candidate_set": "v1_pattern_trajectory",
+      "n_candidates": 95,
+      "evidence_transactions": 1437,
+      "ring_transactions_in_candidates": 5,
+      "ring_tx_share_of_evidence": 0.003479471120389701,
+      "background_ring_tx_rate": 0.002939850531141462,
+      "enrichment_vs_background": 1.1835537499380009,
+      "candidates_with_any_ring_tx": 5,
+      "candidates_majority_ring": 0,
+      "false_candidates_per_day": 0.15,
+      "distinct_ring_tx_covered": 5,
+      "ring_tx_recall": 0.01079913606911447,
+      "median_accounts_per_candidate": 10.0,
+      "by_typology": {
+        "all": {
+          "n_evaluable_rings": 39,
+          "n_with_any_tx_in_candidate": 0,
+          "ring_recall": 0.0,
+          "n_warned_before_observable": 0,
+          "warned_before_observable_rate": 0.0,
+          "lead_days_median": null,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": null,
+          "lead_days_q75": null,
+          "lead_vs_first_tx_median": null,
+          "mean_tx_coverage_of_ring": 0.0
+        },
+        "cycle": {
+          "n_evaluable_rings": 36,
+          "n_with_any_tx_in_candidate": 0,
+          "ring_recall": 0.0,
+          "n_warned_before_observable": 0,
+          "warned_before_observable_rate": 0.0,
+          "lead_days_median": null,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": null,
+          "lead_days_q75": null,
+          "lead_vs_first_tx_median": null,
+          "mean_tx_coverage_of_ring": 0.0
+        },
+        "fan_out": {
+          "n_evaluable_rings": 3,
+          "n_with_any_tx_in_candidate": 0,
+          "ring_recall": 0.0,
+          "n_warned_before_observable": 0,
+          "warned_before_observable_rate": 0.0,
+          "lead_days_median": null,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": null,
+          "lead_days_q75": null,
+          "lead_vs_first_tx_median": null,
+          "mean_tx_coverage_of_ring": 0.0
+        }
+      }
+    },
+    {
+      "candidate_set": "v2_structure",
+      "n_candidates": 25,
+      "evidence_transactions": 163,
+      "ring_transactions_in_candidates": 146,
+      "ring_tx_share_of_evidence": 0.8957055214723927,
+      "background_ring_tx_rate": 0.002939850531141462,
+      "enrichment_vs_background": 304.6772317110337,
+      "candidates_with_any_ring_tx": 22,
+      "candidates_majority_ring": 22,
+      "false_candidates_per_day": 0.005,
+      "distinct_ring_tx_covered": 146,
+      "ring_tx_recall": 0.31533477321814257,
+      "median_accounts_per_candidate": 6.0,
+      "by_typology": {
+        "all": {
+          "n_evaluable_rings": 39,
+          "n_with_any_tx_in_candidate": 21,
+          "ring_recall": 0.5384615384615384,
+          "n_warned_before_observable": 7,
+          "warned_before_observable_rate": 0.1794871794871795,
+          "lead_days_median": 0.0,
+          "lead_days_median_ci95": [
+            0.0,
+            1.0
+          ],
+          "lead_days_q25": 0.0,
+          "lead_days_q75": 1.0,
+          "lead_vs_first_tx_median": -9.0,
+          "mean_tx_coverage_of_ring": 0.46654456654456655
+        },
+        "cycle": {
+          "n_evaluable_rings": 36,
+          "n_with_any_tx_in_candidate": 21,
+          "ring_recall": 0.5833333333333334,
+          "n_warned_before_observable": 7,
+          "warned_before_observable_rate": 0.19444444444444445,
+          "lead_days_median": 0.0,
+          "lead_days_median_ci95": [
+            0.0,
+            1.0
+          ],
+          "lead_days_q25": 0.0,
+          "lead_days_q75": 1.0,
+          "lead_vs_first_tx_median": -9.0,
+          "mean_tx_coverage_of_ring": 0.5054232804232804
+        },
+        "fan_out": {
+          "n_evaluable_rings": 3,
+          "n_with_any_tx_in_candidate": 0,
+          "ring_recall": 0.0,
+          "n_warned_before_observable": 0,
+          "warned_before_observable_rate": 0.0,
+          "lead_days_median": null,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": null,
+          "lead_days_q75": null,
+          "lead_vs_first_tx_median": null,
+          "mean_tx_coverage_of_ring": 0.0
+        }
+      }
+    },
+    {
+      "candidate_set": "v2_novelty_min1_seed",
+      "n_candidates": 512,
+      "evidence_transactions": 2104,
+      "ring_transactions_in_candidates": 398,
+      "ring_tx_share_of_evidence": 0.18916349809885932,
+      "background_ring_tx_rate": 0.002939850531141462,
+      "enrichment_vs_background": 64.34459714705714,
+      "candidates_with_any_ring_tx": 108,
+      "candidates_majority_ring": 88,
+      "false_candidates_per_day": 0.6733333333333333,
+      "distinct_ring_tx_covered": 398,
+      "ring_tx_recall": 0.8596112311015118,
+      "median_accounts_per_candidate": 4.0,
+      "by_typology": {
+        "all": {
+          "n_evaluable_rings": 39,
+          "n_with_any_tx_in_candidate": 39,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 39,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 12.0,
+          "lead_days_median_ci95": [
+            10.0,
+            13.0
+          ],
+          "lead_days_q25": 6.5,
+          "lead_days_q75": 14.0,
+          "lead_vs_first_tx_median": 0.0,
+          "mean_tx_coverage_of_ring": 0.8875559625559626
+        },
+        "cycle": {
+          "n_evaluable_rings": 36,
+          "n_with_any_tx_in_candidate": 36,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 36,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 12.0,
+          "lead_days_median_ci95": [
+            9.5,
+            13.0
+          ],
+          "lead_days_q25": 6.0,
+          "lead_days_q75": 14.0,
+          "lead_vs_first_tx_median": 0.0,
+          "mean_tx_coverage_of_ring": 0.8978615520282188
+        },
+        "fan_out": {
+          "n_evaluable_rings": 3,
+          "n_with_any_tx_in_candidate": 3,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 3,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 158.0,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": 106.0,
+          "lead_days_q75": 189.0,
+          "lead_vs_first_tx_median": 0.0,
+          "mean_tx_coverage_of_ring": 0.7638888888888888
+        }
+      }
+    },
+    {
+      "candidate_set": "v2_novelty_min2_seeds",
+      "n_candidates": 365,
+      "evidence_transactions": 1957,
+      "ring_transactions_in_candidates": 379,
+      "ring_tx_share_of_evidence": 0.1936637710781809,
+      "background_ring_tx_rate": 0.002939850531141462,
+      "enrichment_vs_background": 65.87538006668204,
+      "candidates_with_any_ring_tx": 89,
+      "candidates_majority_ring": 69,
+      "false_candidates_per_day": 0.46,
+      "distinct_ring_tx_covered": 379,
+      "ring_tx_recall": 0.8185745140388769,
+      "median_accounts_per_candidate": 5.0,
+      "by_typology": {
+        "all": {
+          "n_evaluable_rings": 39,
+          "n_with_any_tx_in_candidate": 39,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 38,
+          "warned_before_observable_rate": 0.9743589743589743,
+          "lead_days_median": 10.0,
+          "lead_days_median_ci95": [
+            7.0,
+            12.0
+          ],
+          "lead_days_q25": 5.0,
+          "lead_days_q75": 13.5,
+          "lead_vs_first_tx_median": -2.0,
+          "mean_tx_coverage_of_ring": 0.8654761904761906
+        },
+        "cycle": {
+          "n_evaluable_rings": 36,
+          "n_with_any_tx_in_candidate": 36,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 35,
+          "warned_before_observable_rate": 0.9722222222222222,
+          "lead_days_median": 9.5,
+          "lead_days_median_ci95": [
+            6.0,
+            11.0
+          ],
+          "lead_days_q25": 5.0,
+          "lead_days_q75": 12.25,
+          "lead_vs_first_tx_median": -2.0,
+          "mean_tx_coverage_of_ring": 0.8808862433862434
+        },
+        "fan_out": {
+          "n_evaluable_rings": 3,
+          "n_with_any_tx_in_candidate": 3,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 3,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 123.0,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": 88.5,
+          "lead_days_q75": 161.5,
+          "lead_vs_first_tx_median": -20.0,
+          "mean_tx_coverage_of_ring": 0.6805555555555555
+        }
+      }
+    },
+    {
+      "candidate_set": "v2_novelty_sender_only",
+      "n_candidates": 95,
+      "evidence_transactions": 283,
+      "ring_transactions_in_candidates": 283,
+      "ring_tx_share_of_evidence": 1.0,
+      "background_ring_tx_rate": 0.002939850531141462,
+      "enrichment_vs_background": 340.15334773218143,
+      "candidates_with_any_ring_tx": 95,
+      "candidates_majority_ring": 95,
+      "false_candidates_per_day": 0.0,
+      "distinct_ring_tx_covered": 283,
+      "ring_tx_recall": 0.6112311015118791,
+      "median_accounts_per_candidate": 3.0,
+      "by_typology": {
+        "all": {
+          "n_evaluable_rings": 39,
+          "n_with_any_tx_in_candidate": 36,
+          "ring_recall": 0.9230769230769231,
+          "n_warned_before_observable": 36,
+          "warned_before_observable_rate": 0.9230769230769231,
+          "lead_days_median": 9.5,
+          "lead_days_median_ci95": [
+            6.5,
+            12.0
+          ],
+          "lead_days_q25": 5.0,
+          "lead_days_q75": 12.25,
+          "lead_vs_first_tx_median": -1.0,
+          "mean_tx_coverage_of_ring": 0.6826007326007327
+        },
+        "cycle": {
+          "n_evaluable_rings": 36,
+          "n_with_any_tx_in_candidate": 36,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 36,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 9.5,
+          "lead_days_median_ci95": [
+            6.5,
+            12.0
+          ],
+          "lead_days_q25": 5.0,
+          "lead_days_q75": 12.25,
+          "lead_vs_first_tx_median": -1.0,
+          "mean_tx_coverage_of_ring": 0.739484126984127
+        },
+        "fan_out": {
+          "n_evaluable_rings": 3,
+          "n_with_any_tx_in_candidate": 0,
+          "ring_recall": 0.0,
+          "n_warned_before_observable": 0,
+          "warned_before_observable_rate": 0.0,
+          "lead_days_median": null,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": null,
+          "lead_days_q75": null,
+          "lead_vs_first_tx_median": null,
+          "mean_tx_coverage_of_ring": 0.0
+        }
+      }
+    },
+    {
+      "candidate_set": "v2_all_min1_seed",
+      "n_candidates": 537,
+      "evidence_transactions": 2267,
+      "ring_transactions_in_candidates": 544,
+      "ring_tx_share_of_evidence": 0.2399647110719012,
+      "background_ring_tx_rate": 0.002939850531141462,
+      "enrichment_vs_background": 81.62479980869286,
+      "candidates_with_any_ring_tx": 130,
+      "candidates_majority_ring": 110,
+      "false_candidates_per_day": 0.6783333333333333,
+      "distinct_ring_tx_covered": 411,
+      "ring_tx_recall": 0.8876889848812095,
+      "median_accounts_per_candidate": 4.0,
+      "by_typology": {
+        "all": {
+          "n_evaluable_rings": 39,
+          "n_with_any_tx_in_candidate": 39,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 39,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 12.0,
+          "lead_days_median_ci95": [
+            10.0,
+            13.0
+          ],
+          "lead_days_q25": 6.5,
+          "lead_days_q75": 14.0,
+          "lead_vs_first_tx_median": 0.0,
+          "mean_tx_coverage_of_ring": 0.914977614977615
+        },
+        "cycle": {
+          "n_evaluable_rings": 36,
+          "n_with_any_tx_in_candidate": 36,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 36,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 12.0,
+          "lead_days_median_ci95": [
+            9.5,
+            13.0
+          ],
+          "lead_days_q25": 6.0,
+          "lead_days_q75": 14.0,
+          "lead_vs_first_tx_median": 0.0,
+          "mean_tx_coverage_of_ring": 0.9275683421516755
+        },
+        "fan_out": {
+          "n_evaluable_rings": 3,
+          "n_with_any_tx_in_candidate": 3,
+          "ring_recall": 1.0,
+          "n_warned_before_observable": 3,
+          "warned_before_observable_rate": 1.0,
+          "lead_days_median": 158.0,
+          "lead_days_median_ci95": [
+            null,
+            null
+          ],
+          "lead_days_q25": 106.0,
+          "lead_days_q75": 189.0,
+          "lead_vs_first_tx_median": 0.0,
+          "mean_tx_coverage_of_ring": 0.7638888888888888
+        }
+      }
+    }
+  ]
+}

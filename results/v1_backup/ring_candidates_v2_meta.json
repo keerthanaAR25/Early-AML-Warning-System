@@ -1,0 +1,4394 @@
+[
+  {
+    "candidate_ring_id": "V2-0001",
+    "source": "partial_path",
+    "creation_day": 2,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0002",
+    "source": "partial_path",
+    "creation_day": 2,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0003",
+    "source": "partial_path",
+    "creation_day": 3,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0004",
+    "source": "cycle_closure",
+    "creation_day": 7,
+    "closure_day": 7,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0005",
+    "source": "cycle_closure",
+    "creation_day": 7,
+    "closure_day": 7,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0006",
+    "source": "cycle_closure",
+    "creation_day": 8,
+    "closure_day": 8,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0007",
+    "source": "cycle_closure",
+    "creation_day": 9,
+    "closure_day": 9,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0008",
+    "source": "cycle_closure",
+    "creation_day": 9,
+    "closure_day": 9,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0009",
+    "source": "cycle_closure",
+    "creation_day": 50,
+    "closure_day": 50,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0010",
+    "source": "cycle_closure",
+    "creation_day": 92,
+    "closure_day": 92,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0011",
+    "source": "cycle_closure",
+    "creation_day": 117,
+    "closure_day": 119,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0012",
+    "source": "cycle_closure",
+    "creation_day": 117,
+    "closure_day": 124,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0013",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0014",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0015",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0016",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0017",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0018",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0019",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0020",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0021",
+    "source": "novelty_seeded",
+    "creation_day": 120,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0022",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 20,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0023",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0024",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0025",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0026",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0027",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0028",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0029",
+    "source": "novelty_seeded",
+    "creation_day": 121,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0030",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 15,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0031",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0032",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0033",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0034",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0035",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0036",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0037",
+    "source": "novelty_seeded",
+    "creation_day": 122,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0038",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 13,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0039",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 16,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0040",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0041",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0042",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0043",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0044",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0045",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0046",
+    "source": "novelty_seeded",
+    "creation_day": 123,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0047",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 14,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0048",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0049",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0050",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0051",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0052",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0053",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0054",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0055",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0056",
+    "source": "novelty_seeded",
+    "creation_day": 124,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0057",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0058",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0059",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0060",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0061",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0062",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0063",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0064",
+    "source": "novelty_seeded",
+    "creation_day": 125,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0065",
+    "source": "novelty_seeded",
+    "creation_day": 126,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0066",
+    "source": "novelty_seeded",
+    "creation_day": 126,
+    "closure_day": null,
+    "n_seeds": 21,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0067",
+    "source": "novelty_seeded",
+    "creation_day": 126,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0068",
+    "source": "novelty_seeded",
+    "creation_day": 126,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0069",
+    "source": "novelty_seeded",
+    "creation_day": 126,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0070",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0071",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 16,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0072",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0073",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0074",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0075",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0076",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0077",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0078",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0079",
+    "source": "novelty_seeded",
+    "creation_day": 127,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0080",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0081",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0082",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0083",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 13,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0084",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0085",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0086",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0087",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0088",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0089",
+    "source": "novelty_seeded",
+    "creation_day": 128,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0090",
+    "source": "novelty_seeded",
+    "creation_day": 129,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0091",
+    "source": "novelty_seeded",
+    "creation_day": 129,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0092",
+    "source": "novelty_seeded",
+    "creation_day": 129,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0093",
+    "source": "novelty_seeded",
+    "creation_day": 129,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0094",
+    "source": "novelty_seeded",
+    "creation_day": 129,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0095",
+    "source": "novelty_seeded",
+    "creation_day": 129,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0096",
+    "source": "cycle_closure",
+    "creation_day": 130,
+    "closure_day": 130,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0097",
+    "source": "novelty_seeded",
+    "creation_day": 130,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0098",
+    "source": "novelty_seeded",
+    "creation_day": 130,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0099",
+    "source": "novelty_seeded",
+    "creation_day": 130,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0100",
+    "source": "novelty_seeded",
+    "creation_day": 130,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0101",
+    "source": "novelty_seeded",
+    "creation_day": 130,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0102",
+    "source": "novelty_seeded",
+    "creation_day": 130,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0103",
+    "source": "novelty_seeded",
+    "creation_day": 131,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0104",
+    "source": "novelty_seeded",
+    "creation_day": 131,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0105",
+    "source": "novelty_seeded",
+    "creation_day": 131,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0106",
+    "source": "novelty_seeded",
+    "creation_day": 131,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0107",
+    "source": "novelty_seeded",
+    "creation_day": 131,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0108",
+    "source": "novelty_seeded",
+    "creation_day": 132,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0109",
+    "source": "novelty_seeded",
+    "creation_day": 132,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0110",
+    "source": "novelty_seeded",
+    "creation_day": 132,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0111",
+    "source": "novelty_seeded",
+    "creation_day": 132,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0112",
+    "source": "novelty_seeded",
+    "creation_day": 133,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0113",
+    "source": "novelty_seeded",
+    "creation_day": 133,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0114",
+    "source": "novelty_seeded",
+    "creation_day": 133,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0115",
+    "source": "novelty_seeded",
+    "creation_day": 133,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0116",
+    "source": "novelty_seeded",
+    "creation_day": 133,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0117",
+    "source": "novelty_seeded",
+    "creation_day": 133,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0118",
+    "source": "novelty_seeded",
+    "creation_day": 134,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0119",
+    "source": "novelty_seeded",
+    "creation_day": 134,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0120",
+    "source": "novelty_seeded",
+    "creation_day": 135,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0121",
+    "source": "novelty_seeded",
+    "creation_day": 135,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0122",
+    "source": "novelty_seeded",
+    "creation_day": 135,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0123",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0124",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0125",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0126",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0127",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0128",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0129",
+    "source": "novelty_seeded",
+    "creation_day": 136,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0130",
+    "source": "novelty_seeded",
+    "creation_day": 137,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0131",
+    "source": "novelty_seeded",
+    "creation_day": 137,
+    "closure_day": null,
+    "n_seeds": 13,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0132",
+    "source": "novelty_seeded",
+    "creation_day": 137,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0133",
+    "source": "partial_path",
+    "creation_day": 138,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0134",
+    "source": "novelty_seeded",
+    "creation_day": 138,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0135",
+    "source": "novelty_seeded",
+    "creation_day": 138,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0136",
+    "source": "novelty_seeded",
+    "creation_day": 138,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0137",
+    "source": "novelty_seeded",
+    "creation_day": 138,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0138",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 21,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0139",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0140",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0141",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0142",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 15,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0143",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0144",
+    "source": "novelty_seeded",
+    "creation_day": 139,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0145",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0146",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 14,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0147",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 15,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0148",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0149",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0150",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0151",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0152",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0153",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0154",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0155",
+    "source": "novelty_seeded",
+    "creation_day": 140,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0156",
+    "source": "novelty_seeded",
+    "creation_day": 141,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0157",
+    "source": "novelty_seeded",
+    "creation_day": 141,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0158",
+    "source": "novelty_seeded",
+    "creation_day": 141,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0159",
+    "source": "novelty_seeded",
+    "creation_day": 141,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0160",
+    "source": "novelty_seeded",
+    "creation_day": 141,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0161",
+    "source": "novelty_seeded",
+    "creation_day": 142,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0162",
+    "source": "novelty_seeded",
+    "creation_day": 142,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0163",
+    "source": "novelty_seeded",
+    "creation_day": 142,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0164",
+    "source": "novelty_seeded",
+    "creation_day": 142,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0165",
+    "source": "novelty_seeded",
+    "creation_day": 142,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0166",
+    "source": "novelty_seeded",
+    "creation_day": 142,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0167",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0168",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0169",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0170",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0171",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0172",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0173",
+    "source": "novelty_seeded",
+    "creation_day": 143,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0174",
+    "source": "novelty_seeded",
+    "creation_day": 144,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0175",
+    "source": "novelty_seeded",
+    "creation_day": 144,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0176",
+    "source": "novelty_seeded",
+    "creation_day": 145,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0177",
+    "source": "novelty_seeded",
+    "creation_day": 145,
+    "closure_day": null,
+    "n_seeds": 18,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0178",
+    "source": "novelty_seeded",
+    "creation_day": 145,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0179",
+    "source": "novelty_seeded",
+    "creation_day": 145,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0180",
+    "source": "novelty_seeded",
+    "creation_day": 146,
+    "closure_day": null,
+    "n_seeds": 19,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0181",
+    "source": "novelty_seeded",
+    "creation_day": 146,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0182",
+    "source": "novelty_seeded",
+    "creation_day": 146,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0183",
+    "source": "novelty_seeded",
+    "creation_day": 146,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0184",
+    "source": "novelty_seeded",
+    "creation_day": 147,
+    "closure_day": null,
+    "n_seeds": 14,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0185",
+    "source": "novelty_seeded",
+    "creation_day": 147,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0186",
+    "source": "novelty_seeded",
+    "creation_day": 147,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0187",
+    "source": "novelty_seeded",
+    "creation_day": 147,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0188",
+    "source": "novelty_seeded",
+    "creation_day": 148,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0189",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0190",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0191",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0192",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0193",
+    "source": "cycle_closure",
+    "creation_day": 149,
+    "closure_day": 149,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0194",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0195",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0196",
+    "source": "novelty_seeded",
+    "creation_day": 149,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0197",
+    "source": "novelty_seeded",
+    "creation_day": 150,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0198",
+    "source": "novelty_seeded",
+    "creation_day": 150,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0199",
+    "source": "novelty_seeded",
+    "creation_day": 150,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0200",
+    "source": "novelty_seeded",
+    "creation_day": 151,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0201",
+    "source": "novelty_seeded",
+    "creation_day": 151,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0202",
+    "source": "novelty_seeded",
+    "creation_day": 151,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0203",
+    "source": "novelty_seeded",
+    "creation_day": 151,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0204",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0205",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0206",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0207",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0208",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0209",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0210",
+    "source": "novelty_seeded",
+    "creation_day": 152,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0211",
+    "source": "novelty_seeded",
+    "creation_day": 153,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0212",
+    "source": "novelty_seeded",
+    "creation_day": 154,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0213",
+    "source": "novelty_seeded",
+    "creation_day": 154,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0214",
+    "source": "novelty_seeded",
+    "creation_day": 155,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0215",
+    "source": "novelty_seeded",
+    "creation_day": 155,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0216",
+    "source": "novelty_seeded",
+    "creation_day": 155,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0217",
+    "source": "novelty_seeded",
+    "creation_day": 155,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0218",
+    "source": "novelty_seeded",
+    "creation_day": 156,
+    "closure_day": null,
+    "n_seeds": 15,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0219",
+    "source": "novelty_seeded",
+    "creation_day": 156,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0220",
+    "source": "novelty_seeded",
+    "creation_day": 156,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0221",
+    "source": "novelty_seeded",
+    "creation_day": 157,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0222",
+    "source": "novelty_seeded",
+    "creation_day": 157,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0223",
+    "source": "novelty_seeded",
+    "creation_day": 157,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0224",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0225",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0226",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0227",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 16,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0228",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0229",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0230",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0231",
+    "source": "novelty_seeded",
+    "creation_day": 158,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0232",
+    "source": "novelty_seeded",
+    "creation_day": 159,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0233",
+    "source": "novelty_seeded",
+    "creation_day": 159,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0234",
+    "source": "novelty_seeded",
+    "creation_day": 159,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0235",
+    "source": "novelty_seeded",
+    "creation_day": 159,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0236",
+    "source": "novelty_seeded",
+    "creation_day": 161,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0237",
+    "source": "novelty_seeded",
+    "creation_day": 161,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0238",
+    "source": "novelty_seeded",
+    "creation_day": 161,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0239",
+    "source": "novelty_seeded",
+    "creation_day": 162,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0240",
+    "source": "novelty_seeded",
+    "creation_day": 162,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0241",
+    "source": "novelty_seeded",
+    "creation_day": 162,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0242",
+    "source": "novelty_seeded",
+    "creation_day": 162,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0243",
+    "source": "novelty_seeded",
+    "creation_day": 163,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0244",
+    "source": "novelty_seeded",
+    "creation_day": 163,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0245",
+    "source": "cycle_closure",
+    "creation_day": 164,
+    "closure_day": 164,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0246",
+    "source": "novelty_seeded",
+    "creation_day": 164,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0247",
+    "source": "novelty_seeded",
+    "creation_day": 165,
+    "closure_day": null,
+    "n_seeds": 15,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0248",
+    "source": "novelty_seeded",
+    "creation_day": 165,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0249",
+    "source": "novelty_seeded",
+    "creation_day": 165,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0250",
+    "source": "cycle_closure",
+    "creation_day": 166,
+    "closure_day": 166,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0251",
+    "source": "novelty_seeded",
+    "creation_day": 167,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0252",
+    "source": "novelty_seeded",
+    "creation_day": 169,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0253",
+    "source": "novelty_seeded",
+    "creation_day": 169,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0254",
+    "source": "novelty_seeded",
+    "creation_day": 171,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0255",
+    "source": "novelty_seeded",
+    "creation_day": 171,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0256",
+    "source": "novelty_seeded",
+    "creation_day": 171,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0257",
+    "source": "novelty_seeded",
+    "creation_day": 171,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0258",
+    "source": "novelty_seeded",
+    "creation_day": 172,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0259",
+    "source": "novelty_seeded",
+    "creation_day": 172,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0260",
+    "source": "novelty_seeded",
+    "creation_day": 173,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0261",
+    "source": "novelty_seeded",
+    "creation_day": 174,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0262",
+    "source": "novelty_seeded",
+    "creation_day": 174,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0263",
+    "source": "novelty_seeded",
+    "creation_day": 174,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0264",
+    "source": "novelty_seeded",
+    "creation_day": 175,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0265",
+    "source": "novelty_seeded",
+    "creation_day": 176,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0266",
+    "source": "novelty_seeded",
+    "creation_day": 177,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0267",
+    "source": "novelty_seeded",
+    "creation_day": 177,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0268",
+    "source": "novelty_seeded",
+    "creation_day": 178,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0269",
+    "source": "novelty_seeded",
+    "creation_day": 178,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0270",
+    "source": "novelty_seeded",
+    "creation_day": 179,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0271",
+    "source": "novelty_seeded",
+    "creation_day": 179,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0272",
+    "source": "novelty_seeded",
+    "creation_day": 179,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0273",
+    "source": "novelty_seeded",
+    "creation_day": 179,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0274",
+    "source": "novelty_seeded",
+    "creation_day": 179,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0275",
+    "source": "novelty_seeded",
+    "creation_day": 179,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0276",
+    "source": "novelty_seeded",
+    "creation_day": 180,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0277",
+    "source": "novelty_seeded",
+    "creation_day": 180,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0278",
+    "source": "novelty_seeded",
+    "creation_day": 180,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0279",
+    "source": "novelty_seeded",
+    "creation_day": 181,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0280",
+    "source": "novelty_seeded",
+    "creation_day": 181,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0281",
+    "source": "novelty_seeded",
+    "creation_day": 181,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0282",
+    "source": "novelty_seeded",
+    "creation_day": 182,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0283",
+    "source": "novelty_seeded",
+    "creation_day": 182,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0284",
+    "source": "novelty_seeded",
+    "creation_day": 182,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0285",
+    "source": "novelty_seeded",
+    "creation_day": 182,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0286",
+    "source": "novelty_seeded",
+    "creation_day": 183,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0287",
+    "source": "novelty_seeded",
+    "creation_day": 184,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0288",
+    "source": "novelty_seeded",
+    "creation_day": 184,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0289",
+    "source": "novelty_seeded",
+    "creation_day": 184,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0290",
+    "source": "novelty_seeded",
+    "creation_day": 184,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0291",
+    "source": "novelty_seeded",
+    "creation_day": 185,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0292",
+    "source": "novelty_seeded",
+    "creation_day": 185,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0293",
+    "source": "novelty_seeded",
+    "creation_day": 187,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0294",
+    "source": "novelty_seeded",
+    "creation_day": 187,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0295",
+    "source": "novelty_seeded",
+    "creation_day": 187,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0296",
+    "source": "novelty_seeded",
+    "creation_day": 187,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0297",
+    "source": "novelty_seeded",
+    "creation_day": 188,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0298",
+    "source": "novelty_seeded",
+    "creation_day": 188,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0299",
+    "source": "novelty_seeded",
+    "creation_day": 188,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0300",
+    "source": "novelty_seeded",
+    "creation_day": 190,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0301",
+    "source": "novelty_seeded",
+    "creation_day": 190,
+    "closure_day": null,
+    "n_seeds": 15,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0302",
+    "source": "novelty_seeded",
+    "creation_day": 190,
+    "closure_day": null,
+    "n_seeds": 12,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0303",
+    "source": "novelty_seeded",
+    "creation_day": 190,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0304",
+    "source": "novelty_seeded",
+    "creation_day": 195,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0305",
+    "source": "novelty_seeded",
+    "creation_day": 196,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0306",
+    "source": "cycle_closure",
+    "creation_day": 196,
+    "closure_day": 196,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0307",
+    "source": "novelty_seeded",
+    "creation_day": 196,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0308",
+    "source": "novelty_seeded",
+    "creation_day": 197,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0309",
+    "source": "novelty_seeded",
+    "creation_day": 198,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0310",
+    "source": "novelty_seeded",
+    "creation_day": 199,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0311",
+    "source": "novelty_seeded",
+    "creation_day": 200,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0312",
+    "source": "novelty_seeded",
+    "creation_day": 201,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0313",
+    "source": "novelty_seeded",
+    "creation_day": 202,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0314",
+    "source": "novelty_seeded",
+    "creation_day": 203,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0315",
+    "source": "novelty_seeded",
+    "creation_day": 205,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0316",
+    "source": "novelty_seeded",
+    "creation_day": 205,
+    "closure_day": null,
+    "n_seeds": 17,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0317",
+    "source": "novelty_seeded",
+    "creation_day": 205,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0318",
+    "source": "novelty_seeded",
+    "creation_day": 207,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0319",
+    "source": "novelty_seeded",
+    "creation_day": 207,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0320",
+    "source": "novelty_seeded",
+    "creation_day": 210,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0321",
+    "source": "novelty_seeded",
+    "creation_day": 210,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0322",
+    "source": "novelty_seeded",
+    "creation_day": 211,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0323",
+    "source": "novelty_seeded",
+    "creation_day": 214,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0324",
+    "source": "novelty_seeded",
+    "creation_day": 215,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0325",
+    "source": "novelty_seeded",
+    "creation_day": 217,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0326",
+    "source": "novelty_seeded",
+    "creation_day": 219,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0327",
+    "source": "novelty_seeded",
+    "creation_day": 221,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0328",
+    "source": "novelty_seeded",
+    "creation_day": 221,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0329",
+    "source": "novelty_seeded",
+    "creation_day": 222,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0330",
+    "source": "novelty_seeded",
+    "creation_day": 222,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0331",
+    "source": "novelty_seeded",
+    "creation_day": 225,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0332",
+    "source": "novelty_seeded",
+    "creation_day": 228,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0333",
+    "source": "novelty_seeded",
+    "creation_day": 230,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0334",
+    "source": "novelty_seeded",
+    "creation_day": 230,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0335",
+    "source": "novelty_seeded",
+    "creation_day": 232,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0336",
+    "source": "novelty_seeded",
+    "creation_day": 232,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0337",
+    "source": "novelty_seeded",
+    "creation_day": 232,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0338",
+    "source": "novelty_seeded",
+    "creation_day": 234,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0339",
+    "source": "novelty_seeded",
+    "creation_day": 234,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0340",
+    "source": "novelty_seeded",
+    "creation_day": 234,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0341",
+    "source": "novelty_seeded",
+    "creation_day": 237,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0342",
+    "source": "novelty_seeded",
+    "creation_day": 237,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0343",
+    "source": "novelty_seeded",
+    "creation_day": 238,
+    "closure_day": null,
+    "n_seeds": 27,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0344",
+    "source": "novelty_seeded",
+    "creation_day": 238,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0345",
+    "source": "novelty_seeded",
+    "creation_day": 239,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0346",
+    "source": "novelty_seeded",
+    "creation_day": 240,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0347",
+    "source": "novelty_seeded",
+    "creation_day": 240,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0348",
+    "source": "novelty_seeded",
+    "creation_day": 240,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0349",
+    "source": "novelty_seeded",
+    "creation_day": 240,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0350",
+    "source": "novelty_seeded",
+    "creation_day": 241,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0351",
+    "source": "novelty_seeded",
+    "creation_day": 243,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0352",
+    "source": "cycle_closure",
+    "creation_day": 243,
+    "closure_day": 243,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0353",
+    "source": "cycle_closure",
+    "creation_day": 245,
+    "closure_day": 245,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0354",
+    "source": "novelty_seeded",
+    "creation_day": 246,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0355",
+    "source": "novelty_seeded",
+    "creation_day": 247,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0356",
+    "source": "novelty_seeded",
+    "creation_day": 250,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0357",
+    "source": "novelty_seeded",
+    "creation_day": 252,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0358",
+    "source": "novelty_seeded",
+    "creation_day": 258,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0359",
+    "source": "novelty_seeded",
+    "creation_day": 264,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0360",
+    "source": "novelty_seeded",
+    "creation_day": 264,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0361",
+    "source": "novelty_seeded",
+    "creation_day": 268,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0362",
+    "source": "novelty_seeded",
+    "creation_day": 268,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0363",
+    "source": "novelty_seeded",
+    "creation_day": 268,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0364",
+    "source": "novelty_seeded",
+    "creation_day": 271,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0365",
+    "source": "novelty_seeded",
+    "creation_day": 271,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0366",
+    "source": "cycle_closure",
+    "creation_day": 272,
+    "closure_day": 272,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0367",
+    "source": "cycle_closure",
+    "creation_day": 273,
+    "closure_day": 273,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0368",
+    "source": "novelty_seeded",
+    "creation_day": 276,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0369",
+    "source": "novelty_seeded",
+    "creation_day": 279,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0370",
+    "source": "novelty_seeded",
+    "creation_day": 279,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0371",
+    "source": "novelty_seeded",
+    "creation_day": 280,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0372",
+    "source": "novelty_seeded",
+    "creation_day": 283,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0373",
+    "source": "novelty_seeded",
+    "creation_day": 283,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0374",
+    "source": "novelty_seeded",
+    "creation_day": 285,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0375",
+    "source": "novelty_seeded",
+    "creation_day": 285,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0376",
+    "source": "novelty_seeded",
+    "creation_day": 286,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0377",
+    "source": "novelty_seeded",
+    "creation_day": 292,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0378",
+    "source": "novelty_seeded",
+    "creation_day": 296,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0379",
+    "source": "novelty_seeded",
+    "creation_day": 296,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0380",
+    "source": "partial_path",
+    "creation_day": 300,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0381",
+    "source": "novelty_seeded",
+    "creation_day": 304,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0382",
+    "source": "novelty_seeded",
+    "creation_day": 306,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0383",
+    "source": "novelty_seeded",
+    "creation_day": 309,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0384",
+    "source": "novelty_seeded",
+    "creation_day": 310,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0385",
+    "source": "novelty_seeded",
+    "creation_day": 311,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0386",
+    "source": "novelty_seeded",
+    "creation_day": 315,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0387",
+    "source": "novelty_seeded",
+    "creation_day": 318,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0388",
+    "source": "novelty_seeded",
+    "creation_day": 320,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0389",
+    "source": "novelty_seeded",
+    "creation_day": 321,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0390",
+    "source": "novelty_seeded",
+    "creation_day": 321,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0391",
+    "source": "novelty_seeded",
+    "creation_day": 322,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0392",
+    "source": "novelty_seeded",
+    "creation_day": 322,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0393",
+    "source": "novelty_seeded",
+    "creation_day": 323,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0394",
+    "source": "novelty_seeded",
+    "creation_day": 329,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0395",
+    "source": "novelty_seeded",
+    "creation_day": 331,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0396",
+    "source": "novelty_seeded",
+    "creation_day": 332,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0397",
+    "source": "novelty_seeded",
+    "creation_day": 336,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0398",
+    "source": "novelty_seeded",
+    "creation_day": 338,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0399",
+    "source": "novelty_seeded",
+    "creation_day": 338,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0400",
+    "source": "novelty_seeded",
+    "creation_day": 339,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0401",
+    "source": "novelty_seeded",
+    "creation_day": 343,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0402",
+    "source": "novelty_seeded",
+    "creation_day": 343,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0403",
+    "source": "novelty_seeded",
+    "creation_day": 344,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0404",
+    "source": "novelty_seeded",
+    "creation_day": 345,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0405",
+    "source": "novelty_seeded",
+    "creation_day": 350,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0406",
+    "source": "novelty_seeded",
+    "creation_day": 351,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0407",
+    "source": "novelty_seeded",
+    "creation_day": 351,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0408",
+    "source": "novelty_seeded",
+    "creation_day": 351,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0409",
+    "source": "novelty_seeded",
+    "creation_day": 351,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0410",
+    "source": "novelty_seeded",
+    "creation_day": 356,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0411",
+    "source": "novelty_seeded",
+    "creation_day": 359,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0412",
+    "source": "novelty_seeded",
+    "creation_day": 360,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0413",
+    "source": "novelty_seeded",
+    "creation_day": 362,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0414",
+    "source": "novelty_seeded",
+    "creation_day": 364,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0415",
+    "source": "novelty_seeded",
+    "creation_day": 364,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0416",
+    "source": "novelty_seeded",
+    "creation_day": 368,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0417",
+    "source": "novelty_seeded",
+    "creation_day": 369,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0418",
+    "source": "novelty_seeded",
+    "creation_day": 373,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0419",
+    "source": "novelty_seeded",
+    "creation_day": 375,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0420",
+    "source": "novelty_seeded",
+    "creation_day": 375,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0421",
+    "source": "novelty_seeded",
+    "creation_day": 377,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0422",
+    "source": "novelty_seeded",
+    "creation_day": 377,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0423",
+    "source": "novelty_seeded",
+    "creation_day": 378,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0424",
+    "source": "novelty_seeded",
+    "creation_day": 380,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0425",
+    "source": "novelty_seeded",
+    "creation_day": 394,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0426",
+    "source": "cycle_closure",
+    "creation_day": 395,
+    "closure_day": 395,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0427",
+    "source": "novelty_seeded",
+    "creation_day": 395,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0428",
+    "source": "cycle_closure",
+    "creation_day": 396,
+    "closure_day": 396,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0429",
+    "source": "novelty_seeded",
+    "creation_day": 400,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0430",
+    "source": "novelty_seeded",
+    "creation_day": 401,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0431",
+    "source": "novelty_seeded",
+    "creation_day": 405,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0432",
+    "source": "novelty_seeded",
+    "creation_day": 406,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0433",
+    "source": "novelty_seeded",
+    "creation_day": 407,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0434",
+    "source": "novelty_seeded",
+    "creation_day": 410,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0435",
+    "source": "novelty_seeded",
+    "creation_day": 415,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0436",
+    "source": "novelty_seeded",
+    "creation_day": 418,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0437",
+    "source": "novelty_seeded",
+    "creation_day": 419,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0438",
+    "source": "novelty_seeded",
+    "creation_day": 419,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0439",
+    "source": "novelty_seeded",
+    "creation_day": 420,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0440",
+    "source": "novelty_seeded",
+    "creation_day": 421,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0441",
+    "source": "novelty_seeded",
+    "creation_day": 422,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0442",
+    "source": "novelty_seeded",
+    "creation_day": 433,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0443",
+    "source": "novelty_seeded",
+    "creation_day": 436,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0444",
+    "source": "partial_path",
+    "creation_day": 438,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0445",
+    "source": "novelty_seeded",
+    "creation_day": 439,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0446",
+    "source": "novelty_seeded",
+    "creation_day": 440,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0447",
+    "source": "novelty_seeded",
+    "creation_day": 444,
+    "closure_day": null,
+    "n_seeds": 10,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0448",
+    "source": "novelty_seeded",
+    "creation_day": 445,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0449",
+    "source": "novelty_seeded",
+    "creation_day": 445,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0450",
+    "source": "novelty_seeded",
+    "creation_day": 446,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0451",
+    "source": "novelty_seeded",
+    "creation_day": 454,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0452",
+    "source": "novelty_seeded",
+    "creation_day": 456,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0453",
+    "source": "novelty_seeded",
+    "creation_day": 464,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0454",
+    "source": "novelty_seeded",
+    "creation_day": 466,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0455",
+    "source": "novelty_seeded",
+    "creation_day": 466,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0456",
+    "source": "novelty_seeded",
+    "creation_day": 467,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0457",
+    "source": "partial_path",
+    "creation_day": 468,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0458",
+    "source": "novelty_seeded",
+    "creation_day": 469,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0459",
+    "source": "novelty_seeded",
+    "creation_day": 473,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0460",
+    "source": "novelty_seeded",
+    "creation_day": 474,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0461",
+    "source": "partial_path",
+    "creation_day": 475,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0462",
+    "source": "novelty_seeded",
+    "creation_day": 476,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0463",
+    "source": "novelty_seeded",
+    "creation_day": 476,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0464",
+    "source": "novelty_seeded",
+    "creation_day": 482,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0465",
+    "source": "novelty_seeded",
+    "creation_day": 483,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0466",
+    "source": "novelty_seeded",
+    "creation_day": 489,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0467",
+    "source": "novelty_seeded",
+    "creation_day": 489,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0468",
+    "source": "novelty_seeded",
+    "creation_day": 493,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0469",
+    "source": "novelty_seeded",
+    "creation_day": 496,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0470",
+    "source": "novelty_seeded",
+    "creation_day": 499,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0471",
+    "source": "novelty_seeded",
+    "creation_day": 505,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0472",
+    "source": "novelty_seeded",
+    "creation_day": 508,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0473",
+    "source": "cycle_closure",
+    "creation_day": 511,
+    "closure_day": 511,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0474",
+    "source": "novelty_seeded",
+    "creation_day": 515,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0475",
+    "source": "novelty_seeded",
+    "creation_day": 528,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0476",
+    "source": "novelty_seeded",
+    "creation_day": 528,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0477",
+    "source": "novelty_seeded",
+    "creation_day": 535,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0478",
+    "source": "novelty_seeded",
+    "creation_day": 536,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0479",
+    "source": "novelty_seeded",
+    "creation_day": 536,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0480",
+    "source": "novelty_seeded",
+    "creation_day": 540,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0481",
+    "source": "novelty_seeded",
+    "creation_day": 541,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0482",
+    "source": "cycle_closure",
+    "creation_day": 542,
+    "closure_day": 542,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0483",
+    "source": "novelty_seeded",
+    "creation_day": 542,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0484",
+    "source": "novelty_seeded",
+    "creation_day": 545,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0485",
+    "source": "novelty_seeded",
+    "creation_day": 552,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0486",
+    "source": "partial_path",
+    "creation_day": 553,
+    "closure_day": null,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0487",
+    "source": "novelty_seeded",
+    "creation_day": 554,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0488",
+    "source": "novelty_seeded",
+    "creation_day": 555,
+    "closure_day": null,
+    "n_seeds": 11,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0489",
+    "source": "novelty_seeded",
+    "creation_day": 555,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0490",
+    "source": "novelty_seeded",
+    "creation_day": 557,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0491",
+    "source": "novelty_seeded",
+    "creation_day": 558,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0492",
+    "source": "novelty_seeded",
+    "creation_day": 561,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0493",
+    "source": "novelty_seeded",
+    "creation_day": 562,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0494",
+    "source": "novelty_seeded",
+    "creation_day": 563,
+    "closure_day": null,
+    "n_seeds": 8,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0495",
+    "source": "novelty_seeded",
+    "creation_day": 564,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0496",
+    "source": "novelty_seeded",
+    "creation_day": 568,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0497",
+    "source": "novelty_seeded",
+    "creation_day": 569,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0498",
+    "source": "cycle_closure",
+    "creation_day": 571,
+    "closure_day": 571,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0499",
+    "source": "novelty_seeded",
+    "creation_day": 571,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0500",
+    "source": "novelty_seeded",
+    "creation_day": 580,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0501",
+    "source": "novelty_seeded",
+    "creation_day": 583,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0502",
+    "source": "novelty_seeded",
+    "creation_day": 583,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0503",
+    "source": "novelty_seeded",
+    "creation_day": 583,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0504",
+    "source": "novelty_seeded",
+    "creation_day": 584,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0505",
+    "source": "cycle_closure",
+    "creation_day": 589,
+    "closure_day": 589,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0506",
+    "source": "novelty_seeded",
+    "creation_day": 593,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0507",
+    "source": "novelty_seeded",
+    "creation_day": 593,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0508",
+    "source": "novelty_seeded",
+    "creation_day": 593,
+    "closure_day": null,
+    "n_seeds": 5,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0509",
+    "source": "novelty_seeded",
+    "creation_day": 597,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0510",
+    "source": "novelty_seeded",
+    "creation_day": 604,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0511",
+    "source": "novelty_seeded",
+    "creation_day": 606,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0512",
+    "source": "novelty_seeded",
+    "creation_day": 617,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0513",
+    "source": "novelty_seeded",
+    "creation_day": 624,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0514",
+    "source": "novelty_seeded",
+    "creation_day": 628,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0515",
+    "source": "novelty_seeded",
+    "creation_day": 633,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0516",
+    "source": "novelty_seeded",
+    "creation_day": 633,
+    "closure_day": null,
+    "n_seeds": 6,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0517",
+    "source": "novelty_seeded",
+    "creation_day": 633,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0518",
+    "source": "novelty_seeded",
+    "creation_day": 638,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0519",
+    "source": "novelty_seeded",
+    "creation_day": 641,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0520",
+    "source": "novelty_seeded",
+    "creation_day": 645,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0521",
+    "source": "novelty_seeded",
+    "creation_day": 647,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0522",
+    "source": "cycle_closure",
+    "creation_day": 649,
+    "closure_day": 649,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0523",
+    "source": "novelty_seeded",
+    "creation_day": 649,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0524",
+    "source": "novelty_seeded",
+    "creation_day": 652,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0525",
+    "source": "novelty_seeded",
+    "creation_day": 653,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0526",
+    "source": "novelty_seeded",
+    "creation_day": 653,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0527",
+    "source": "novelty_seeded",
+    "creation_day": 653,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0528",
+    "source": "novelty_seeded",
+    "creation_day": 654,
+    "closure_day": null,
+    "n_seeds": 3,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0529",
+    "source": "novelty_seeded",
+    "creation_day": 658,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0530",
+    "source": "novelty_seeded",
+    "creation_day": 660,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0531",
+    "source": "novelty_seeded",
+    "creation_day": 664,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0532",
+    "source": "novelty_seeded",
+    "creation_day": 666,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0533",
+    "source": "cycle_closure",
+    "creation_day": 667,
+    "closure_day": 677,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0534",
+    "source": "novelty_seeded",
+    "creation_day": 667,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0535",
+    "source": "novelty_seeded",
+    "creation_day": 667,
+    "closure_day": null,
+    "n_seeds": 4,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0536",
+    "source": "novelty_seeded",
+    "creation_day": 672,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0537",
+    "source": "novelty_seeded",
+    "creation_day": 682,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0538",
+    "source": "novelty_seeded",
+    "creation_day": 683,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0539",
+    "source": "novelty_seeded",
+    "creation_day": 685,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0540",
+    "source": "novelty_seeded",
+    "creation_day": 689,
+    "closure_day": null,
+    "n_seeds": 2,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0541",
+    "source": "novelty_seeded",
+    "creation_day": 689,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0542",
+    "source": "novelty_seeded",
+    "creation_day": 695,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0543",
+    "source": "novelty_seeded",
+    "creation_day": 698,
+    "closure_day": null,
+    "n_seeds": 9,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0544",
+    "source": "novelty_seeded",
+    "creation_day": 703,
+    "closure_day": null,
+    "n_seeds": 7,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0545",
+    "source": "novelty_seeded",
+    "creation_day": 705,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0546",
+    "source": "novelty_seeded",
+    "creation_day": 705,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0547",
+    "source": "novelty_seeded",
+    "creation_day": 710,
+    "closure_day": null,
+    "n_seeds": 1,
+    "signal": "simulator-specific novelty"
+  },
+  {
+    "candidate_ring_id": "V2-0548",
+    "source": "cycle_closure",
+    "creation_day": 715,
+    "closure_day": 715,
+    "n_seeds": null,
+    "signal": "structure"
+  },
+  {
+    "candidate_ring_id": "V2-0549",
+    "source": "cycle_closure",
+    "creation_day": 717,
+    "closure_day": 717,
+    "n_seeds": null,
+    "signal": "structure"
+  }
+]

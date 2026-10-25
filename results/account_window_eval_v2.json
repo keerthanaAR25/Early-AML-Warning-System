@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-10-24T14:03:15.645400+00:00",
+  "runtime_seconds": 208.3,
+  "parameters": {
+    "horizons": [
+      2,
+      7,
+      14
+    ],
+    "burn_in": 120,
+    "seed": 42,
+    "n_boot": 300,
+    "n_estimators": 300,
+    "threshold_rule": "max F1 on validation",
+    "purge_gap": "H days at each boundary"
+  },
+  "dashboard_baseline_from_model_comparison_json": {
+    "n_samples": 653487,
+    "n_positive": 32,
+    "precision": 0.29411764705882354,
+    "recall": 0.15625,
+    "f1": 0.20408163265306123,
+    "roc_auc": 0.9750381625360584,
+    "pr_auc": 0.0777529247998856,
+    "false_warning_rate": 1.8363927125815854e-05
+  },
+  "results": [
+    {
+      "name": "activity+rolling (no account history)",
+      "horizon_days": 2,
+      "features": 5,
+      "bounds": {
+        "train": [
+          120,
+          429
+        ],
+        "val": [
+          432,
+          573
+        ],
+        "test": [
+          576,
+          719
+        ]
+      },
+      "n_train": 1125427,
+      "n_train_pos": 194,
+      "n_val_pos": 54,
+      "n_test": 653487,
+      "n_test_pos": 32,
+      "n_test_pos_accounts": 27,
+      "prevalence": 4.896807434577888e-05,
+      "pr_auc": 0.08104282499745237,
+      "pr_auc_bootstrap_range_2p5_97p5": [
+        0.057694909447942144,
+        0.3528192741565029
+      ],
+      "positive_accounts_caught": 8,
+      "recall_by_account": 0.2962962962962963,
+      "recall_by_account_wilson95": [
+        0.15852853317647564,
+        0.4848103338083759
+      ],
+      "precision_wilson95": [
+        0.17204987516891143,
+        0.5159008626542329
+      ],
+      "roc_auc_inflated_by_active_only_labels": 0.97681319869004,
+      "threshold_chosen_on_validation": 0.9929431080818176,
+      "tp": 8,
+      "fp": 17,
+      "precision": 0.32,
+      "recall": 0.25,
+      "f1": 0.2807017543859649,
+      "false_positive_rate": 2.601556342823913e-05,
+      "precision_at_10": 6,
+      "precision_at_20": 7,
+      "precision_at_50": 8
+    },
+    {
+      "name": "+ account history/novelty",
+      "horizon_days": 2,
+      "features": 13,
+      "bounds": {
+        "train": [
+          120,
+          429
+        ],
+        "val": [
+          432,
+          573
+        ],
+        "test": [
+          576,
+          719
+        ]
+      },
+      "n_train": 1125427,
+      "n_train_pos": 194,
+      "n_val_pos": 54,
+      "n_test": 653487,
+      "n_test_pos": 32,
+      "n_test_pos_accounts": 27,
+      "prevalence": 4.896807434577888e-05,
+      "pr_auc": 0.10512736811057787,
+      "pr_auc_bootstrap_range_2p5_97p5": [
+        0.08204917965244288,
+        0.3995908753331606
+      ],
+      "positive_accounts_caught": 8,
+      "recall_by_account": 0.2962962962962963,
+      "recall_by_account_wilson95": [
+        0.15852853317647564,
+        0.4848103338083759
+      ],
+      "precision_wilson95": [
+        0.21880396741419272,
+        0.613422057684794
+      ],
+      "roc_auc_inflated_by_active_only_labels": 0.977690100121661,
+      "threshold_chosen_on_validation": 0.9966375827789307,
+      "tp": 8,
+      "fp": 12,
+      "precision": 0.4,
+      "recall": 0.25,
+      "f1": 0.3076923076923077,
+      "false_positive_rate": 1.8363927125815854e-05,
+      "precision_at_10": 6,
+      "precision_at_20": 8,
+      "precision_at_50": 11
+    },
+    {
+      "name": "activity+rolling (no account history)",
+      "horizon_days": 7,
+      "features": 5,
+      "bounds": {
+        "train": [
+          120,
+          424
+        ],
+        "val": [
+          432,
+          568
+        ],
+        "test": [
+          576,
+          719
+        ]
+      },
+      "n_train": 1104982,
+      "n_train_pos": 617,
+      "n_val_pos": 138,
+      "n_test": 653487,
+      "n_test_pos": 81,
+      "n_test_pos_accounts": 53,
+      "prevalence": 0.00012395043818775277,
+      "pr_auc": 0.1630948321555513,
+      "pr_auc_bootstrap_range_2p5_97p5": [
+        0.09885833349493771,
+        0.2882946489411211
+      ],
+      "positive_accounts_caught": 18,
+      "recall_by_account": 0.33962264150943394,
+      "recall_by_account_wilson95": [
+        0.22686862857429074,
+        0.4740546388917903
+      ],
+      "precision_wilson95": [
+        0.5242302810344169,
+        0.8571632616261843
+      ],
+      "roc_auc_inflated_by_active_only_labels": 0.9793679410487337,
+      "threshold_chosen_on_validation": 0.9898213148117065,
+      "tp": 18,
+      "fp": 7,
+      "precision": 0.72,
+      "recall": 0.2222222222222222,
+      "f1": 0.33962264150943394,
+      "false_positive_rate": 1.0713094155854094e-05,
+      "precision_at_10": 7,
+      "precision_at_20": 14,
+      "precision_at_50": 18
+    },
+    {
+      "name": "+ account history/novelty",
+      "horizon_days": 7,
+      "features": 13,
+      "bounds": {
+        "train": [
+          120,
+          424
+        ],
+        "val": [
+          432,
+          568
+        ],
+        "test": [
+          576,
+          719
+        ]
+      },
+      "n_train": 1104982,
+      "n_train_pos": 617,
+      "n_val_pos": 138,
+      "n_test": 653487,
+      "n_test_pos": 81,
+      "n_test_pos_accounts": 53,
+      "prevalence": 0.00012395043818775277,
+      "pr_auc": 0.12877881840125888,
+      "pr_auc_bootstrap_range_2p5_97p5": [
+        0.13497759502653128,
+        0.37815441434539804
+      ],
+      "positive_accounts_caught": 13,
+      "recall_by_account": 0.24528301886792453,
+      "recall_by_account_wilson95": [
+        0.14932762711854577,
+        0.3756681506217008
+      ],
+      "precision_wilson95": [
+        0.43285051021946463,
+        0.8188104521320554
+      ],
+      "roc_auc_inflated_by_active_only_labels": 0.9855966416887192,
+      "threshold_chosen_on_validation": 0.9892445802688599,
+      "tp": 13,
+      "fp": 7,
+      "precision": 0.65,
+      "recall": 0.16049382716049382,
+      "f1": 0.25742574257425743,
+      "false_positive_rate": 1.0713094155854094e-05,
+      "precision_at_10": 7,
+      "precision_at_20": 13,
+      "precision_at_50": 25
+    },
+    {
+      "name": "activity+rolling (no account history)",
+      "horizon_days": 14,
+      "features": 5,
+      "bounds": {
+        "train": [
+          120,
+          417
+        ],
+        "val": [
+          432,
+          561
+        ],
+        "test": [
+          576,
+          719
+        ]
+      },
+      "n_train": 1076446,
+      "n_train_pos": 1131,
+      "n_val_pos": 225,
+      "n_test": 653487,
+      "n_test_pos": 118,
+      "n_test_pos_accounts": 59,
+      "prevalence": 0.0001805697741500596,
+      "pr_auc": 0.13887415622244587,
+      "pr_auc_bootstrap_range_2p5_97p5": [
+        0.07973890410270937,
+        0.243810209681078
+      ],
+      "positive_accounts_caught": 20,
+      "recall_by_account": 0.3389830508474576,
+      "recall_by_account_wilson95": [
+        0.23137483598383493,
+        0.4662776744551099
+      ],
+      "precision_wilson95": [
+        0.6086866446346177,
+        0.9113954589934752
+      ],
+      "roc_auc_inflated_by_active_only_labels": 0.9750664813672012,
+      "threshold_chosen_on_validation": 0.9880166053771973,
+      "tp": 20,
+      "fp": 5,
+      "precision": 0.8,
+      "recall": 0.1694915254237288,
+      "f1": 0.2797202797202797,
+      "false_positive_rate": 7.652643452627842e-06,
+      "precision_at_10": 8,
+      "precision_at_20": 16,
+      "precision_at_50": 20
+    },
+    {
+      "name": "+ account history/novelty",
+      "horizon_days": 14,
+      "features": 13,
+      "bounds": {
+        "train": [
+          120,
+          417
+        ],
+        "val": [
+          432,
+          561
+        ],
+        "test": [
+          576,
+          719
+        ]
+      },
+      "n_train": 1076446,
+      "n_train_pos": 1131,
+      "n_val_pos": 225,
+      "n_test": 653487,
+      "n_test_pos": 118,
+      "n_test_pos_accounts": 59,
+      "prevalence": 0.0001805697741500596,
+      "pr_auc": 0.1185929673626874,
+      "pr_auc_bootstrap_range_2p5_97p5": [
+        0.12582606173957495,
+        0.3424991107825647
+      ],
+      "positive_accounts_caught": 15,
+      "recall_by_account": 0.2542372881355932,
+      "recall_by_account_wilson95": [
+        0.1605583829520582,
+        0.3779638698231735
+      ],
+      "precision_wilson95": [
+        0.5312949900419365,
+        0.888139947210597
+      ],
+      "roc_auc_inflated_by_active_only_labels": 0.981180975912306,
+      "threshold_chosen_on_validation": 0.986149787902832,
+      "tp": 15,
+      "fp": 5,
+      "precision": 0.75,
+      "recall": 0.1271186440677966,
+      "f1": 0.21739130434782608,
+      "false_positive_rate": 7.652643452627842e-06,
+      "precision_at_10": 8,
+      "precision_at_20": 15,
+      "precision_at_50": 30
+    }
+  ]
+}

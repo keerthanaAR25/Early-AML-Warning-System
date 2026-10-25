@@ -1,0 +1,2221 @@
+{
+  "generated_at": "2026-10-24T08:48:13.319217+00:00",
+  "runtime_seconds": 22.6,
+  "parameters": {
+    "burn_in_days": 120,
+    "first_scored_day": 240,
+    "block_len_days": 120,
+    "alerts_per_day_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "headline_alerts_per_day": 5,
+    "headline_model": "xgb_with_novelty",
+    "observable_k": 4,
+    "seed": 42,
+    "n_estimators": 200
+  },
+  "definitions": {
+    "observable_time": "cycle: day of last (closing) edge; fan_in/fan_out: day the k-th distinct counterparty has transacted (k=observable_k), else last transaction day",
+    "warning_time": "earliest day any transaction of the ring is flagged by the daily budget (out-of-sample days only)",
+    "lead_time": "observable_day - warning_day, in days; >0 means warned before the ring became observable",
+    "evaluable_ring": "ALL transactions of the ring fall inside the scored period (first_day >= first scored day) and its observable_day is scored; this avoids right-truncating warnings. The JSON also keeps summary_observable_in_period (only observable_day in the scored period), which is truncated for slow rings."
+  },
+  "data": {
+    "n_transactions": 197905,
+    "n_days": 720,
+    "day0": "2017-01-01",
+    "n_rings": 100,
+    "rings_by_type": {
+      "cycle": 40,
+      "fan_in": 30,
+      "fan_out": 30
+    },
+    "transactions_sha256": "3212d710c18bd4ab4fb6ea9fb150c9949e1f61322cce66011cc64b9c77719d86",
+    "alerts_sha256": "057a608e36c3766292b59d833b36f20d751e23da6e6b080c30feff3884b08ab2"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6"
+  },
+  "training_blocks": {
+    "xgb_with_novelty": [
+      {
+        "block": [
+          240,
+          360
+        ],
+        "n_train": 40182,
+        "n_train_pos": 86,
+        "scored": true
+      },
+      {
+        "block": [
+          360,
+          480
+        ],
+        "n_train": 77450,
+        "n_train_pos": 178,
+        "scored": true
+      },
+      {
+        "block": [
+          480,
+          600
+        ],
+        "n_train": 108149,
+        "n_train_pos": 277,
+        "scored": true
+      },
+      {
+        "block": [
+          600,
+          720
+        ],
+        "n_train": 134474,
+        "n_train_pos": 396,
+        "scored": true
+      }
+    ],
+    "xgb_without_novelty": [
+      {
+        "block": [
+          240,
+          360
+        ],
+        "n_train": 40182,
+        "n_train_pos": 86,
+        "scored": true
+      },
+      {
+        "block": [
+          360,
+          480
+        ],
+        "n_train": 77450,
+        "n_train_pos": 178,
+        "scored": true
+      },
+      {
+        "block": [
+          480,
+          600
+        ],
+        "n_train": 108149,
+        "n_train_pos": 277,
+        "scored": true
+      },
+      {
+        "block": [
+          600,
+          720
+        ],
+        "n_train": 134474,
+        "n_train_pos": 396,
+        "scored": true
+      }
+    ],
+    "newness_rule": [
+      {
+        "block": [
+          240,
+          360
+        ],
+        "scored": true,
+        "note": "rule, no training"
+      },
+      {
+        "block": [
+          360,
+          480
+        ],
+        "scored": true,
+        "note": "rule, no training"
+      },
+      {
+        "block": [
+          480,
+          600
+        ],
+        "scored": true,
+        "note": "rule, no training"
+      },
+      {
+        "block": [
+          600,
+          720
+        ],
+        "scored": true,
+        "note": "rule, no training"
+      }
+    ],
+    "random": [
+      {
+        "block": [
+          240,
+          360
+        ],
+        "scored": true,
+        "note": "random control"
+      },
+      {
+        "block": [
+          360,
+          480
+        ],
+        "scored": true,
+        "note": "random control"
+      },
+      {
+        "block": [
+          480,
+          600
+        ],
+        "scored": true,
+        "note": "random control"
+      },
+      {
+        "block": [
+          600,
+          720
+        ],
+        "scored": true,
+        "note": "random control"
+      }
+    ]
+  },
+  "tx_level_out_of_sample_metrics": {
+    "xgb_with_novelty": {
+      "n_scored_tx": 117252,
+      "n_positive": 320,
+      "prevalence": 0.002729164534506874,
+      "pr_auc": 0.710494923833266,
+      "roc_auc": 0.9893420695361406
+    },
+    "xgb_without_novelty": {
+      "n_scored_tx": 117252,
+      "n_positive": 320,
+      "prevalence": 0.002729164534506874,
+      "pr_auc": 0.0061038226568216275,
+      "roc_auc": 0.7619264829131461
+    },
+    "newness_rule": {
+      "n_scored_tx": 117252,
+      "n_positive": 320,
+      "prevalence": 0.002729164534506874,
+      "pr_auc": 0.6966979390785049,
+      "roc_auc": 0.9342569960532617
+    },
+    "random": {
+      "n_scored_tx": 117252,
+      "n_positive": 320,
+      "prevalence": 0.002729164534506874,
+      "pr_auc": 0.0028109940548761755,
+      "roc_auc": 0.4838283147470325
+    }
+  },
+  "results": {
+    "xgb_with_novelty": {
+      "1": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 28,
+            "warned_before_observable_rate": 0.9333333333333333,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 9.566666666666666,
+            "lead_days_q25": 5.25,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              7.0,
+              12.5
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 28,
+            "warned_before_observable_rate": 0.9333333333333333,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 9.566666666666666,
+            "lead_days_q25": 5.25,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              7.0,
+              12.5
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 1,
+          "scored_days": 480,
+          "n_flags": 480,
+          "true_flags": 166,
+          "false_flags": 314,
+          "false_alerts_per_day": 0.6541666666666667,
+          "precision_of_flags": 0.3458333333333333,
+          "share_of_true_flags_that_are_first_ever_sender": 0.8734939759036144
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 46,
+            "detection_rate": 0.8679245283018868,
+            "n_warned_before_observable": 31,
+            "warned_before_observable_rate": 0.5849056603773585,
+            "lead_days_median": 6.5,
+            "lead_days_mean": -4.021739130434782,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": 157.0,
+            "lead_days_median_ci95": [
+              1.5,
+              10.0
+            ],
+            "n_for_lead_stats": 46
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 29,
+            "warned_before_observable_rate": 0.9354838709677419,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 9.32258064516129,
+            "lead_days_q25": 5.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              7.0,
+              12.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 11,
+            "detection_rate": 0.9166666666666666,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.08333333333333333,
+            "lead_days_median": 0.0,
+            "lead_days_mean": -30.727272727272727,
+            "lead_days_q25": -48.0,
+            "lead_days_q75": 0.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": 157.0,
+            "lead_days_median_ci95": [
+              -96.0,
+              0.0
+            ],
+            "n_for_lead_stats": 11
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 4,
+            "detection_rate": 0.4,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.1,
+            "lead_days_median": -9.5,
+            "lead_days_mean": -34.0,
+            "lead_days_q25": -46.5,
+            "lead_days_q75": 3.0,
+            "lead_days_min": -129.0,
+            "lead_days_max": 12.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 4
+          }
+        }
+      },
+      "3": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 11.5,
+            "lead_days_mean": 10.966666666666667,
+            "lead_days_q25": 7.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.5,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 11.5,
+            "lead_days_mean": 10.966666666666667,
+            "lead_days_q25": 7.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.5,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 3,
+          "scored_days": 480,
+          "n_flags": 1440,
+          "true_flags": 252,
+          "false_flags": 1188,
+          "false_alerts_per_day": 2.475,
+          "precision_of_flags": 0.175,
+          "share_of_true_flags_that_are_first_ever_sender": 0.7777777777777778
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 52,
+            "detection_rate": 0.9811320754716981,
+            "n_warned_before_observable": 36,
+            "warned_before_observable_rate": 0.6792452830188679,
+            "lead_days_median": 8.0,
+            "lead_days_mean": 13.23076923076923,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": -114.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              3.5,
+              11.5
+            ],
+            "n_for_lead_stats": 52
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 31,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 11.0,
+            "lead_days_mean": 10.67741935483871,
+            "lead_days_q25": 6.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 12,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.25,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 28.25,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 33.75,
+            "lead_days_min": -114.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              0.0,
+              67.5
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 9,
+            "detection_rate": 0.9,
+            "n_warned_before_observable": 2,
+            "warned_before_observable_rate": 0.2,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 2.0,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 0.0,
+            "lead_days_min": -4.0,
+            "lead_days_max": 12.0,
+            "lead_days_median_ci95": [
+              0.0,
+              10.0
+            ],
+            "n_for_lead_stats": 9
+          }
+        }
+      },
+      "5": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 11.133333333333333,
+            "lead_days_q25": 7.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              10.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 11.133333333333333,
+            "lead_days_q25": 7.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              10.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 5,
+          "scored_days": 480,
+          "n_flags": 2400,
+          "true_flags": 282,
+          "false_flags": 2118,
+          "false_alerts_per_day": 4.4125,
+          "precision_of_flags": 0.1175,
+          "share_of_true_flags_that_are_first_ever_sender": 0.7304964539007093
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 53,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 37,
+            "warned_before_observable_rate": 0.6981132075471698,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 13.377358490566039,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": -135.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              4.0,
+              12.0
+            ],
+            "n_for_lead_stats": 53
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 31,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.838709677419354,
+            "lead_days_q25": 6.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              10.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 12,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.25,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 37.75,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 33.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              0.0,
+              67.5
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 10,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.3,
+            "lead_days_median": 0.0,
+            "lead_days_mean": -8.0,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 7.5,
+            "lead_days_min": -135.0,
+            "lead_days_max": 33.0,
+            "lead_days_median_ci95": [
+              0.0,
+              10.0
+            ],
+            "n_for_lead_stats": 10
+          }
+        }
+      },
+      "10": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 11.266666666666667,
+            "lead_days_q25": 7.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              10.0,
+              13.5
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 11.266666666666667,
+            "lead_days_q25": 7.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              10.0,
+              13.5
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 10,
+          "scored_days": 480,
+          "n_flags": 4800,
+          "true_flags": 308,
+          "false_flags": 4492,
+          "false_alerts_per_day": 9.358333333333333,
+          "precision_of_flags": 0.06416666666666666,
+          "share_of_true_flags_that_are_first_ever_sender": 0.6785714285714286
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 53,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 39,
+            "warned_before_observable_rate": 0.7358490566037735,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 17.49056603773585,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              5.0,
+              12.0
+            ],
+            "n_for_lead_stats": 53
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 31,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.96774193548387,
+            "lead_days_q25": 6.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              10.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 12,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.25,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 37.75,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 33.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              0.0,
+              67.5
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 10,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.5,
+            "lead_days_median": 5.0,
+            "lead_days_mean": 13.4,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 67.0,
+            "lead_days_median_ci95": [
+              0.0,
+              22.5
+            ],
+            "n_for_lead_stats": 10
+          }
+        }
+      }
+    },
+    "xgb_without_novelty": {
+      "1": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 1,
+            "detection_rate": 0.03333333333333333,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.03333333333333333,
+            "lead_days_median": 16.0,
+            "lead_days_mean": 16.0,
+            "lead_days_q25": 16.0,
+            "lead_days_q75": 16.0,
+            "lead_days_min": 16.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 1,
+            "detection_rate": 0.03333333333333333,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.03333333333333333,
+            "lead_days_median": 16.0,
+            "lead_days_mean": 16.0,
+            "lead_days_q25": 16.0,
+            "lead_days_q75": 16.0,
+            "lead_days_min": 16.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 1,
+          "scored_days": 480,
+          "n_flags": 480,
+          "true_flags": 3,
+          "false_flags": 477,
+          "false_alerts_per_day": 0.99375,
+          "precision_of_flags": 0.00625,
+          "share_of_true_flags_that_are_first_ever_sender": 0.3333333333333333
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 2,
+            "detection_rate": 0.03773584905660377,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.018867924528301886,
+            "lead_days_median": -61.5,
+            "lead_days_mean": -61.5,
+            "lead_days_q25": -100.25,
+            "lead_days_q75": -22.75,
+            "lead_days_min": -139.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 2
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 1,
+            "detection_rate": 0.03225806451612903,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.03225806451612903,
+            "lead_days_median": 16.0,
+            "lead_days_mean": 16.0,
+            "lead_days_q25": 16.0,
+            "lead_days_q75": 16.0,
+            "lead_days_min": 16.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": null,
+            "lead_days_mean": null,
+            "lead_days_q25": null,
+            "lead_days_q75": null,
+            "lead_days_min": null,
+            "lead_days_max": null,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 0
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 1,
+            "detection_rate": 0.1,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -139.0,
+            "lead_days_mean": -139.0,
+            "lead_days_q25": -139.0,
+            "lead_days_q75": -139.0,
+            "lead_days_min": -139.0,
+            "lead_days_max": -139.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          }
+        }
+      },
+      "3": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 5,
+            "detection_rate": 0.16666666666666666,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 13.0,
+            "lead_days_mean": 9.6,
+            "lead_days_q25": 4.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 5,
+            "detection_rate": 0.16666666666666666,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 13.0,
+            "lead_days_mean": 9.6,
+            "lead_days_q25": 4.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 3,
+          "scored_days": 480,
+          "n_flags": 1440,
+          "true_flags": 10,
+          "false_flags": 1430,
+          "false_alerts_per_day": 2.9791666666666665,
+          "precision_of_flags": 0.006944444444444444,
+          "share_of_true_flags_that_are_first_ever_sender": 0.4
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 7,
+            "detection_rate": 0.1320754716981132,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.09433962264150944,
+            "lead_days_median": 4.0,
+            "lead_days_mean": -13.0,
+            "lead_days_q25": 0.5,
+            "lead_days_q75": 13.5,
+            "lead_days_min": -139.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              0.0,
+              14.0
+            ],
+            "n_for_lead_stats": 7
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 6,
+            "detection_rate": 0.1935483870967742,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16129032258064516,
+            "lead_days_median": 8.5,
+            "lead_days_mean": 8.0,
+            "lead_days_q25": 1.75,
+            "lead_days_q75": 13.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              0.5,
+              15.0
+            ],
+            "n_for_lead_stats": 6
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": null,
+            "lead_days_mean": null,
+            "lead_days_q25": null,
+            "lead_days_q75": null,
+            "lead_days_min": null,
+            "lead_days_max": null,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 0
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 1,
+            "detection_rate": 0.1,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -139.0,
+            "lead_days_mean": -139.0,
+            "lead_days_q25": -139.0,
+            "lead_days_q75": -139.0,
+            "lead_days_min": -139.0,
+            "lead_days_max": -139.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          }
+        }
+      },
+      "5": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 7,
+            "detection_rate": 0.23333333333333334,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 4.0,
+            "lead_days_mean": 6.857142857142857,
+            "lead_days_q25": 0.5,
+            "lead_days_q75": 13.5,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              0.0,
+              14.0
+            ],
+            "n_for_lead_stats": 7
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 7,
+            "detection_rate": 0.23333333333333334,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 4.0,
+            "lead_days_mean": 6.857142857142857,
+            "lead_days_q25": 0.5,
+            "lead_days_q75": 13.5,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              0.0,
+              14.0
+            ],
+            "n_for_lead_stats": 7
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 5,
+          "scored_days": 480,
+          "n_flags": 2400,
+          "true_flags": 15,
+          "false_flags": 2385,
+          "false_alerts_per_day": 4.96875,
+          "precision_of_flags": 0.00625,
+          "share_of_true_flags_that_are_first_ever_sender": 0.6
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 10,
+            "detection_rate": 0.18867924528301888,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.09433962264150944,
+            "lead_days_median": 0.5,
+            "lead_days_mean": -9.1,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 10.75,
+            "lead_days_min": -139.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              0.0,
+              13.0
+            ],
+            "n_for_lead_stats": 10
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 8,
+            "detection_rate": 0.25806451612903225,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16129032258064516,
+            "lead_days_median": 2.5,
+            "lead_days_mean": 6.0,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 13.25,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              0.0,
+              14.0
+            ],
+            "n_for_lead_stats": 8
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 1,
+            "detection_rate": 0.08333333333333333,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 0.0,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 0.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 0.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 1,
+            "detection_rate": 0.1,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -139.0,
+            "lead_days_mean": -139.0,
+            "lead_days_q25": -139.0,
+            "lead_days_q75": -139.0,
+            "lead_days_min": -139.0,
+            "lead_days_max": -139.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          }
+        }
+      },
+      "10": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 16,
+            "detection_rate": 0.5333333333333333,
+            "n_warned_before_observable": 14,
+            "warned_before_observable_rate": 0.4666666666666667,
+            "lead_days_median": 10.5,
+            "lead_days_mean": 9.0625,
+            "lead_days_q25": 4.0,
+            "lead_days_q75": 13.25,
+            "lead_days_min": 0.0,
+            "lead_days_max": 18.0,
+            "lead_days_median_ci95": [
+              4.0,
+              13.0
+            ],
+            "n_for_lead_stats": 16
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 16,
+            "detection_rate": 0.5333333333333333,
+            "n_warned_before_observable": 14,
+            "warned_before_observable_rate": 0.4666666666666667,
+            "lead_days_median": 10.5,
+            "lead_days_mean": 9.0625,
+            "lead_days_q25": 4.0,
+            "lead_days_q75": 13.25,
+            "lead_days_min": 0.0,
+            "lead_days_max": 18.0,
+            "lead_days_median_ci95": [
+              4.0,
+              13.0
+            ],
+            "n_for_lead_stats": 16
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 10,
+          "scored_days": 480,
+          "n_flags": 4800,
+          "true_flags": 28,
+          "false_flags": 4772,
+          "false_alerts_per_day": 9.941666666666666,
+          "precision_of_flags": 0.005833333333333334,
+          "share_of_true_flags_that_are_first_ever_sender": 0.5714285714285714
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 19,
+            "detection_rate": 0.3584905660377358,
+            "n_warned_before_observable": 15,
+            "warned_before_observable_rate": 0.2830188679245283,
+            "lead_days_median": 9.0,
+            "lead_days_mean": 0.3684210526315789,
+            "lead_days_q25": 1.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": -139.0,
+            "lead_days_max": 18.0,
+            "lead_days_median_ci95": [
+              1.0,
+              13.0
+            ],
+            "n_for_lead_stats": 19
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 17,
+            "detection_rate": 0.5483870967741935,
+            "n_warned_before_observable": 15,
+            "warned_before_observable_rate": 0.4838709677419355,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 8.588235294117647,
+            "lead_days_q25": 4.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 18.0,
+            "lead_days_median_ci95": [
+              4.0,
+              13.0
+            ],
+            "n_for_lead_stats": 17
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 1,
+            "detection_rate": 0.08333333333333333,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 0.0,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 0.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 0.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 1,
+            "detection_rate": 0.1,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -139.0,
+            "lead_days_mean": -139.0,
+            "lead_days_q25": -139.0,
+            "lead_days_q75": -139.0,
+            "lead_days_min": -139.0,
+            "lead_days_max": -139.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          }
+        }
+      }
+    },
+    "newness_rule": {
+      "1": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 28,
+            "warned_before_observable_rate": 0.9333333333333333,
+            "lead_days_median": 10.5,
+            "lead_days_mean": 9.833333333333334,
+            "lead_days_q25": 5.0,
+            "lead_days_q75": 13.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              6.5,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 28,
+            "warned_before_observable_rate": 0.9333333333333333,
+            "lead_days_median": 10.5,
+            "lead_days_mean": 9.833333333333334,
+            "lead_days_q25": 5.0,
+            "lead_days_q75": 13.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              6.5,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 1,
+          "scored_days": 480,
+          "n_flags": 480,
+          "true_flags": 162,
+          "false_flags": 318,
+          "false_alerts_per_day": 0.6625,
+          "precision_of_flags": 0.3375,
+          "share_of_true_flags_that_are_first_ever_sender": 0.9012345679012346
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 44,
+            "detection_rate": 0.8301886792452831,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 0.5660377358490566,
+            "lead_days_median": 5.5,
+            "lead_days_mean": -1.9545454545454546,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": -200.0,
+            "lead_days_max": 157.0,
+            "lead_days_median_ci95": [
+              2.0,
+              10.5
+            ],
+            "n_for_lead_stats": 44
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 29,
+            "warned_before_observable_rate": 0.9354838709677419,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 9.548387096774194,
+            "lead_days_q25": 5.0,
+            "lead_days_q75": 13.5,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              6.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 11,
+            "detection_rate": 0.9166666666666666,
+            "n_warned_before_observable": 1,
+            "warned_before_observable_rate": 0.08333333333333333,
+            "lead_days_median": 0.0,
+            "lead_days_mean": -31.818181818181817,
+            "lead_days_q25": -96.5,
+            "lead_days_q75": 0.0,
+            "lead_days_min": -200.0,
+            "lead_days_max": 157.0,
+            "lead_days_median_ci95": [
+              -97.0,
+              0.0
+            ],
+            "n_for_lead_stats": 11
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 2,
+            "detection_rate": 0.2,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -16.0,
+            "lead_days_mean": -16.0,
+            "lead_days_q25": -24.0,
+            "lead_days_q75": -8.0,
+            "lead_days_min": -32.0,
+            "lead_days_max": 0.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 2
+          }
+        }
+      },
+      "3": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 29,
+            "warned_before_observable_rate": 0.9666666666666667,
+            "lead_days_median": 11.5,
+            "lead_days_mean": 10.466666666666667,
+            "lead_days_q25": 5.25,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              7.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 29,
+            "warned_before_observable_rate": 0.9666666666666667,
+            "lead_days_median": 11.5,
+            "lead_days_mean": 10.466666666666667,
+            "lead_days_q25": 5.25,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              7.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 3,
+          "scored_days": 480,
+          "n_flags": 1440,
+          "true_flags": 247,
+          "false_flags": 1193,
+          "false_alerts_per_day": 2.4854166666666666,
+          "precision_of_flags": 0.17152777777777778,
+          "share_of_true_flags_that_are_first_ever_sender": 0.8178137651821862
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 50,
+            "detection_rate": 0.9433962264150944,
+            "n_warned_before_observable": 36,
+            "warned_before_observable_rate": 0.6792452830188679,
+            "lead_days_median": 8.5,
+            "lead_days_mean": 17.08,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 13.75,
+            "lead_days_min": -4.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              4.0,
+              12.0
+            ],
+            "n_for_lead_stats": 50
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 0.967741935483871,
+            "lead_days_median": 11.0,
+            "lead_days_mean": 10.193548387096774,
+            "lead_days_q25": 5.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              7.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 12,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.25,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 37.75,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 33.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              0.0,
+              67.5
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 7,
+            "detection_rate": 0.7,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.3,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 12.142857142857142,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 11.0,
+            "lead_days_min": -4.0,
+            "lead_days_max": 67.0,
+            "lead_days_median_ci95": [
+              0.0,
+              12.0
+            ],
+            "n_for_lead_stats": 7
+          }
+        }
+      },
+      "5": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.966666666666667,
+            "lead_days_q25": 6.25,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.966666666666667,
+            "lead_days_q25": 6.25,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 5,
+          "scored_days": 480,
+          "n_flags": 2400,
+          "true_flags": 273,
+          "false_flags": 2127,
+          "false_alerts_per_day": 4.43125,
+          "precision_of_flags": 0.11375,
+          "share_of_true_flags_that_are_first_ever_sender": 0.7655677655677655
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 52,
+            "detection_rate": 0.9811320754716981,
+            "n_warned_before_observable": 38,
+            "warned_before_observable_rate": 0.7169811320754716,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 17.346153846153847,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 14.0,
+            "lead_days_min": -4.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              5.0,
+              12.0
+            ],
+            "n_for_lead_stats": 52
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 31,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.67741935483871,
+            "lead_days_q25": 5.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 12,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.25,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 37.75,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 33.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              0.0,
+              67.5
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 9,
+            "detection_rate": 0.9,
+            "n_warned_before_observable": 4,
+            "warned_before_observable_rate": 0.4,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 13.11111111111111,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": -4.0,
+            "lead_days_max": 67.0,
+            "lead_days_median_ci95": [
+              0.0,
+              33.0
+            ],
+            "n_for_lead_stats": 9
+          }
+        }
+      },
+      "10": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.966666666666667,
+            "lead_days_q25": 6.25,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 30,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 30,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.966666666666667,
+            "lead_days_q25": 6.25,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 30
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 10,
+          "scored_days": 480,
+          "n_flags": 4800,
+          "true_flags": 281,
+          "false_flags": 4519,
+          "false_alerts_per_day": 9.414583333333333,
+          "precision_of_flags": 0.058541666666666665,
+          "share_of_true_flags_that_are_first_ever_sender": 0.7437722419928826
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 52,
+            "detection_rate": 0.9811320754716981,
+            "n_warned_before_observable": 39,
+            "warned_before_observable_rate": 0.7358490566037735,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 17.576923076923077,
+            "lead_days_q25": 0.75,
+            "lead_days_q75": 14.0,
+            "lead_days_min": -4.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              5.0,
+              12.0
+            ],
+            "n_for_lead_stats": 52
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 31,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 31,
+            "warned_before_observable_rate": 1.0,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.67741935483871,
+            "lead_days_q25": 5.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 19.0,
+            "lead_days_median_ci95": [
+              9.0,
+              13.0
+            ],
+            "n_for_lead_stats": 31
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 12,
+            "detection_rate": 1.0,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.25,
+            "lead_days_median": 0.0,
+            "lead_days_mean": 37.75,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 33.75,
+            "lead_days_min": 0.0,
+            "lead_days_max": 161.0,
+            "lead_days_median_ci95": [
+              0.0,
+              67.5
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 9,
+            "detection_rate": 0.9,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.5,
+            "lead_days_median": 10.0,
+            "lead_days_mean": 14.444444444444445,
+            "lead_days_q25": 0.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": -4.0,
+            "lead_days_max": 67.0,
+            "lead_days_median_ci95": [
+              0.0,
+              33.0
+            ],
+            "n_for_lead_stats": 9
+          }
+        }
+      }
+    },
+    "random": {
+      "1": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 3,
+            "detection_rate": 0.1,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.1,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 9.666666666666666,
+            "lead_days_q25": 6.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 3
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 3,
+            "detection_rate": 0.1,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.1,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 9.666666666666666,
+            "lead_days_q25": 6.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 3
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 1,
+          "scored_days": 480,
+          "n_flags": 480,
+          "true_flags": 5,
+          "false_flags": 475,
+          "false_alerts_per_day": 0.9895833333333334,
+          "precision_of_flags": 0.010416666666666666,
+          "share_of_true_flags_that_are_first_ever_sender": 0.4
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 4,
+            "detection_rate": 0.07547169811320754,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.05660377358490566,
+            "lead_days_median": 6.5,
+            "lead_days_mean": -64.0,
+            "lead_days_q25": -70.5,
+            "lead_days_q75": 13.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 4
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 3,
+            "detection_rate": 0.0967741935483871,
+            "n_warned_before_observable": 3,
+            "warned_before_observable_rate": 0.0967741935483871,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 9.666666666666666,
+            "lead_days_q25": 6.5,
+            "lead_days_q75": 14.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 3
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 1,
+            "detection_rate": 0.08333333333333333,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -285.0,
+            "lead_days_mean": -285.0,
+            "lead_days_q25": -285.0,
+            "lead_days_q75": -285.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": -285.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": null,
+            "lead_days_mean": null,
+            "lead_days_q25": null,
+            "lead_days_q75": null,
+            "lead_days_min": null,
+            "lead_days_max": null,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 0
+          }
+        }
+      },
+      "3": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 5,
+            "detection_rate": 0.16666666666666666,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.2,
+            "lead_days_q25": 9.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 5,
+            "detection_rate": 0.16666666666666666,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.2,
+            "lead_days_q25": 9.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 3,
+          "scored_days": 480,
+          "n_flags": 1440,
+          "true_flags": 8,
+          "false_flags": 1432,
+          "false_alerts_per_day": 2.9833333333333334,
+          "precision_of_flags": 0.005555555555555556,
+          "share_of_true_flags_that_are_first_ever_sender": 0.5
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 6,
+            "detection_rate": 0.11320754716981132,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.09433962264150944,
+            "lead_days_median": 10.5,
+            "lead_days_mean": -39.0,
+            "lead_days_q25": 3.0,
+            "lead_days_q75": 12.75,
+            "lead_days_min": -285.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              -142.0,
+              14.5
+            ],
+            "n_for_lead_stats": 6
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 5,
+            "detection_rate": 0.16129032258064516,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16129032258064516,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.2,
+            "lead_days_q25": 9.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 1,
+            "detection_rate": 0.08333333333333333,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -285.0,
+            "lead_days_mean": -285.0,
+            "lead_days_q25": -285.0,
+            "lead_days_q75": -285.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": -285.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": null,
+            "lead_days_mean": null,
+            "lead_days_q25": null,
+            "lead_days_q75": null,
+            "lead_days_min": null,
+            "lead_days_max": null,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 0
+          }
+        }
+      },
+      "5": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 5,
+            "detection_rate": 0.16666666666666666,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.2,
+            "lead_days_q25": 9.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 5,
+            "detection_rate": 0.16666666666666666,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16666666666666666,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.2,
+            "lead_days_q25": 9.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 5,
+          "scored_days": 480,
+          "n_flags": 2400,
+          "true_flags": 8,
+          "false_flags": 2392,
+          "false_alerts_per_day": 4.983333333333333,
+          "precision_of_flags": 0.0033333333333333335,
+          "share_of_true_flags_that_are_first_ever_sender": 0.5
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 6,
+            "detection_rate": 0.11320754716981132,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.09433962264150944,
+            "lead_days_median": 10.5,
+            "lead_days_mean": -39.0,
+            "lead_days_q25": 3.0,
+            "lead_days_q75": 12.75,
+            "lead_days_min": -285.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              -142.0,
+              14.5
+            ],
+            "n_for_lead_stats": 6
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 5,
+            "detection_rate": 0.16129032258064516,
+            "n_warned_before_observable": 5,
+            "warned_before_observable_rate": 0.16129032258064516,
+            "lead_days_median": 12.0,
+            "lead_days_mean": 10.2,
+            "lead_days_q25": 9.0,
+            "lead_days_q75": 13.0,
+            "lead_days_min": 1.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              16.0
+            ],
+            "n_for_lead_stats": 5
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 1,
+            "detection_rate": 0.08333333333333333,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -285.0,
+            "lead_days_mean": -285.0,
+            "lead_days_q25": -285.0,
+            "lead_days_q75": -285.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": -285.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": null,
+            "lead_days_mean": null,
+            "lead_days_q25": null,
+            "lead_days_q75": null,
+            "lead_days_min": null,
+            "lead_days_max": null,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 0
+          }
+        }
+      },
+      "10": {
+        "summary": {
+          "all": {
+            "n_evaluable_rings": 30,
+            "n_detected": 12,
+            "detection_rate": 0.4,
+            "n_warned_before_observable": 10,
+            "warned_before_observable_rate": 0.3333333333333333,
+            "lead_days_median": 7.0,
+            "lead_days_mean": 6.833333333333333,
+            "lead_days_q25": 1.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              12.0
+            ],
+            "n_for_lead_stats": 12
+          },
+          "cycle": {
+            "n_evaluable_rings": 30,
+            "n_detected": 12,
+            "detection_rate": 0.4,
+            "n_warned_before_observable": 10,
+            "warned_before_observable_rate": 0.3333333333333333,
+            "lead_days_median": 7.0,
+            "lead_days_mean": 6.833333333333333,
+            "lead_days_q25": 1.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              12.0
+            ],
+            "n_for_lead_stats": 12
+          }
+        },
+        "flag_stats": {
+          "alerts_per_day_budget": 10,
+          "scored_days": 480,
+          "n_flags": 4800,
+          "true_flags": 16,
+          "false_flags": 4784,
+          "false_alerts_per_day": 9.966666666666667,
+          "precision_of_flags": 0.0033333333333333335,
+          "share_of_true_flags_that_are_first_ever_sender": 0.625
+        },
+        "summary_observable_in_period": {
+          "all": {
+            "n_evaluable_rings": 53,
+            "n_detected": 13,
+            "detection_rate": 0.24528301886792453,
+            "n_warned_before_observable": 10,
+            "warned_before_observable_rate": 0.18867924528301888,
+            "lead_days_median": 5.0,
+            "lead_days_mean": -15.615384615384615,
+            "lead_days_q25": 1.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              12.0
+            ],
+            "n_for_lead_stats": 13
+          },
+          "cycle": {
+            "n_evaluable_rings": 31,
+            "n_detected": 12,
+            "detection_rate": 0.3870967741935484,
+            "n_warned_before_observable": 10,
+            "warned_before_observable_rate": 0.3225806451612903,
+            "lead_days_median": 7.0,
+            "lead_days_mean": 6.833333333333333,
+            "lead_days_q25": 1.0,
+            "lead_days_q75": 12.0,
+            "lead_days_min": 0.0,
+            "lead_days_max": 16.0,
+            "lead_days_median_ci95": [
+              1.0,
+              12.0
+            ],
+            "n_for_lead_stats": 12
+          },
+          "fan_in": {
+            "n_evaluable_rings": 12,
+            "n_detected": 1,
+            "detection_rate": 0.08333333333333333,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": -285.0,
+            "lead_days_mean": -285.0,
+            "lead_days_q25": -285.0,
+            "lead_days_q75": -285.0,
+            "lead_days_min": -285.0,
+            "lead_days_max": -285.0,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 1
+          },
+          "fan_out": {
+            "n_evaluable_rings": 10,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "n_warned_before_observable": 0,
+            "warned_before_observable_rate": 0.0,
+            "lead_days_median": null,
+            "lead_days_mean": null,
+            "lead_days_q25": null,
+            "lead_days_q75": null,
+            "lead_days_min": null,
+            "lead_days_max": null,
+            "lead_days_median_ci95": [
+              null,
+              null
+            ],
+            "n_for_lead_stats": 0
+          }
+        }
+      }
+    }
+  },
+  "caveats": [
+    "AMLSim-specific shortcut: ring members are drawn from otherwise-dormant accounts, so 'first-ever sender' transactions are almost always ring transactions after a warm-up. xgb_without_novelty uses same-day information only (no account history); newness_rule is a two-bit rule (first-ever sender / first-ever receiver); random is a control. If xgb_with_novelty does not clearly beat newness_rule, the model adds nothing beyond the shortcut.",
+    "Labels are used only as training targets for rows before each scored block and for evaluation.",
+    "Rings that continue into a scored block are excluded from that block's training set (ring-grouped split).",
+    "Daily timestamps: a flag on the same day as observable_time gives lead 0 (not early).",
+    "Evaluable ring counts are small for some typologies; read N and the confidence intervals."
+  ]
+}

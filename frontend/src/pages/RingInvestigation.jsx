@@ -1,5 +1,8 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 import { api } from "../api.js";
+import { WarningGivenCard } from "../components/warnings.jsx";
+import { SupportingPatternsCard } from "../components/SupportingPatterns.jsx";
 import {
   Card,
   Loading,
@@ -73,23 +76,28 @@ function ScoreBar({ label, value, weight }) {
   );
 }
 
-function GraphNode({ node }) {
+function GraphNode({ node, edges = [] }) {
   const data = node?.data || node || {};
+  const id = String(data.id ?? data.account_id ?? "");
+
+  // Role and flow counts are derived from the evidence edges (real data). The API has no per-account risk score,
+  // so the former "Type" (which repeated the account ID) and "Risk" (always empty) columns are replaced.
+  const endpoint = (e, a, b) => String(e?.data?.[a] ?? e?.[a] ?? e?.data?.[b] ?? e?.[b] ?? "");
+  const out = edges.filter((e) => endpoint(e, "source", "sender") === id).length;
+  const inn = edges.filter((e) => endpoint(e, "target", "receiver") === id).length;
+  const role =
+    out && inn ? "Sender and receiver" : out ? "Sender" : inn ? "Receiver" : "—";
 
   return (
     <tr className="border-t border-border">
       <td className="px-3 py-2 font-mono text-xs">
-        {data.id ?? data.account_id ?? "—"}
+        {id || "—"}
       </td>
 
-      <td className="px-3 py-2 text-xs">
-        {data.label ?? data.type ?? "Account"}
-      </td>
+      <td className="px-3 py-2 text-xs">{role}</td>
 
       <td className="px-3 py-2 text-xs">
-        {data.risk_score != null
-          ? formatNumber(data.risk_score)
-          : "—"}
+        {out} out / {inn} in
       </td>
     </tr>
   );
@@ -123,15 +131,25 @@ function GraphEdge({ edge }) {
 
 export default function RingInvestigation() {
   const { data: rings, loading: ringsLoading, error: ringsError } =
-    useApi(() => api.rings({ limit: 142 }), []);
+    useApi(() => api.rings({ limit: 1000 }), []);
 
   const [selected, setSelected] = React.useState(null);
+  const [params] = useSearchParams();
+  const wanted = params.get("id");
 
+  // an Investigate link (?id=...) selects that candidate; without one, the top-ranked candidate is shown
   React.useEffect(() => {
-    if (rings?.length && !selected) {
+    if (!rings?.length) return;
+    if (wanted && rings.some((r) => r.candidate_ring_id === wanted)) {
+      if (selected !== wanted) setSelected(wanted);
+    } else if (!selected) {
       setSelected(rings[0].candidate_ring_id);
     }
-  }, [rings, selected]);
+  }, [rings, wanted]);   // eslint-disable-line react-hooks/exhaustive-deps
+
+  const { data: warn } = useApi(() => api.warnings(), []);
+  const { data: sp } = useApi(() => api.supportingPatterns(), []);
+  const { data: evid } = useApi(() => (selected ? api.ringEvidence(selected) : Promise.resolve(null)), [selected]);
 
   const {
     data: ring,
@@ -167,22 +185,26 @@ export default function RingInvestigation() {
   const behavioural =
     ring?.behavioural_score ??
     ring?.risk_components?.behavioural ??
-    ring?.risk_breakdown?.behavioural;
+    ring?.risk_breakdown?.behavioural ??
+    ring?.score_components?.behavioural;
 
   const network =
     ring?.network_score ??
     ring?.risk_components?.network ??
-    ring?.risk_breakdown?.network;
+    ring?.risk_breakdown?.network ??
+    ring?.score_components?.network;
 
   const fundFlow =
     ring?.fund_flow_score ??
     ring?.risk_components?.fund_flow ??
-    ring?.risk_breakdown?.fund_flow;
+    ring?.risk_breakdown?.fund_flow ??
+    ring?.score_components?.fund_flow;
 
   const persistence =
     ring?.persistence_score ??
     ring?.risk_components?.persistence ??
-    ring?.risk_breakdown?.persistence;
+    ring?.risk_breakdown?.persistence ??
+    ring?.score_components?.persistence;
 
   const patterns = Array.isArray(ring?.patterns)
     ? ring.patterns
@@ -339,6 +361,10 @@ export default function RingInvestigation() {
 
           </div>
 
+          <WarningGivenCard id={selected} warn={warn} evidence={evid} />
+
+          <SupportingPatternsCard sp={sp} id={selected} />
+
           {/* RISK BREAKDOWN */}
           <Card title="Explainable Risk Breakdown">
 
@@ -451,11 +477,11 @@ export default function RingInvestigation() {
                               </th>
 
                               <th className="px-3 py-2">
-                                Type
+                                Role in evidence
                               </th>
 
                               <th className="px-3 py-2">
-                                Risk
+                                Flows (out / in)
                               </th>
                             </tr>
                           </thead>
@@ -469,6 +495,7 @@ export default function RingInvestigation() {
                                   index
                                 }
                                 node={node}
+                                edges={edges}
                               />
                             ))}
                           </tbody>

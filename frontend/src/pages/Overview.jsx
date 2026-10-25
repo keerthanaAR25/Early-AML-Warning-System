@@ -4,7 +4,10 @@ import {
   Card,
   Loading,
   ErrorBox,
+  useApi,
 } from "../components/ui.jsx";
+import { ProductionNote } from "../components/ResultStatus.jsx";
+import { WarningCards } from "../components/warnings.jsx";
 
 export default function Overview() {
   const {
@@ -48,6 +51,19 @@ export default function Overview() {
     };
   }, []);
 
+  const [pipeline, setPipeline] = React.useState(null);
+
+  React.useEffect(() => {
+    let active = true;
+    api.pipelineStats()
+      .then((r) => { if (active) setPipeline(r); })
+      .catch(() => {});            // a failed call leaves the pipeline cards at an em dash; no numbers are invented
+    return () => { active = false; };
+  }, []);
+
+  const { data: lt } = useApi(() => api.leadTime(), []);
+  const { data: warn } = useApi(() => api.warnings(), []);
+
   if (summaryLoading) {
     return <Loading text="Loading executive overview..." />;
   }
@@ -62,17 +78,17 @@ export default function Overview() {
   }
 
   const transactions =
-    Number(summary?.transactions ?? summary?.transaction_count ?? 197905);
+    Number(summary?.total_transactions ?? summary?.transactions ?? summary?.transaction_count ?? NaN);
 
   const accounts =
-    Number(summary?.accounts ?? summary?.account_count ?? 12043);
+    Number(summary?.total_accounts ?? summary?.accounts ?? summary?.account_count ?? NaN);
 
   const candidates =
     Number(
       summary?.ring_candidates ??
         summary?.candidate_rings ??
         summary?.candidates ??
-        142
+        NaN
     );
 
   const critical =
@@ -80,7 +96,7 @@ export default function Overview() {
       summary?.critical_candidates ??
         summary?.critical_risk ??
         summary?.critical ??
-        0
+        NaN
     );
 
   const high =
@@ -88,7 +104,7 @@ export default function Overview() {
       summary?.high_risk ??
         summary?.high_candidates ??
         summary?.high ??
-        89
+        NaN
     );
 
   const moderate =
@@ -96,15 +112,18 @@ export default function Overview() {
       summary?.moderate_risk ??
         summary?.moderate_candidates ??
         summary?.moderate ??
-        53
+        NaN
     );
 
   const averageRisk =
     Number(
       summary?.average_risk_score ??
         summary?.avg_risk_score ??
-        52.08
+        NaN
     );
+
+  // safe formatter: a missing value shows an em dash, never "NaN" and never a remembered number
+  const show = (n) => (Number.isFinite(n) ? n.toLocaleString("en-IN") : "—");
 
   return (
     <div className="space-y-6">
@@ -130,7 +149,7 @@ export default function Overview() {
           </div>
 
           <div className="text-2xl font-bold mt-1">
-            {transactions.toLocaleString("en-IN")}
+            {show(transactions)}
           </div>
         </div>
 
@@ -140,7 +159,7 @@ export default function Overview() {
           </div>
 
           <div className="text-2xl font-bold mt-1">
-            {accounts.toLocaleString("en-IN")}
+            {show(accounts)}
           </div>
         </div>
 
@@ -150,7 +169,7 @@ export default function Overview() {
           </div>
 
           <div className="text-2xl font-bold mt-1">
-            {candidates}
+            {show(candidates)}
           </div>
 
           <div className="text-xs text-muted mt-1">
@@ -164,7 +183,7 @@ export default function Overview() {
           </div>
 
           <div className="text-2xl font-bold mt-1">
-            {critical}
+            {show(critical)}
           </div>
 
           <div className="text-xs text-muted mt-1">
@@ -173,6 +192,9 @@ export default function Overview() {
         </div>
 
       </div>
+
+      <ProductionNote lt={lt} />
+      <WarningCards warn={warn} />
 
       {/* RISK DISTRIBUTION */}
       <Card title="Candidate Risk Distribution">
@@ -185,7 +207,7 @@ export default function Overview() {
             </div>
 
             <div className="text-2xl font-bold mt-1">
-              {critical}
+              {show(critical)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -199,7 +221,7 @@ export default function Overview() {
             </div>
 
             <div className="text-2xl font-bold mt-1">
-              {high}
+              {show(high)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -213,7 +235,7 @@ export default function Overview() {
             </div>
 
             <div className="text-2xl font-bold mt-1">
-              {moderate}
+              {show(moderate)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -229,11 +251,11 @@ export default function Overview() {
       <Card title="Average Candidate Risk Score">
 
         <div className="text-3xl font-bold">
-          {averageRisk.toFixed(2)}
+          {Number.isFinite(averageRisk) ? averageRisk.toFixed(2) : "—"}
         </div>
 
         <p className="text-sm text-muted mt-2">
-          Average analytical risk score across the {candidates} generated
+          Average analytical risk score across the {show(candidates)} generated
           candidate rings.
         </p>
 
@@ -250,7 +272,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xl font-bold mt-1">
-              197,905
+              {show(transactions)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -264,7 +286,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xl font-bold mt-1">
-              720
+              {show(pipeline?.n_graph_windows)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -278,7 +300,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xl font-bold mt-1">
-              39,869
+              {show(pipeline?.n_pattern_events)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -292,7 +314,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xl font-bold mt-1">
-              3,460
+              {show(pipeline?.n_trajectories)}
             </div>
 
             <div className="text-xs text-muted mt-1">
@@ -306,7 +328,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xl font-bold mt-1">
-              142
+              {show(candidates)}
             </div>
 
             <div className="text-xs text-muted mt-1">

@@ -1,35 +1,324 @@
 {
-  "ground_truth_rings": 100,
-  "n_candidates": 142,
-  "n_matched_to_ground_truth": 2,
-  "n_strong_matches": 2,
-  "n_moderate_matches": 0,
-  "n_extended_matches": 2,
-  "n_alerted_candidates": 89,
-  "n_alerted_and_matched": 1,
-  "unique_ground_truth_rings_detected": 1,
-  "candidate_match_rate": 0.014084507042253521,
-  "ring_detection_rate": 0.01,
-  "strong_match_ring_detection_rate": 0.01,
-  "false_warning_rate_candidates": 0.9887640449438202,
-  "mean_lead_time_windows": -23.0,
-  "median_lead_time_windows": -23.0,
-  "min_lead_time_windows": -23.0,
-  "max_lead_time_windows": -23.0,
-  "std_lead_time_windows": null,
-  "early_detection_rate": 0.0,
-  "n_early_detections": 0,
-  "extended_candidate_match_rate": 0.014084507042253521,
-  "extended_match_ring_detection_rate": 0.01,
-  "extended_false_warning_rate_candidates": 0.9887640449438202,
-  "extended_n_alerted_and_matched": 1,
-  "extended_mean_lead_time_windows": -23.0,
-  "extended_median_lead_time_windows": -23.0,
-  "extended_min_lead_time_windows": -23.0,
-  "extended_max_lead_time_windows": -23.0,
-  "extended_std_lead_time_windows": null,
-  "extended_early_detection_rate": 0.0,
-  "extended_n_early_detections": 0,
-  "evaluation_rule": "STRICT/STRONG: >=2 shared participant accounts AND overlapping transaction intervals; original ring detection and lead-time metrics use STRONG matches only. SECONDARY/MODERATE: >=2 shared accounts with no temporal overlap but a gap <= 10.0 days. Moderate linkage is reported separately and does not replace strict evaluation. Baseline lead time uses the earliest AMLSim alert transaction as the observable event. Completion-based lead time uses the latest AMLSim alert transaction and is reported separately to characterize warning before the end of the known alert lifecycle.",
-  "risk_model_note": "Warning-time reconstruction preserves the existing project's approximation: final behavioural and network components are held constant while fund-flow and persistence components are accumulated by trajectory window."
+ "evaluation_unit": "ring",
+ "headline": "production_alerted",
+ "protocol": {
+  "burn_in_days": 120,
+  "scored_from_day": 240,
+  "horizon_days": 14,
+  "alert_threshold": 50.0,
+  "observable_k": 4,
+  "model_blocks": "one model per 120-day block, trained only on earlier data"
+ },
+ "rings": {
+  "n_labelled": 100,
+  "n_evaluable": 30,
+  "n_seen": 9,
+  "ring_recall": 0.3,
+  "n_warned_before_completion": 5,
+  "warned_before_completion_rate": 0.16666666666666666,
+  "lead_days_median": 1.0,
+  "lead_days_median_ci95": [
+   0.0,
+   5.0
+  ],
+  "lead_days_q25": 0.0,
+  "lead_days_q75": 4.0,
+  "lead_vs_first_tx_median": -3.0,
+  "mean_tx_coverage_of_ring": 0.2585714285714286
+ },
+ "alerted_candidates": {
+  "threshold": 50.0,
+  "n_alerted": 11,
+  "alerted_containing_ring_tx": 9,
+  "alert_precision": 0.8181818181818182,
+  "false_alerts_per_day": 0.004166666666666667,
+  "scored_days": 480,
+  "level_counts": {
+   "CRITICAL": 0,
+   "HIGH": 8,
+   "MODERATE": 159,
+   "LOW": 4
+  },
+  "frontier": [
+   {
+    "threshold": 30,
+    "n_alerted": 170,
+    "alert_precision": 0.27647058823529413,
+    "false_alerts_per_day": 0.25625,
+    "rings_seen": 29,
+    "n_evaluable_rings": 30,
+    "warned_before_completion": 17,
+    "lead_days_median": 4.0,
+    "configured": false
+   },
+   {
+    "threshold": 35,
+    "n_alerted": 163,
+    "alert_precision": 0.2822085889570552,
+    "false_alerts_per_day": 0.24375,
+    "rings_seen": 29,
+    "n_evaluable_rings": 30,
+    "warned_before_completion": 17,
+    "lead_days_median": 4.0,
+    "configured": false
+   },
+   {
+    "threshold": 40,
+    "n_alerted": 129,
+    "alert_precision": 0.3333333333333333,
+    "false_alerts_per_day": 0.17916666666666667,
+    "rings_seen": 28,
+    "n_evaluable_rings": 30,
+    "warned_before_completion": 15,
+    "lead_days_median": 1.0,
+    "configured": false
+   },
+   {
+    "threshold": 45,
+    "n_alerted": 29,
+    "alert_precision": 0.8620689655172413,
+    "false_alerts_per_day": 0.008333333333333333,
+    "rings_seen": 24,
+    "n_evaluable_rings": 30,
+    "warned_before_completion": 10,
+    "lead_days_median": 0.0,
+    "configured": false
+   },
+   {
+    "threshold": 50,
+    "n_alerted": 11,
+    "alert_precision": 0.8181818181818182,
+    "false_alerts_per_day": 0.004166666666666667,
+    "rings_seen": 9,
+    "n_evaluable_rings": 30,
+    "warned_before_completion": 5,
+    "lead_days_median": 1.0,
+    "configured": true
+   },
+   {
+    "threshold": 55,
+    "n_alerted": 9,
+    "alert_precision": 0.8888888888888888,
+    "false_alerts_per_day": 0.0020833333333333333,
+    "rings_seen": 8,
+    "n_evaluable_rings": 30,
+    "warned_before_completion": 4,
+    "lead_days_median": 0.5,
+    "configured": false
+   }
+  ],
+  "ring_tx_share_of_evidence": 0.7794117647058824,
+  "enrichment_vs_background": 285.5862132352941,
+  "ring_tx_recall": 0.165625
+ },
+ "all_candidates": {
+  "n_candidates": 171,
+  "ring_tx_share_of_evidence": 0.2960609911054638,
+  "enrichment_vs_background": 108.48044790343076,
+  "false_candidates_per_day": 0.25833333333333336,
+  "ring_tx_recall": 0.715625,
+  "rings_seen": 29,
+  "warned_before_completion": 17,
+  "lead_days_median": 4.0
+ },
+ "ranking": {
+  "n_candidates": 171,
+  "n_containing_ring_tx": 47,
+  "auc_score_vs_contains_ring_tx": 0.7814859299931366,
+  "precision_at_k": {
+   "10": 0.8,
+   "20": 0.85,
+   "50": 0.56
+  }
+ },
+ "frontier": [
+  {
+   "threshold": 30,
+   "n_alerted": 170,
+   "alert_precision": 0.27647058823529413,
+   "false_alerts_per_day": 0.25625,
+   "rings_seen": 29,
+   "n_evaluable_rings": 30,
+   "warned_before_completion": 17,
+   "lead_days_median": 4.0,
+   "configured": false
+  },
+  {
+   "threshold": 35,
+   "n_alerted": 163,
+   "alert_precision": 0.2822085889570552,
+   "false_alerts_per_day": 0.24375,
+   "rings_seen": 29,
+   "n_evaluable_rings": 30,
+   "warned_before_completion": 17,
+   "lead_days_median": 4.0,
+   "configured": false
+  },
+  {
+   "threshold": 40,
+   "n_alerted": 129,
+   "alert_precision": 0.3333333333333333,
+   "false_alerts_per_day": 0.17916666666666667,
+   "rings_seen": 28,
+   "n_evaluable_rings": 30,
+   "warned_before_completion": 15,
+   "lead_days_median": 1.0,
+   "configured": false
+  },
+  {
+   "threshold": 45,
+   "n_alerted": 29,
+   "alert_precision": 0.8620689655172413,
+   "false_alerts_per_day": 0.008333333333333333,
+   "rings_seen": 24,
+   "n_evaluable_rings": 30,
+   "warned_before_completion": 10,
+   "lead_days_median": 0.0,
+   "configured": false
+  },
+  {
+   "threshold": 50,
+   "n_alerted": 11,
+   "alert_precision": 0.8181818181818182,
+   "false_alerts_per_day": 0.004166666666666667,
+   "rings_seen": 9,
+   "n_evaluable_rings": 30,
+   "warned_before_completion": 5,
+   "lead_days_median": 1.0,
+   "configured": true
+  },
+  {
+   "threshold": 55,
+   "n_alerted": 9,
+   "alert_precision": 0.8888888888888888,
+   "false_alerts_per_day": 0.0020833333333333333,
+   "rings_seen": 8,
+   "n_evaluable_rings": 30,
+   "warned_before_completion": 4,
+   "lead_days_median": 0.5,
+   "configured": false
+  }
+ ],
+ "stability": {
+  "seeds": [
+   "42",
+   "43",
+   "44",
+   "45",
+   "46"
+  ],
+  "production_seed": "42",
+  "n_retrainings": 5,
+  "metrics": {
+   "alerts": {
+    "production": 11,
+    "min": 11,
+    "median": 14.0,
+    "max": 16,
+    "n": 5
+   },
+   "precision": {
+    "production": 0.8181818181818182,
+    "min": 0.8181818181818182,
+    "median": 0.8571428571428571,
+    "max": 0.875,
+    "n": 5
+   },
+   "seen": {
+    "production": 9,
+    "min": 9,
+    "median": 11.0,
+    "max": 13,
+    "n": 5
+   },
+   "early": {
+    "production": 5,
+    "min": 5,
+    "median": 6.0,
+    "max": 6,
+    "n": 5
+   },
+   "lead": {
+    "production": 1.0,
+    "min": 0.0,
+    "median": 1.0,
+    "max": 1.0,
+    "n": 5
+   },
+   "false_per_day": {
+    "production": 0.004166666666666667,
+    "min": 0.004166666666666667,
+    "median": 0.004166666666666667,
+    "max": 0.004166666666666667,
+    "n": 5
+   },
+   "auc": {
+    "production": 0.7814859299931366,
+    "min": 0.7642415923129718,
+    "median": 0.7707618393960193,
+    "max": 0.7814859299931366,
+    "n": 5
+   },
+   "p10": {
+    "production": 0.8,
+    "min": 0.8,
+    "median": 0.8,
+    "max": 0.8,
+    "n": 5
+   },
+   "high": {
+    "production": 8,
+    "min": 8,
+    "median": 10.0,
+    "max": 12,
+    "n": 5
+   }
+  }
+ },
+ "by_typology": {
+  "all": {
+   "n_evaluable_rings": 30,
+   "n_with_any_tx_in_candidate": 9,
+   "ring_recall": 0.3,
+   "n_warned_before_observable": 5,
+   "warned_before_observable_rate": 0.16666666666666666,
+   "lead_days_median": 1.0,
+   "lead_days_median_ci95": [
+    0.0,
+    5.0
+   ],
+   "lead_days_q25": 0.0,
+   "lead_days_q75": 4.0,
+   "lead_vs_first_tx_median": -3.0,
+   "mean_tx_coverage_of_ring": 0.2585714285714286
+  },
+  "cycle": {
+   "n_evaluable_rings": 30,
+   "n_with_any_tx_in_candidate": 9,
+   "ring_recall": 0.3,
+   "n_warned_before_observable": 5,
+   "warned_before_observable_rate": 0.16666666666666666,
+   "lead_days_median": 1.0,
+   "lead_days_median_ci95": [
+    0.0,
+    5.0
+   ],
+   "lead_days_q25": 0.0,
+   "lead_days_q75": 4.0,
+   "lead_vs_first_tx_median": -3.0,
+   "mean_tx_coverage_of_ring": 0.2585714285714286
+  }
+ },
+ "definitions": {
+  "observable_time": "cycle: day of the closing (last) edge; fan: day the 4-th distinct counterparty has transacted",
+  "warning_time": "first day the candidate's risk score (computed only from evidence up to that day) reaches the alert threshold and the candidate contains a transaction of the ring",
+  "lead_time": "observable_day - warning_day in days; positive = warned before the ring was complete",
+  "evaluable_ring": "all transactions of the ring fall in the scored period (first day >= scored_from) and it completes inside the data"
+ },
+ "caveats": [
+  "AMLSim-specific shortcut: ring members are drawn from otherwise-dormant accounts, so first-time accounts are unusually informative here.",
+  "Only cycle rings are fully evaluable: fan rings take longer than the data allows to start and finish inside the scored period.",
+  "Warnings arrive with the ring's first transactions, so lead is measured against ring completion, not against a ring's start.",
+  "Labels are used only to train earlier blocks and to evaluate; never to build candidates or scores."
+ ]
 }

@@ -1,0 +1,76 @@
+{
+ "seeds": [
+  "42",
+  "43",
+  "44",
+  "45",
+  "46"
+ ],
+ "production_seed": "42",
+ "n_retrainings": 5,
+ "metrics": {
+  "alerts": {
+   "production": 11,
+   "min": 11,
+   "median": 14.0,
+   "max": 16,
+   "n": 5
+  },
+  "precision": {
+   "production": 0.8181818181818182,
+   "min": 0.8181818181818182,
+   "median": 0.8571428571428571,
+   "max": 0.875,
+   "n": 5
+  },
+  "seen": {
+   "production": 9,
+   "min": 9,
+   "median": 11.0,
+   "max": 13,
+   "n": 5
+  },
+  "early": {
+   "production": 5,
+   "min": 5,
+   "median": 6.0,
+   "max": 6,
+   "n": 5
+  },
+  "lead": {
+   "production": 1.0,
+   "min": 0.0,
+   "median": 1.0,
+   "max": 1.0,
+   "n": 5
+  },
+  "false_per_day": {
+   "production": 0.004166666666666667,
+   "min": 0.004166666666666667,
+   "median": 0.004166666666666667,
+   "max": 0.004166666666666667,
+   "n": 5
+  },
+  "auc": {
+   "production": 0.7814859299931366,
+   "min": 0.7642415923129718,
+   "median": 0.7707618393960193,
+   "max": 0.7814859299931366,
+   "n": 5
+  },
+  "p10": {
+   "production": 0.8,
+   "min": 0.8,
+   "median": 0.8,
+   "max": 0.8,
+   "n": 5
+  },
+  "high": {
+   "production": 8,
+   "min": 8,
+   "median": 10.0,
+   "max": 12,
+   "n": 5
+  }
+ }
+}

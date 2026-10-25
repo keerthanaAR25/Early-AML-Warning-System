@@ -1,11 +1,22 @@
 import React from "react";
 import { api } from "../api.js";
 import { Card, Loading, ErrorBox, useApi } from "../components/ui.jsx";
+import { ProtocolNote } from "../components/ResultStatus.jsx";
+
+// a model whose validation-chosen threshold flags no test rows has no precision to report
+function flagMetric(m, value) {
+  const cm = m?.confusion_matrix;
+  if (cm && Number(cm.tp) + Number(cm.fp) === 0) return "no flags";
+  return formatMetric(value);
+}
 
 function formatMetric(value, digits = 4) {
   const n = Number(value);
 
   if (!Number.isFinite(n)) return "—";
+
+  // a small non-zero rate (e.g. 1.8e-5) must not be displayed as 0.0000
+  if (n > 0 && n < 0.0001) return n.toExponential(1);
 
   return n.toFixed(digits);
 }
@@ -60,6 +71,7 @@ export default function ModelPerformance() {
     loading,
     error,
   } = useApi(() => api.metrics(), []);
+  const { data: ctx } = useApi(() => api.evaluationContext(), []);
 
   if (loading) return <Loading />;
   if (error) return <ErrorBox error={error} />;
@@ -74,6 +86,22 @@ export default function ModelPerformance() {
 
   const proposedTest =
     proposedEntry?.[1]?.test || {};
+
+  // evaluation context and Precision@K come from the metrics the API returns (previously typed into the page)
+  const nTest = Number(proposedTest.n_samples);
+  const nPos = Number(proposedTest.n_positive);
+  const fmtInt = (n) => (Number.isFinite(n) ? n.toLocaleString("en-US") : "—");
+  const posRate =
+    Number.isFinite(nTest) && nTest > 0 && Number.isFinite(nPos)
+      ? `${((nPos / nTest) * 100).toFixed(4)}%`
+      : "—";
+  const topK = proposedTest.top_k_precision || {};
+  const pkNum = (k) => (topK[k] === null || topK[k] === undefined ? NaN : Number(topK[k]));
+  const pkValue = (k) => (Number.isFinite(pkNum(k)) ? `${(pkNum(k) * 100).toFixed(0)}%` : "—");
+  const pkDesc = (k) =>
+    Number.isFinite(pkNum(k))
+      ? `${Math.round(pkNum(k) * k)} of the top ${k} ranked test observations were positive.`
+      : "Not available in the loaded results.";
 
   return (
     <div className="space-y-5">
@@ -90,6 +118,8 @@ export default function ModelPerformance() {
         </p>
       </div>
 
+      <ProtocolNote ctx={ctx} />
+
       {/* Important evaluation context */}
       <div className="rounded-lg border border-border p-4">
 
@@ -105,7 +135,7 @@ export default function ModelPerformance() {
             </div>
 
             <div className="text-lg font-bold">
-              653,487
+              {fmtInt(nTest)}
             </div>
           </div>
 
@@ -115,7 +145,7 @@ export default function ModelPerformance() {
             </div>
 
             <div className="text-lg font-bold">
-              32
+              {fmtInt(nPos)}
             </div>
           </div>
 
@@ -125,7 +155,7 @@ export default function ModelPerformance() {
             </div>
 
             <div className="text-lg font-bold">
-              0.0049%
+              {posRate}
             </div>
           </div>
 
@@ -147,19 +177,19 @@ export default function ModelPerformance() {
 
             <MetricCard
               label="Precision"
-              value={formatMetric(proposedTest.precision)}
+              value={flagMetric(proposedTest, proposedTest.precision)}
               description="Correct positive predictions"
             />
 
             <MetricCard
               label="Recall"
-              value={formatMetric(proposedTest.recall)}
+              value={flagMetric(proposedTest, proposedTest.recall)}
               description="Positive cases detected"
             />
 
             <MetricCard
               label="F1"
-              value={formatMetric(proposedTest.f1)}
+              value={flagMetric(proposedTest, proposedTest.f1)}
               description="Precision-recall balance"
             />
 
@@ -250,15 +280,15 @@ export default function ModelPerformance() {
                     </td>
 
                     <td className="px-3 py-3">
-                      {formatMetric(m.precision)}
+                      {flagMetric(m, m.precision)}
                     </td>
 
                     <td className="px-3 py-3">
-                      {formatMetric(m.recall)}
+                      {flagMetric(m, m.recall)}
                     </td>
 
                     <td className="px-3 py-3">
-                      {formatMetric(m.f1)}
+                      {flagMetric(m, m.f1)}
                     </td>
 
                     <td className="px-3 py-3 font-medium">
@@ -304,20 +334,20 @@ export default function ModelPerformance() {
 
           <MetricCard
             label="Precision@10"
-            value="40%"
-            description="4 of the top 10 ranked test observations were positive."
+            value={pkValue(10)}
+            description={pkDesc(10)}
           />
 
           <MetricCard
             label="Precision@20"
-            value="25%"
-            description="5 of the top 20 ranked test observations were positive."
+            value={pkValue(20)}
+            description={pkDesc(20)}
           />
 
           <MetricCard
             label="Precision@50"
-            value="14%"
-            description="7 of the top 50 ranked test observations were positive."
+            value={pkValue(50)}
+            description={pkDesc(50)}
           />
 
         </div>

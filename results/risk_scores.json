@@ -1,2416 +1,2909 @@
 [
-  {
-    "candidate_ring_id": "RING001",
-    "risk_score": 54.9,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.1,
-      "network": 28.87,
-      "fund_flow": 54.17,
-      "persistence": 25.49
-    },
-    "top_factors": [
-      "Mean model probability 87.1% across 13 accounts (highest: 43 at 99.6%)",
-      "Combines 4 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "5 evidence events across 14 accounts (0.36 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING002",
-    "risk_score": 54.07,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.34,
-      "network": 42.25,
-      "fund_flow": 37.5,
-      "persistence": 28.38
-    },
-    "top_factors": [
-      "Mean model probability 87.3% across 11 accounts (highest: 41 at 99.1%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "5 evidence events across 12 accounts (0.42 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING003",
-    "risk_score": 49.83,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 82.88,
-      "network": 48.59,
-      "fund_flow": 25.0,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 82.9% across 9 accounts (highest: 30 at 98.5%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING004",
-    "risk_score": 45.31,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 86.8,
-      "network": 7.04,
-      "fund_flow": 37.5,
-      "persistence": 20.72
-    },
-    "top_factors": [
-      "Mean model probability 86.8% across 24 accounts (highest: 65 at 97.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "7 evidence events across 26 accounts (0.27 events/account)",
-      "Evidence-subgraph density ranks at the 7th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING005",
-    "risk_score": 50.89,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.91,
-      "network": 35.21,
-      "fund_flow": 29.17,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 87.9% across 11 accounts (highest: 15 at 99.6%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "6 evidence events across 14 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING006",
-    "risk_score": 41.72,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 84.36,
-      "network": 4.23,
-      "fund_flow": 25.0,
-      "persistence": 25.49
-    },
-    "top_factors": [
-      "Mean model probability 84.4% across 28 accounts (highest: 41 at 99.1%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "10 evidence events across 28 accounts (0.36 events/account)",
-      "Evidence-subgraph density ranks at the 4th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING007",
-    "risk_score": 65.3,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 92.13,
-      "network": 88.73,
-      "fund_flow": 37.5,
-      "persistence": 29.66
-    },
-    "top_factors": [
-      "Mean model probability 92.1% across 8 accounts (highest: 647 at 98.8%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 9 accounts (0.44 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING008",
-    "risk_score": 43.96,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 88.15,
-      "network": 8.45,
-      "fund_flow": 25.0,
-      "persistence": 25.82
-    },
-    "top_factors": [
-      "Mean model probability 88.1% across 22 accounts (highest: 13 at 98.9%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "8 evidence events across 22 accounts (0.36 events/account)",
-      "Evidence-subgraph density ranks at the 8th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING009",
-    "risk_score": 57.7,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 90.11,
-      "network": 56.34,
-      "fund_flow": 37.5,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 90.1% across 9 accounts (highest: 6 at 99.1%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING010",
-    "risk_score": 45.79,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 85.28,
-      "network": 28.87,
-      "fund_flow": 25.0,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 85.3% across 12 accounts (highest: 16 at 98.6%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "3 evidence events across 12 accounts (0.25 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING011",
-    "risk_score": 65.82,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.0,
-      "network": 97.89,
-      "fund_flow": 37.5,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 87.0% across 6 accounts (highest: 2641 at 96.2%)",
-      "Evidence-subgraph density ranks at the 98th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 8 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING012",
-    "risk_score": 42.33,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 81.71,
-      "network": 5.63,
-      "fund_flow": 29.17,
-      "persistence": 26.59
-    },
-    "top_factors": [
-      "Mean model probability 81.7% across 26 accounts (highest: 13 at 98.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "11 evidence events across 29 accounts (0.38 events/account)",
-      "Evidence-subgraph density ranks at the 6th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING013",
-    "risk_score": 60.74,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.74,
-      "network": 89.44,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 87.7% across 6 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING014",
-    "risk_score": 61.54,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 88.52,
-      "network": 89.44,
-      "fund_flow": 33.33,
-      "persistence": 21.67
-    },
-    "top_factors": [
-      "Mean model probability 88.5% across 7 accounts (highest: 37 at 98.9%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "2 evidence events across 7 accounts (0.29 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING015",
-    "risk_score": 42.96,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 75.64,
-      "network": 15.49,
-      "fund_flow": 33.33,
-      "persistence": 25.27
-    },
-    "top_factors": [
-      "Mean model probability 75.6% across 17 accounts (highest: 18 at 95.7%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "6 evidence events across 17 accounts (0.35 events/account)",
-      "Evidence-subgraph density ranks at the 15th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING016",
-    "risk_score": 50.28,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 79.28,
-      "network": 48.59,
-      "fund_flow": 29.17,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 79.3% across 9 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING017",
-    "risk_score": 47.05,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 89.12,
-      "network": 15.49,
-      "fund_flow": 33.33,
-      "persistence": 22.14
-    },
-    "top_factors": [
-      "Mean model probability 89.1% across 17 accounts (highest: 7 at 98.6%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "5 evidence events across 17 accounts (0.29 events/account)",
-      "Evidence-subgraph density ranks at the 15th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING018",
-    "risk_score": 49.88,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 78.11,
-      "network": 48.59,
-      "fund_flow": 33.33,
-      "persistence": 22.46
-    },
-    "top_factors": [
-      "Mean model probability 78.1% across 10 accounts (highest: 13 at 98.9%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 10 accounts (0.30 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING019",
-    "risk_score": 59.89,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 74.89,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 74.9% across 7 accounts (highest: 30 at 98.5%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 8 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING020",
-    "risk_score": 61.33,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 93.56,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 33.93
-    },
-    "top_factors": [
-      "Mean model probability 93.6% across 7 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "6 evidence events across 11 accounts (0.55 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING021",
-    "risk_score": 53.05,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 81.71,
-      "network": 56.34,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 81.7% across 9 accounts (highest: 32 at 99.0%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING022",
-    "risk_score": 51.19,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.13,
-      "network": 25.35,
-      "fund_flow": 37.5,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 91.1% across 14 accounts (highest: 26 at 99.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 25th percentile among this run's candidates",
-      "5 evidence events across 15 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING023",
-    "risk_score": 58.91,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.7,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 87.7% across 7 accounts (highest: 29 at 99.3%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "5 evidence events across 10 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING024",
-    "risk_score": 58.68,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 90.36,
-      "network": 56.34,
-      "fund_flow": 37.5,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 90.4% across 9 accounts (highest: 2742 at 97.2%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "5 evidence events across 10 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING025",
-    "risk_score": 50.71,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 84.98,
-      "network": 42.25,
-      "fund_flow": 33.33,
-      "persistence": 20.92
-    },
-    "top_factors": [
-      "Mean model probability 85.0% across 11 accounts (highest: 26 at 99.3%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 11 accounts (0.27 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING026",
-    "risk_score": 56.35,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 80.37,
-      "network": 71.83,
-      "fund_flow": 33.33,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 80.4% across 10 accounts (highest: 6 at 99.1%)",
-      "Evidence-subgraph density ranks at the 72th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING027",
-    "risk_score": 55.72,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 78.6,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 78.6% across 7 accounts (highest: 29 at 99.3%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "5 evidence events across 10 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING028",
-    "risk_score": 53.42,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 90.27,
-      "network": 42.25,
-      "fund_flow": 29.17,
-      "persistence": 30.42
-    },
-    "top_factors": [
-      "Mean model probability 90.3% across 10 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "6 evidence events across 13 accounts (0.46 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING029",
-    "risk_score": 47.33,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.94,
-      "network": 6.34,
-      "fund_flow": 45.83,
-      "persistence": 26.15
-    },
-    "top_factors": [
-      "Mean model probability 83.9% across 25 accounts (highest: 41 at 99.1%)",
-      "Combines 4 distinct pattern type(s); strongest evidence: layering",
-      "10 evidence events across 27 accounts (0.37 events/account)",
-      "Evidence-subgraph density ranks at the 6th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING030",
-    "risk_score": 47.62,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 86.87,
-      "network": 25.35,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 86.9% across 14 accounts (highest: 37 at 98.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "Evidence-subgraph density ranks at the 25th percentile among this run's candidates",
-      "5 evidence events across 15 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING031",
-    "risk_score": 44.62,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 79.75,
-      "network": 21.83,
-      "fund_flow": 29.17,
-      "persistence": 25.27
-    },
-    "top_factors": [
-      "Mean model probability 79.8% across 15 accounts (highest: 26 at 99.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "6 evidence events across 17 accounts (0.35 events/account)",
-      "Evidence-subgraph density ranks at the 22th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING032",
-    "risk_score": 53.64,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 83.39,
-      "network": 56.34,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 83.4% across 9 accounts (highest: 27 at 94.5%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING033",
-    "risk_score": 48.34,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 89.72,
-      "network": 21.83,
-      "fund_flow": 29.17,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 89.7% across 14 accounts (highest: 42 at 98.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "6 evidence events across 16 accounts (0.38 events/account)",
-      "Evidence-subgraph density ranks at the 22th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING034",
-    "risk_score": 54.38,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 76.99,
-      "network": 56.34,
-      "fund_flow": 37.5,
-      "persistence": 33.93
-    },
-    "top_factors": [
-      "Mean model probability 77.0% across 9 accounts (highest: 542 at 97.9%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "6 evidence events across 11 accounts (0.55 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING035",
-    "risk_score": 52.24,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 90.79,
-      "network": 48.59,
-      "fund_flow": 25.0,
-      "persistence": 22.46
-    },
-    "top_factors": [
-      "Mean model probability 90.8% across 10 accounts (highest: 39 at 99.1%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: split_merge",
-      "3 evidence events across 10 accounts (0.30 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING036",
-    "risk_score": 50.16,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 80.83,
-      "network": 42.25,
-      "fund_flow": 29.17,
-      "persistence": 30.64
-    },
-    "top_factors": [
-      "Mean model probability 80.8% across 11 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "7 evidence events across 15 accounts (0.47 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING037",
-    "risk_score": 43.59,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 87.61,
-      "network": 2.82,
-      "fund_flow": 29.17,
-      "persistence": 25.37
-    },
-    "top_factors": [
-      "Mean model probability 87.6% across 29 accounts (highest: 29 at 99.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "11 evidence events across 31 accounts (0.35 events/account)",
-      "Evidence-subgraph density ranks at the 3th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING038",
-    "risk_score": 62.18,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 79.17,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 36.04
-    },
-    "top_factors": [
-      "Mean model probability 79.2% across 6 accounts (highest: 33 at 99.1%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "6 evidence events across 10 accounts (0.60 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING039",
-    "risk_score": 58.6,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.09,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 87.1% across 8 accounts (highest: 29 at 99.3%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING040",
-    "risk_score": 42.88,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 78.27,
-      "network": 13.38,
-      "fund_flow": 29.17,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 78.3% across 17 accounts (highest: 8 at 99.0%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "8 evidence events across 20 accounts (0.40 events/account)",
-      "Evidence-subgraph density ranks at the 13th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING041",
-    "risk_score": 45.31,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 89.94,
-      "network": 8.45,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 89.9% across 22 accounts (highest: 26 at 99.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "8 evidence events across 24 accounts (0.33 events/account)",
-      "Evidence-subgraph density ranks at the 8th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING042",
-    "risk_score": 41.41,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.03,
-      "network": 2.11,
-      "fund_flow": 29.17,
-      "persistence": 23.15
-    },
-    "top_factors": [
-      "Mean model probability 83.0% across 30 accounts (highest: 39 at 99.1%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "10 evidence events across 32 accounts (0.31 events/account)",
-      "Evidence-subgraph density ranks at the 2th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING043",
-    "risk_score": 43.77,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 79.74,
-      "network": 15.49,
-      "fund_flow": 33.33,
-      "persistence": 22.14
-    },
-    "top_factors": [
-      "Mean model probability 79.7% across 17 accounts (highest: 33 at 99.1%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "5 evidence events across 17 accounts (0.29 events/account)",
-      "Evidence-subgraph density ranks at the 15th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING044",
-    "risk_score": 51.76,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.42,
-      "network": 48.59,
-      "fund_flow": 25.0,
-      "persistence": 22.46
-    },
-    "top_factors": [
-      "Mean model probability 89.4% across 10 accounts (highest: 32 at 99.0%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: split_merge",
-      "3 evidence events across 10 accounts (0.30 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING045",
-    "risk_score": 46.71,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.53,
-      "network": 35.21,
-      "fund_flow": 25.0,
-      "persistence": 20.92
-    },
-    "top_factors": [
-      "Mean model probability 83.5% across 11 accounts (highest: 8 at 99.0%)",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "3 evidence events across 11 accounts (0.27 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING046",
-    "risk_score": 49.58,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.86,
-      "network": 35.21,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 83.9% across 12 accounts (highest: 10 at 98.0%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "4 evidence events across 12 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING047",
-    "risk_score": 44.97,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 73.68,
-      "network": 35.21,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 73.7% across 11 accounts (highest: 240 at 95.7%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "4 evidence events across 12 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING048",
-    "risk_score": 55.83,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.09,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 33.93
-    },
-    "top_factors": [
-      "Mean model probability 87.1% across 8 accounts (highest: 8 at 99.0%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "6 evidence events across 11 accounts (0.55 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING049",
-    "risk_score": 38.91,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 79.25,
-      "network": 0.7,
-      "fund_flow": 29.17,
-      "persistence": 18.69
-    },
-    "top_factors": [
-      "Mean model probability 79.3% across 33 accounts (highest: 480 at 98.1%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "8 evidence events across 34 accounts (0.24 events/account)",
-      "Evidence-subgraph density ranks at the 1th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING050",
-    "risk_score": 49.64,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.49,
-      "network": 35.21,
-      "fund_flow": 29.17,
-      "persistence": 30.42
-    },
-    "top_factors": [
-      "Mean model probability 83.5% across 11 accounts (highest: 198 at 98.7%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "6 evidence events across 13 accounts (0.46 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING051",
-    "risk_score": 60.89,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 84.76,
-      "network": 56.34,
-      "fund_flow": 54.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 84.8% across 9 accounts (highest: 7 at 98.6%)",
-      "Combines 4 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "5 evidence events across 10 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING052",
-    "risk_score": 45.2,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 84.14,
-      "network": 9.86,
-      "fund_flow": 37.5,
-      "persistence": 22.0
-    },
-    "top_factors": [
-      "Mean model probability 84.1% across 23 accounts (highest: 36 at 95.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "7 evidence events across 24 accounts (0.29 events/account)",
-      "Evidence-subgraph density ranks at the 10th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING053",
-    "risk_score": 57.09,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.51,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 82.5% across 7 accounts (highest: 36 at 95.9%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 10 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING054",
-    "risk_score": 63.98,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 86.57,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 86.6% across 7 accounts (highest: 38 at 98.1%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 8 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING055",
-    "risk_score": 57.5,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.33,
-      "network": 56.34,
-      "fund_flow": 33.33,
-      "persistence": 29.66
-    },
-    "top_factors": [
-      "Mean model probability 91.3% across 9 accounts (highest: 8 at 99.0%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 9 accounts (0.44 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING056",
-    "risk_score": 67.13,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 92.54,
-      "network": 97.89,
-      "fund_flow": 37.5,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 92.5% across 6 accounts (highest: 105 at 97.7%)",
-      "Evidence-subgraph density ranks at the 98th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 7 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING057",
-    "risk_score": 55.2,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 83.34,
-      "network": 72.54,
-      "fund_flow": 25.0,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 83.3% across 8 accounts (highest: 6 at 99.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: split_merge",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING058",
-    "risk_score": 40.86,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 84.04,
-      "network": 0.0,
-      "fund_flow": 29.17,
-      "persistence": 20.78
-    },
-    "top_factors": [
-      "Mean model probability 84.0% across 36 accounts (highest: 33 at 99.1%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "10 evidence events across 37 accounts (0.27 events/account)",
-      "Evidence-subgraph density ranks at the 0th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING059",
-    "risk_score": 51.71,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 85.38,
-      "network": 42.25,
-      "fund_flow": 29.17,
-      "persistence": 30.42
-    },
-    "top_factors": [
-      "Mean model probability 85.4% across 11 accounts (highest: 376 at 98.1%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "6 evidence events across 13 accounts (0.46 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING060",
-    "risk_score": 53.41,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 76.29,
-      "network": 28.87,
-      "fund_flow": 54.17,
-      "persistence": 36.96
-    },
-    "top_factors": [
-      "Mean model probability 76.3% across 13 accounts (highest: 13 at 98.9%)",
-      "Combines 4 distinct pattern type(s); strongest evidence: circular_flow",
-      "10 evidence events across 16 accounts (0.62 events/account)",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING061",
-    "risk_score": 54.77,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 80.04,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 80.0% across 8 accounts (highest: 31 at 96.7%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "2 evidence events across 8 accounts (0.25 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING062",
-    "risk_score": 52.81,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 86.47,
-      "network": 48.59,
-      "fund_flow": 33.33,
-      "persistence": 22.46
-    },
-    "top_factors": [
-      "Mean model probability 86.5% across 10 accounts (highest: 628 at 99.1%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 10 accounts (0.30 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING063",
-    "risk_score": 50.15,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 84.14,
-      "network": 41.55,
-      "fund_flow": 29.17,
-      "persistence": 25.49
-    },
-    "top_factors": [
-      "Mean model probability 84.1% across 12 accounts (highest: 42 at 98.3%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "5 evidence events across 14 accounts (0.36 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING064",
-    "risk_score": 40.49,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 80.87,
-      "network": 2.82,
-      "fund_flow": 33.33,
-      "persistence": 16.45
-    },
-    "top_factors": [
-      "Mean model probability 80.9% across 30 accounts (highest: 596 at 98.9%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "6 evidence events across 30 accounts (0.20 events/account)",
-      "Evidence-subgraph density ranks at the 3th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING065",
-    "risk_score": 48.1,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 79.77,
-      "network": 19.72,
-      "fund_flow": 37.5,
-      "persistence": 34.33
-    },
-    "top_factors": [
-      "Mean model probability 79.8% across 16 accounts (highest: 35 at 99.1%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "10 evidence events across 18 accounts (0.56 events/account)",
-      "Evidence-subgraph density ranks at the 20th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING066",
-    "risk_score": 41.48,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.3,
-      "network": 1.41,
-      "fund_flow": 29.17,
-      "persistence": 23.74
-    },
-    "top_factors": [
-      "Mean model probability 83.3% across 31 accounts (highest: 29 at 99.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "11 evidence events across 34 accounts (0.32 events/account)",
-      "Evidence-subgraph density ranks at the 1th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING067",
-    "risk_score": 57.85,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 93.93,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 93.9% across 8 accounts (highest: 38 at 98.1%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "6 evidence events across 12 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING068",
-    "risk_score": 46.34,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 77.57,
-      "network": 28.87,
-      "fund_flow": 29.17,
-      "persistence": 30.64
-    },
-    "top_factors": [
-      "Mean model probability 77.6% across 12 accounts (highest: 521 at 98.4%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "7 evidence events across 15 accounts (0.47 events/account)",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING069",
-    "risk_score": 43.35,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 82.81,
-      "network": 10.56,
-      "fund_flow": 33.33,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 82.8% across 20 accounts (highest: 30 at 98.5%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "5 evidence events across 20 accounts (0.25 events/account)",
-      "Evidence-subgraph density ranks at the 11th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING070",
-    "risk_score": 58.01,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.28,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 89.3% across 8 accounts (highest: 98 at 98.4%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "2 evidence events across 8 accounts (0.25 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING071",
-    "risk_score": 48.17,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 83.59,
-      "network": 35.21,
-      "fund_flow": 29.17,
-      "persistence": 22.89
-    },
-    "top_factors": [
-      "Mean model probability 83.6% across 11 accounts (highest: 2664 at 94.2%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "4 evidence events across 13 accounts (0.31 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING072",
-    "risk_score": 53.91,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.35,
-      "network": 72.54,
-      "fund_flow": 25.0,
-      "persistence": 21.67
-    },
-    "top_factors": [
-      "Mean model probability 82.4% across 7 accounts (highest: 93 at 98.0%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "2 evidence events across 7 accounts (0.29 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING073",
-    "risk_score": 61.17,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 75.77,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 36.96
-    },
-    "top_factors": [
-      "Mean model probability 75.8% across 7 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "5 evidence events across 8 accounts (0.62 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING074",
-    "risk_score": 52.89,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.93,
-      "network": 42.25,
-      "fund_flow": 29.17,
-      "persistence": 28.38
-    },
-    "top_factors": [
-      "Mean model probability 89.9% across 10 accounts (highest: 26 at 99.3%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 12 accounts (0.42 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING075",
-    "risk_score": 60.1,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 80.27,
-      "network": 89.44,
-      "fund_flow": 33.33,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 80.3% across 7 accounts (highest: 49 at 98.1%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 7 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING076",
-    "risk_score": 54.78,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.12,
-      "network": 72.54,
-      "fund_flow": 25.0,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 82.1% across 8 accounts (highest: 33 at 99.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: split_merge",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING077",
-    "risk_score": 45.57,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 82.77,
-      "network": 28.87,
-      "fund_flow": 25.0,
-      "persistence": 22.89
-    },
-    "top_factors": [
-      "Mean model probability 82.8% across 13 accounts (highest: 32 at 99.0%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: split_merge",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "4 evidence events across 13 accounts (0.31 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING078",
-    "risk_score": 42.19,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 81.17,
-      "network": 15.49,
-      "fund_flow": 25.0,
-      "persistence": 22.14
-    },
-    "top_factors": [
-      "Mean model probability 81.2% across 17 accounts (highest: 33 at 99.1%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: split_merge",
-      "5 evidence events across 17 accounts (0.29 events/account)",
-      "Evidence-subgraph density ranks at the 15th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING079",
-    "risk_score": 50.43,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 85.24,
-      "network": 42.25,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 85.2% across 11 accounts (highest: 43 at 99.6%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "4 evidence events across 12 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING080",
-    "risk_score": 44.48,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 82.2,
-      "network": 21.83,
-      "fund_flow": 25.0,
-      "persistence": 25.49
-    },
-    "top_factors": [
-      "Mean model probability 82.2% across 14 accounts (highest: 243 at 96.7%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 14 accounts (0.36 events/account)",
-      "Evidence-subgraph density ranks at the 22th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING081",
-    "risk_score": 43.88,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 75.6,
-      "network": 25.35,
-      "fund_flow": 29.17,
-      "persistence": 25.27
-    },
-    "top_factors": [
-      "Mean model probability 75.6% across 14 accounts (highest: 16 at 98.6%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 25th percentile among this run's candidates",
-      "6 evidence events across 17 accounts (0.35 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING082",
-    "risk_score": 51.21,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 88.14,
-      "network": 19.72,
-      "fund_flow": 50.0,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 88.1% across 16 accounts (highest: 13 at 98.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 20th percentile among this run's candidates",
-      "4 evidence events across 16 accounts (0.25 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING083",
-    "risk_score": 59.29,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 84.55,
-      "network": 56.34,
-      "fund_flow": 50.0,
-      "persistence": 29.66
-    },
-    "top_factors": [
-      "Mean model probability 84.6% across 9 accounts (highest: 11 at 94.5%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "4 evidence events across 9 accounts (0.44 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING084",
-    "risk_score": 53.46,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.89,
-      "network": 56.34,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 82.9% across 9 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING085",
-    "risk_score": 42.12,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 77.52,
-      "network": 13.38,
-      "fund_flow": 29.17,
-      "persistence": 25.12
-    },
-    "top_factors": [
-      "Mean model probability 77.5% across 17 accounts (highest: 13 at 98.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "7 evidence events across 20 accounts (0.35 events/account)",
-      "Evidence-subgraph density ranks at the 13th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING086",
-    "risk_score": 61.88,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 92.78,
-      "network": 72.54,
-      "fund_flow": 37.5,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 92.8% across 8 accounts (highest: 9 at 98.6%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING087",
-    "risk_score": 57.04,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 77.78,
-      "network": 72.54,
-      "fund_flow": 37.5,
-      "persistence": 29.66
-    },
-    "top_factors": [
-      "Mean model probability 77.8% across 8 accounts (highest: 33 at 99.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 9 accounts (0.44 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING088",
-    "risk_score": 65.29,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.43,
-      "network": 97.89,
-      "fund_flow": 29.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 91.4% across 6 accounts (highest: 7 at 98.6%)",
-      "Evidence-subgraph density ranks at the 98th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: split_merge",
-      "4 evidence events across 8 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING089",
-    "risk_score": 51.33,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 78.88,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 25.82
-    },
-    "top_factors": [
-      "Mean model probability 78.9% across 9 accounts (highest: 36 at 95.9%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "4 evidence events across 11 accounts (0.36 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING090",
-    "risk_score": 49.74,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 89.45,
-      "network": 28.87,
-      "fund_flow": 29.17,
-      "persistence": 26.85
-    },
-    "top_factors": [
-      "Mean model probability 89.4% across 12 accounts (highest: 549 at 98.7%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "5 evidence events across 13 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING091",
-    "risk_score": 48.07,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 82.83,
-      "network": 25.35,
-      "fund_flow": 37.5,
-      "persistence": 23.15
-    },
-    "top_factors": [
-      "Mean model probability 82.8% across 14 accounts (highest: 104 at 95.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 25th percentile among this run's candidates",
-      "5 evidence events across 16 accounts (0.31 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING092",
-    "risk_score": 39.73,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 76.39,
-      "network": 4.23,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 76.4% across 28 accounts (highest: 13 at 98.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "10 evidence events across 30 accounts (0.33 events/account)",
-      "Evidence-subgraph density ranks at the 4th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING093",
-    "risk_score": 57.15,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.59,
-      "network": 72.54,
-      "fund_flow": 25.0,
-      "persistence": 21.67
-    },
-    "top_factors": [
-      "Mean model probability 91.6% across 7 accounts (highest: 7 at 98.6%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "2 evidence events across 7 accounts (0.29 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING094",
-    "risk_score": 47.23,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 85.68,
-      "network": 12.68,
-      "fund_flow": 37.5,
-      "persistence": 26.67
-    },
-    "top_factors": [
-      "Mean model probability 85.7% across 19 accounts (highest: 376 at 98.1%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "8 evidence events across 21 accounts (0.38 events/account)",
-      "Evidence-subgraph density ranks at the 13th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING095",
-    "risk_score": 53.2,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.58,
-      "network": 48.59,
-      "fund_flow": 33.33,
-      "persistence": 22.46
-    },
-    "top_factors": [
-      "Mean model probability 87.6% across 10 accounts (highest: 647 at 98.8%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 10 accounts (0.30 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING096",
-    "risk_score": 50.86,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 86.25,
-      "network": 28.87,
-      "fund_flow": 37.5,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 86.3% across 13 accounts (highest: 46 at 98.0%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "6 evidence events across 15 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING097",
-    "risk_score": 52.32,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.13,
-      "network": 48.59,
-      "fund_flow": 33.33,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 82.1% across 10 accounts (highest: 480 at 98.1%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING098",
-    "risk_score": 48.36,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 77.57,
-      "network": 7.04,
-      "fund_flow": 54.17,
-      "persistence": 31.28
-    },
-    "top_factors": [
-      "Mean model probability 77.6% across 24 accounts (highest: 26 at 99.3%)",
-      "Combines 4 distinct pattern type(s); strongest evidence: circular_flow",
-      "13 evidence events across 27 accounts (0.48 events/account)",
-      "Evidence-subgraph density ranks at the 7th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING099",
-    "risk_score": 53.9,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 92.76,
-      "network": 56.34,
-      "fund_flow": 25.0,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 92.8% across 8 accounts (highest: 9 at 98.6%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "2 evidence events across 8 accounts (0.25 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING100",
-    "risk_score": 55.8,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.57,
-      "network": 56.34,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 89.6% across 9 accounts (highest: 30 at 98.5%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING101",
-    "risk_score": 44.03,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 75.4,
-      "network": 25.35,
-      "fund_flow": 29.17,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 75.4% across 13 accounts (highest: 13 at 98.9%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: repeated_intermediary",
-      "6 evidence events across 16 accounts (0.38 events/account)",
-      "Evidence-subgraph density ranks at the 25th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING102",
-    "risk_score": 60.58,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 80.12,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 80.1% across 7 accounts (highest: 10 at 98.0%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING103",
-    "risk_score": 60.92,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.6,
-      "network": 89.44,
-      "fund_flow": 33.33,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 82.6% across 7 accounts (highest: 38 at 98.1%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 7 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING104",
-    "risk_score": 55.45,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 79.19,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 29.66
-    },
-    "top_factors": [
-      "Mean model probability 79.2% across 7 accounts (highest: 48 at 96.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "4 evidence events across 9 accounts (0.44 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING105",
-    "risk_score": 60.77,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 93.31,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 93.3% across 8 accounts (highest: 39 at 99.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING106",
-    "risk_score": 54.49,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.42,
-      "network": 42.25,
-      "fund_flow": 37.5,
-      "persistence": 26.85
-    },
-    "top_factors": [
-      "Mean model probability 89.4% across 11 accounts (highest: 15 at 99.6%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "5 evidence events across 13 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING107",
-    "risk_score": 62.69,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.66,
-      "network": 89.44,
-      "fund_flow": 33.33,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 87.7% across 7 accounts (highest: 2732 at 95.8%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 7 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING108",
-    "risk_score": 44.18,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 86.29,
-      "network": 15.49,
-      "fund_flow": 25.0,
-      "persistence": 23.15
-    },
-    "top_factors": [
-      "Mean model probability 86.3% across 16 accounts (highest: 8 at 99.0%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 16 accounts (0.31 events/account)",
-      "Evidence-subgraph density ranks at the 15th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING109",
-    "risk_score": 53.28,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 71.91,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 71.9% across 8 accounts (highest: 242 at 97.2%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING110",
-    "risk_score": 47.85,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 81.94,
-      "network": 10.56,
-      "fund_flow": 45.83,
-      "persistence": 28.03
-    },
-    "top_factors": [
-      "Mean model probability 81.9% across 19 accounts (highest: 15 at 99.6%)",
-      "Combines 4 distinct pattern type(s); strongest evidence: layering",
-      "9 evidence events across 22 accounts (0.41 events/account)",
-      "Evidence-subgraph density ranks at the 11th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING111",
-    "risk_score": 56.16,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.65,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 91.7% across 8 accounts (highest: 134 at 95.8%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING112",
-    "risk_score": 56.78,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 85.77,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 19.59
-    },
-    "top_factors": [
-      "Mean model probability 85.8% across 8 accounts (highest: 42 at 98.3%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "2 evidence events across 8 accounts (0.25 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING113",
-    "risk_score": 54.41,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 88.57,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 88.6% across 8 accounts (highest: 37 at 98.9%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING114",
-    "risk_score": 53.66,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 86.42,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 86.4% across 8 accounts (highest: 30 at 98.5%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING115",
-    "risk_score": 46.8,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 81.82,
-      "network": 28.87,
-      "fund_flow": 29.17,
-      "persistence": 25.49
-    },
-    "top_factors": [
-      "Mean model probability 81.8% across 12 accounts (highest: 188 at 98.2%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "5 evidence events across 14 accounts (0.36 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING116",
-    "risk_score": 57.95,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.19,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 37.37
-    },
-    "top_factors": [
-      "Mean model probability 91.2% across 8 accounts (highest: 32 at 99.0%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "7 evidence events across 11 accounts (0.64 events/account)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING117",
-    "risk_score": 43.42,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 76.87,
-      "network": 19.72,
-      "fund_flow": 29.17,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 76.9% across 15 accounts (highest: 18 at 95.7%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "6 evidence events across 16 accounts (0.38 events/account)",
-      "Evidence-subgraph density ranks at the 20th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING118",
-    "risk_score": 39.74,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 70.82,
-      "network": 21.83,
-      "fund_flow": 25.0,
-      "persistence": 21.67
-    },
-    "top_factors": [
-      "Mean model probability 70.8% across 14 accounts (highest: 16 at 98.6%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 22th percentile among this run's candidates",
-      "4 evidence events across 14 accounts (0.29 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING119",
-    "risk_score": 45.14,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 85.41,
-      "network": 15.49,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 85.4% across 16 accounts (highest: 34 at 99.0%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "6 evidence events across 18 accounts (0.33 events/account)",
-      "Evidence-subgraph density ranks at the 15th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING120",
-    "risk_score": 53.18,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.07,
-      "network": 56.34,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 82.1% across 9 accounts (highest: 10 at 98.0%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING121",
-    "risk_score": 48.75,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 88.87,
-      "network": 28.87,
-      "fund_flow": 29.17,
-      "persistence": 22.89
-    },
-    "top_factors": [
-      "Mean model probability 88.9% across 12 accounts (highest: 32 at 99.0%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 29th percentile among this run's candidates",
-      "4 evidence events across 13 accounts (0.31 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING122",
-    "risk_score": 42.97,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 82.16,
-      "network": 13.38,
-      "fund_flow": 29.17,
-      "persistence": 21.21
-    },
-    "top_factors": [
-      "Mean model probability 82.2% across 17 accounts (highest: 546 at 98.4%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 18 accounts (0.28 events/account)",
-      "Evidence-subgraph density ranks at the 13th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING123",
-    "risk_score": 58.78,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.62,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 87.6% across 8 accounts (highest: 339 at 94.2%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING124",
-    "risk_score": 63.97,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.8,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 89.8% across 7 accounts (highest: 37 at 98.9%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING125",
-    "risk_score": 47.88,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 84.9,
-      "network": 21.83,
-      "fund_flow": 37.5,
-      "persistence": 22.14
-    },
-    "top_factors": [
-      "Mean model probability 84.9% across 15 accounts (highest: 53 at 96.7%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "5 evidence events across 17 accounts (0.29 events/account)",
-      "Evidence-subgraph density ranks at the 22th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING126",
-    "risk_score": 55.66,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 78.7,
-      "network": 72.54,
-      "fund_flow": 33.33,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 78.7% across 8 accounts (highest: 44 at 98.9%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING127",
-    "risk_score": 50.33,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 86.3,
-      "network": 35.21,
-      "fund_flow": 29.17,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 86.3% across 11 accounts (highest: 43 at 99.6%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "6 evidence events across 14 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING128",
-    "risk_score": 50.26,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 79.22,
-      "network": 48.59,
-      "fund_flow": 29.17,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 79.2% across 9 accounts (highest: 35 at 99.1%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING129",
-    "risk_score": 52.47,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 92.42,
-      "network": 35.21,
-      "fund_flow": 29.17,
-      "persistence": 28.93
-    },
-    "top_factors": [
-      "Mean model probability 92.4% across 11 accounts (highest: 29 at 99.3%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "6 evidence events across 14 accounts (0.43 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING130",
-    "risk_score": 52.16,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 87.84,
-      "network": 42.25,
-      "fund_flow": 29.17,
-      "persistence": 28.38
-    },
-    "top_factors": [
-      "Mean model probability 87.8% across 10 accounts (highest: 26 at 99.3%)",
-      "Evidence-subgraph density ranks at the 42th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 12 accounts (0.42 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING131",
-    "risk_score": 56.6,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.47,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 30.11
-    },
-    "top_factors": [
-      "Mean model probability 91.5% across 8 accounts (highest: 33 at 99.1%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 11 accounts (0.45 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING132",
-    "risk_score": 67.06,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 91.73,
-      "network": 89.44,
-      "fund_flow": 37.5,
-      "persistence": 38.45
-    },
-    "top_factors": [
-      "Mean model probability 91.7% across 6 accounts (highest: 18 at 95.7%)",
-      "Evidence-subgraph density ranks at the 89th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "6 evidence events across 9 accounts (0.67 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING133",
-    "risk_score": 44.27,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 84.37,
-      "network": 10.56,
-      "fund_flow": 29.17,
-      "persistence": 26.67
-    },
-    "top_factors": [
-      "Mean model probability 84.4% across 19 accounts (highest: 392 at 98.7%)",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "8 evidence events across 21 accounts (0.38 events/account)",
-      "Evidence-subgraph density ranks at the 11th percentile among this run's candidates"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING134",
-    "risk_score": 48.64,
-    "risk_level": "MODERATE",
-    "score_components": {
-      "behavioural": 81.18,
-      "network": 35.21,
-      "fund_flow": 33.33,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 81.2% across 12 accounts (highest: 240 at 95.7%)",
-      "Combines 2 distinct pattern type(s); strongest evidence: circular_flow",
-      "Evidence-subgraph density ranks at the 35th percentile among this run's candidates",
-      "4 evidence events across 12 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING135",
-    "risk_score": 54.3,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 85.84,
-      "network": 48.59,
-      "fund_flow": 37.5,
-      "persistence": 25.82
-    },
-    "top_factors": [
-      "Mean model probability 85.8% across 10 accounts (highest: 17 at 93.9%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 11 accounts (0.36 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING136",
-    "risk_score": 53.0,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 85.61,
-      "network": 48.59,
-      "fund_flow": 29.17,
-      "persistence": 30.11
-    },
-    "top_factors": [
-      "Mean model probability 85.6% across 9 accounts (highest: 216 at 97.6%)",
-      "Evidence-subgraph density ranks at the 49th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 11 accounts (0.45 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING137",
-    "risk_score": 56.78,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 81.61,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 32.07
-    },
-    "top_factors": [
-      "Mean model probability 81.6% across 7 accounts (highest: 6 at 99.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "5 evidence events across 10 accounts (0.50 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING138",
-    "risk_score": 51.68,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 80.77,
-      "network": 56.34,
-      "fund_flow": 29.17,
-      "persistence": 24.26
-    },
-    "top_factors": [
-      "Mean model probability 80.8% across 8 accounts (highest: 34 at 99.0%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "3 evidence events across 9 accounts (0.33 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING139",
-    "risk_score": 56.3,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 89.16,
-      "network": 72.54,
-      "fund_flow": 25.0,
-      "persistence": 21.67
-    },
-    "top_factors": [
-      "Mean model probability 89.2% across 7 accounts (highest: 6 at 99.1%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 2 distinct pattern type(s); strongest evidence: layering",
-      "2 evidence events across 7 accounts (0.29 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING140",
-    "risk_score": 56.42,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 83.84,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 26.38
-    },
-    "top_factors": [
-      "Mean model probability 83.8% across 7 accounts (highest: 9 at 98.6%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "3 evidence events across 8 accounts (0.38 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING141",
-    "risk_score": 54.72,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 81.6,
-      "network": 56.34,
-      "fund_flow": 37.5,
-      "persistence": 27.6
-    },
-    "top_factors": [
-      "Mean model probability 81.6% across 9 accounts (highest: 15 at 99.6%)",
-      "Evidence-subgraph density ranks at the 56th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: circular_flow",
-      "4 evidence events across 10 accounts (0.40 events/account)"
-    ]
-  },
-  {
-    "candidate_ring_id": "RING142",
-    "risk_score": 56.66,
-    "risk_level": "HIGH",
-    "score_components": {
-      "behavioural": 82.65,
-      "network": 72.54,
-      "fund_flow": 29.17,
-      "persistence": 29.66
-    },
-    "top_factors": [
-      "Mean model probability 82.7% across 7 accounts (highest: 172 at 94.6%)",
-      "Evidence-subgraph density ranks at the 73th percentile among this run's candidates",
-      "Combines 3 distinct pattern type(s); strongest evidence: layering",
-      "4 evidence events across 9 accounts (0.44 events/account)"
-    ]
-  }
+ {
+  "candidate_ring_id": "RING0001",
+  "risk_score": 37.9,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 10.1,
+   "network": 100.0,
+   "fund_flow": 20.0,
+   "persistence": 46.84
+  },
+  "top_factors": [
+   "Mean account score percentile 10 across 16 accounts (highest: 10724 at the 100th percentile)",
+   "Structure: fan_in, fan_out (network completeness 100/100)",
+   "Combines 2 pattern type(s); strongest: fan_in",
+   "15 evidence transactions across 16 accounts (0.94 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0002",
+  "risk_score": 43.96,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 49.17,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 49 across 4 accounts (highest: 5164 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0003",
+  "risk_score": 38.09,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 32.4,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 32 across 4 accounts (highest: 1700 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0004",
+  "risk_score": 43.12,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 59.79,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 60 across 3 accounts (highest: 6948 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0005",
+  "risk_score": 43.64,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 61.29,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 61 across 3 accounts (highest: 1356 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0006",
+  "risk_score": 42.19,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 57.14,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 57 across 3 accounts (highest: 1383 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0007",
+  "risk_score": 40.19,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.06,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 26 across 5 accounts (highest: 1265 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0008",
+  "risk_score": 39.94,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 24.78,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 25 across 6 accounts (highest: 3025 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0009",
+  "risk_score": 43.3,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 47.28,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 47 across 4 accounts (highest: 4180 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0010",
+  "risk_score": 49.4,
+  "risk_level": "LOW",
+  "score_components": {
+   "behavioural": 34.84,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 10 accounts (highest: 440 at the 93th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "10 evidence transactions across 10 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0011",
+  "risk_score": 43.16,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 34.55,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 5 accounts (highest: 2877 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0012",
+  "risk_score": 39.34,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 23.06,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 23 across 6 accounts (highest: 9997 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0013",
+  "risk_score": 60.91,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 67.74,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 68 across 4 accounts (highest: 409 at the 95th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "4 evidence transactions across 4 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0014",
+  "risk_score": 42.32,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 31.57,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 32 across 6 accounts (highest: 1937 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0015",
+  "risk_score": 39.05,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 35.14,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 4 accounts (highest: 1023 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0016",
+  "risk_score": 34.8,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 8.6,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 46.44
+  },
+  "top_factors": [
+   "Mean account score percentile 9 across 13 accounts (highest: 5955 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "12 evidence transactions across 13 accounts (0.92 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0017",
+  "risk_score": 36.62,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 14.17,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.79
+  },
+  "top_factors": [
+   "Mean account score percentile 14 across 10 accounts (highest: 8445 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "9 evidence transactions across 10 accounts (0.90 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0018",
+  "risk_score": 37.09,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.53,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 30 across 4 accounts (highest: 607 at the 82th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0019",
+  "risk_score": 42.21,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 16.04,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 16 across 9 accounts (highest: 1204 at the 100th percentile)",
+   "Structure: layering, fan_out (network completeness 100/100)",
+   "Combines 2 pattern type(s); strongest: layering",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0020",
+  "risk_score": 38.62,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 20.3,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 8 accounts (highest: 9828 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0021",
+  "risk_score": 31.31,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 13.04,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 13 across 4 accounts (highest: 106 at the 37th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0022",
+  "risk_score": 41.63,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 30.19,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 30 across 5 accounts (highest: 1848 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0023",
+  "risk_score": 35.15,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 9.82,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 46.05
+  },
+  "top_factors": [
+   "Mean account score percentile 10 across 11 accounts (highest: 4194 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "10 evidence transactions across 11 accounts (0.91 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0024",
+  "risk_score": 41.77,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 30.57,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 31 across 5 accounts (highest: 9936 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0025",
+  "risk_score": 40.16,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 25.4,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 25 across 6 accounts (highest: 9434 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0026",
+  "risk_score": 39.19,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 35.53,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 36 across 4 accounts (highest: 10801 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0027",
+  "risk_score": 41.47,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 55.09,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 55 across 3 accounts (highest: 1620 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0028",
+  "risk_score": 42.9,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 59.17,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 59 across 3 accounts (highest: 4233 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0029",
+  "risk_score": 40.3,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 25.8,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 26 across 6 accounts (highest: 11538 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0030",
+  "risk_score": 39.33,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 23.04,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 23 across 6 accounts (highest: 1386 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0031",
+  "risk_score": 38.5,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.95,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 8 accounts (highest: 829 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0032",
+  "risk_score": 34.66,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 9.0,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 9 across 8 accounts (highest: 4260 at the 34th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0033",
+  "risk_score": 40.43,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.75,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 27 across 5 accounts (highest: 118 at the 94th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0034",
+  "risk_score": 44.84,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 64.72,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 65 across 3 accounts (highest: 7348 at the 100th percentile)",
+   "Structure: fan_in (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_in",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0035",
+  "risk_score": 44.49,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 63.72,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 64 across 3 accounts (highest: 3509 at the 100th percentile)",
+   "Structure: fan_in (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_in",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0036",
+  "risk_score": 39.82,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 23.72,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 24 across 8 accounts (highest: 7408 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0037",
+  "risk_score": 36.94,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 15.27,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 15 across 9 accounts (highest: 11004 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0038",
+  "risk_score": 40.29,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 38.69,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 39 across 4 accounts (highest: 6487 at the 100th percentile)",
+   "Structure: fan_in (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_in",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0039",
+  "risk_score": 42.41,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 44.75,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 45 across 4 accounts (highest: 780 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0040",
+  "risk_score": 45.7,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 24.26,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 24 across 9 accounts (highest: 3897 at the 71th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "9 evidence transactions across 9 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0041",
+  "risk_score": 37.88,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 17.96,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 18 across 9 accounts (highest: 3266 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0042",
+  "risk_score": 38.51,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 33.59,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 34 across 4 accounts (highest: 1396 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0043",
+  "risk_score": 35.87,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 12.44,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 12 across 8 accounts (highest: 4738 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0044",
+  "risk_score": 55.73,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 52.92,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 53 across 6 accounts (highest: 518 at the 79th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "6 evidence transactions across 6 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0045",
+  "risk_score": 39.01,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 35.04,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 4 accounts (highest: 3143 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0046",
+  "risk_score": 38.4,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.98,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 7 accounts (highest: 146 at the 90th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0047",
+  "risk_score": 43.14,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 34.51,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 5 accounts (highest: 9737 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0048",
+  "risk_score": 31.96,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 27.9,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 28 across 3 accounts (highest: 109 at the 68th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0049",
+  "risk_score": 34.17,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 34.22,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 34 across 3 accounts (highest: 184 at the 66th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0050",
+  "risk_score": 39.47,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 7.01,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 47.57
+  },
+  "top_factors": [
+   "Mean account score percentile 7 across 28 accounts (highest: 5061 at the 100th percentile)",
+   "Structure: layering, fan_out (network completeness 100/100)",
+   "Combines 2 pattern type(s); strongest: layering",
+   "27 evidence transactions across 28 accounts (0.96 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0051",
+  "risk_score": 39.23,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 48.68,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 49 across 3 accounts (highest: 1377 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0052",
+  "risk_score": 36.49,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.4,
+   "network": 70.0,
+   "fund_flow": 20.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 26 across 4 accounts (highest: 9668 at the 75th percentile)",
+   "Structure: layering (network completeness 70/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0053",
+  "risk_score": 36.97,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 16.28,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 16 across 6 accounts (highest: 159 at the 93th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0054",
+  "risk_score": 48.14,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 48.77,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 49 across 5 accounts (highest: 3365 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0055",
+  "risk_score": 40.93,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 27.6,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 28 across 6 accounts (highest: 4830 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0056",
+  "risk_score": 40.56,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 43.74,
+   "network": 60.0,
+   "fund_flow": 20.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 44 across 4 accounts (highest: 4634 at the 100th percentile)",
+   "Structure: layering (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0057",
+  "risk_score": 40.25,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 38.58,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 39 across 4 accounts (highest: 6907 at the 98th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0058",
+  "risk_score": 42.89,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 33.77,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 34 across 5 accounts (highest: 3629 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0059",
+  "risk_score": 37.99,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.2,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 19 across 6 accounts (highest: 2157 at the 98th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0060",
+  "risk_score": 42.94,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 33.92,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 34 across 5 accounts (highest: 7118 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0061",
+  "risk_score": 37.15,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 15.88,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 16 across 9 accounts (highest: 11694 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0062",
+  "risk_score": 40.75,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 10.13,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 10 across 17 accounts (highest: 3479 at the 100th percentile)",
+   "Structure: layering, fan_out (network completeness 100/100)",
+   "Combines 2 pattern type(s); strongest: layering",
+   "17 evidence transactions across 17 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0063",
+  "risk_score": 36.94,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.12,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 29 across 4 accounts (highest: 128 at the 81th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0064",
+  "risk_score": 28.29,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 17.42,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 17 across 3 accounts (highest: 147 at the 48th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0065",
+  "risk_score": 36.89,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 41.99,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 42 across 3 accounts (highest: 4807 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0066",
+  "risk_score": 36.05,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.57,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 27 across 4 accounts (highest: 1168 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0067",
+  "risk_score": 33.69,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.82,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 4 accounts (highest: 191 at the 55th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0068",
+  "risk_score": 37.08,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 16.6,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 17 across 6 accounts (highest: 644 at the 51th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0069",
+  "risk_score": 41.01,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 40.74,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 41 across 4 accounts (highest: 10144 at the 100th percentile)",
+   "Structure: fan_in (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_in",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0070",
+  "risk_score": 34.74,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 22.83,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 23 across 4 accounts (highest: 215 at the 55th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0071",
+  "risk_score": 42.42,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 44.77,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 45 across 4 accounts (highest: 1479 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0072",
+  "risk_score": 38.97,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 22.01,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 22 across 6 accounts (highest: 2743 at the 74th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0073",
+  "risk_score": 31.87,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 27.66,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 28 across 3 accounts (highest: 217 at the 47th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0074",
+  "risk_score": 42.67,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 32.57,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 33 across 6 accounts (highest: 9344 at the 100th percentile)",
+   "Structure: fan_in (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_in",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0075",
+  "risk_score": 33.36,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 18.88,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 19 across 4 accounts (highest: 65 at the 44th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0076",
+  "risk_score": 36.49,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 13.99,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 14 across 9 accounts (highest: 163 at the 72th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0077",
+  "risk_score": 43.01,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 59.49,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 59 across 3 accounts (highest: 4186 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0078",
+  "risk_score": 38.2,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.41,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 19 across 7 accounts (highest: 5051 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0079",
+  "risk_score": 44.95,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 65.04,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 65 across 3 accounts (highest: 1810 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0080",
+  "risk_score": 37.93,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 44.96,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 45 across 3 accounts (highest: 187 at the 98th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0081",
+  "risk_score": 36.83,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 14.97,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 15 across 9 accounts (highest: 2274 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0082",
+  "risk_score": 42.62,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 33.0,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 33 across 5 accounts (highest: 2015 at the 100th percentile)",
+   "Structure: fan_in (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_in",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0083",
+  "risk_score": 44.81,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 64.63,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 65 across 3 accounts (highest: 1077 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0084",
+  "risk_score": 44.47,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 63.65,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 64 across 3 accounts (highest: 1206 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0085",
+  "risk_score": 43.61,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 61.2,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 61 across 3 accounts (highest: 3229 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0086",
+  "risk_score": 44.48,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 63.7,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 64 across 3 accounts (highest: 8868 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0087",
+  "risk_score": 41.36,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 54.78,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 55 across 3 accounts (highest: 5996 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0088",
+  "risk_score": 62.12,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 71.2,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 71 across 7 accounts (highest: 3895 at the 99th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "7 evidence transactions across 7 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0089",
+  "risk_score": 47.8,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 30.26,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 30 across 6 accounts (highest: 3591 at the 99th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "6 evidence transactions across 6 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0090",
+  "risk_score": 41.47,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.14,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 29 across 6 accounts (highest: 8986 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0091",
+  "risk_score": 42.1,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 30.25,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 30 across 8 accounts (highest: 8760 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0092",
+  "risk_score": 40.22,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 38.49,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 38 across 4 accounts (highest: 843 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0093",
+  "risk_score": 40.6,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 52.59,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 53 across 3 accounts (highest: 4826 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0094",
+  "risk_score": 38.05,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 18.45,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.47
+  },
+  "top_factors": [
+   "Mean account score percentile 18 across 9 accounts (highest: 3110 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "8 evidence transactions across 9 accounts (0.89 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0095",
+  "risk_score": 38.09,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 45.43,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 45 across 3 accounts (highest: 2923 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0096",
+  "risk_score": 46.22,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 35.58,
+   "network": 100.0,
+   "fund_flow": 20.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 36 across 6 accounts (highest: 8695 at the 99th percentile)",
+   "Structure: layering (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0097",
+  "risk_score": 44.77,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 37.73,
+   "network": 90.0,
+   "fund_flow": 20.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 38 across 5 accounts (highest: 3108 at the 100th percentile)",
+   "Structure: layering (network completeness 90/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0098",
+  "risk_score": 38.07,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 43.95,
+   "network": 50.0,
+   "fund_flow": 20.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 44 across 3 accounts (highest: 5732 at the 96th percentile)",
+   "Structure: layering (network completeness 50/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0099",
+  "risk_score": 37.27,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 15.88,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 46.05
+  },
+  "top_factors": [
+   "Mean account score percentile 16 across 11 accounts (highest: 1599 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "10 evidence transactions across 11 accounts (0.91 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0100",
+  "risk_score": 39.25,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 22.39,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 22 across 7 accounts (highest: 3178 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0101",
+  "risk_score": 56.8,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 90.14,
+   "network": 60.0,
+   "fund_flow": 20.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 90 across 4 accounts (highest: 3869 at the 100th percentile)",
+   "Structure: layering (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0102",
+  "risk_score": 37.73,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 17.77,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 18 across 8 accounts (highest: 5427 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0103",
+  "risk_score": 32.11,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 28.33,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 28 across 3 accounts (highest: 152 at the 50th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0104",
+  "risk_score": 39.46,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 49.35,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 49 across 3 accounts (highest: 4773 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0105",
+  "risk_score": 39.89,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 50.58,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 51 across 3 accounts (highest: 2168 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0106",
+  "risk_score": 38.56,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 20.42,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 7 accounts (highest: 3102 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0107",
+  "risk_score": 38.89,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 34.68,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 4 accounts (highest: 4937 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0108",
+  "risk_score": 34.77,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 35.95,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 36 across 3 accounts (highest: 4931 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0109",
+  "risk_score": 40.0,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 50.89,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 51 across 3 accounts (highest: 2924 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0110",
+  "risk_score": 37.48,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 43.68,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 44 across 3 accounts (highest: 4213 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0111",
+  "risk_score": 40.15,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 25.37,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 25 across 6 accounts (highest: 4898 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0112",
+  "risk_score": 38.36,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 46.2,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 46 across 3 accounts (highest: 7858 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0113",
+  "risk_score": 37.04,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 15.22,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 46.05
+  },
+  "top_factors": [
+   "Mean account score percentile 15 across 11 accounts (highest: 7862 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "10 evidence transactions across 11 accounts (0.91 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0114",
+  "risk_score": 33.97,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 23.04,
+   "network": 60.0,
+   "fund_flow": 20.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 23 across 7 accounts (highest: 7982 at the 99th percentile)",
+   "Structure: layering (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0115",
+  "risk_score": 35.4,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 37.74,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 38 across 3 accounts (highest: 1733 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0116",
+  "risk_score": 40.84,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.8,
+   "network": 100.0,
+   "fund_flow": 20.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 7 accounts (highest: 6070 at the 100th percentile)",
+   "Structure: fan_in, fan_out (network completeness 100/100)",
+   "Combines 2 pattern type(s); strongest: fan_in",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0117",
+  "risk_score": 42.5,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 45.0,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 45 across 4 accounts (highest: 7466 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0118",
+  "risk_score": 39.3,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 22.94,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 23 across 6 accounts (highest: 2156 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0119",
+  "risk_score": 56.79,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 88.64,
+   "network": 60.0,
+   "fund_flow": 20.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 89 across 6 accounts (highest: 3009 at the 100th percentile)",
+   "Structure: layering (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0120",
+  "risk_score": 39.6,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 23.41,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 44.55
+  },
+  "top_factors": [
+   "Mean account score percentile 23 across 7 accounts (highest: 5160 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "6 evidence transactions across 7 accounts (0.86 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0121",
+  "risk_score": 36.71,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 14.43,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.79
+  },
+  "top_factors": [
+   "Mean account score percentile 14 across 10 accounts (highest: 3099 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "9 evidence transactions across 10 accounts (0.90 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0122",
+  "risk_score": 35.89,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.11,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 26 across 4 accounts (highest: 4469 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0123",
+  "risk_score": 39.96,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 24.83,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 25 across 6 accounts (highest: 2215 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0124",
+  "risk_score": 43.02,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 59.52,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 60 across 3 accounts (highest: 6073 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0125",
+  "risk_score": 45.31,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 32.96,
+   "network": 100.0,
+   "fund_flow": 20.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 33 across 6 accounts (highest: 2195 at the 87th percentile)",
+   "Structure: layering (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0126",
+  "risk_score": 49.27,
+  "risk_level": "LOW",
+  "score_components": {
+   "behavioural": 34.46,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 34 across 5 accounts (highest: 5155 at the 87th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "5 evidence transactions across 5 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0127",
+  "risk_score": 44.25,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 37.68,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 38 across 5 accounts (highest: 8551 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0128",
+  "risk_score": 36.09,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 39.72,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 40 across 3 accounts (highest: 142 at the 66th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0129",
+  "risk_score": 46.54,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.67,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 27 across 9 accounts (highest: 313 at the 82th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "9 evidence transactions across 9 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0130",
+  "risk_score": 36.23,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 27.1,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 27 across 4 accounts (highest: 9953 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0131",
+  "risk_score": 36.41,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 13.99,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 45.07
+  },
+  "top_factors": [
+   "Mean account score percentile 14 across 8 accounts (highest: 4350 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "7 evidence transactions across 8 accounts (0.88 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0132",
+  "risk_score": 42.04,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 31.35,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 31 across 5 accounts (highest: 1880 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0133",
+  "risk_score": 41.87,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 46.57,
+   "network": 60.0,
+   "fund_flow": 20.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 47 across 5 accounts (highest: 5614 at the 100th percentile)",
+   "Structure: layering (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0134",
+  "risk_score": 34.43,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 34.98,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 35 across 3 accounts (highest: 3845 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0135",
+  "risk_score": 43.67,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 59.95,
+   "network": 50.0,
+   "fund_flow": 20.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 60 across 3 accounts (highest: 8176 at the 100th percentile)",
+   "Structure: layering (network completeness 50/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0136",
+  "risk_score": 43.29,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 11.53,
+   "network": 100.0,
+   "fund_flow": 40.0,
+   "persistence": 46.26
+  },
+  "top_factors": [
+   "Mean account score percentile 12 across 12 accounts (highest: 6133 at the 100th percentile)",
+   "Structure: layering, fan_in, fan_out (network completeness 100/100)",
+   "Combines 3 pattern type(s); strongest: layering",
+   "11 evidence transactions across 12 accounts (0.92 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0137",
+  "risk_score": 46.08,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 32.49,
+   "network": 100.0,
+   "fund_flow": 20.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 32 across 8 accounts (highest: 456 at the 82th percentile)",
+   "Structure: layering (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "8 evidence transactions across 8 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0138",
+  "risk_score": 40.56,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 39.45,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 39 across 4 accounts (highest: 1086 at the 97th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0139",
+  "risk_score": 44.51,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 20.87,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 21 across 6 accounts (highest: 8924 at the 84th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "6 evidence transactions across 6 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0140",
+  "risk_score": 39.87,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 24.58,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 25 across 6 accounts (highest: 1716 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0141",
+  "risk_score": 41.0,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 53.73,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 54 across 3 accounts (highest: 10712 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0142",
+  "risk_score": 44.94,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.74,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 52.64
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 6 accounts (highest: 731 at the 69th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "7 evidence transactions across 6 accounts (1.17 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0143",
+  "risk_score": 43.35,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 47.43,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 47 across 4 accounts (highest: 11065 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0144",
+  "risk_score": 41.42,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.59,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 30 across 5 accounts (highest: 970 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0145",
+  "risk_score": 35.88,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 26.1,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 26 across 4 accounts (highest: 952 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0146",
+  "risk_score": 39.64,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 23.91,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 43.85
+  },
+  "top_factors": [
+   "Mean account score percentile 24 across 6 accounts (highest: 2307 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "5 evidence transactions across 6 accounts (0.83 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0147",
+  "risk_score": 40.39,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 51.99,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 52 across 3 accounts (highest: 1849 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0148",
+  "risk_score": 50.88,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 81.98,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 82 across 3 accounts (highest: 1889 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0149",
+  "risk_score": 49.35,
+  "risk_level": "LOW",
+  "score_components": {
+   "behavioural": 50.81,
+   "network": 90.0,
+   "fund_flow": 20.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 51 across 5 accounts (highest: 5948 at the 100th percentile)",
+   "Structure: layering (network completeness 90/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0150",
+  "risk_score": 42.38,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 44.65,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 45 across 4 accounts (highest: 1450 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0151",
+  "risk_score": 37.04,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.4,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 29 across 4 accounts (highest: 942 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0152",
+  "risk_score": 39.53,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 49.53,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 50 across 3 accounts (highest: 4476 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0153",
+  "risk_score": 47.78,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 30.21,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 30 across 6 accounts (highest: 6663 at the 91th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "6 evidence transactions across 6 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0154",
+  "risk_score": 43.54,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 35.64,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 36 across 5 accounts (highest: 9113 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0155",
+  "risk_score": 38.5,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 46.6,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 47 across 3 accounts (highest: 4354 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0156",
+  "risk_score": 49.26,
+  "risk_level": "LOW",
+  "score_components": {
+   "behavioural": 50.56,
+   "network": 90.0,
+   "fund_flow": 20.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 51 across 5 accounts (highest: 3960 at the 91th percentile)",
+   "Structure: layering (network completeness 90/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0157",
+  "risk_score": 37.07,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.49,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 29 across 4 accounts (highest: 3238 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0158",
+  "risk_score": 33.85,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 33.32,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 33 across 3 accounts (highest: 4887 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0159",
+  "risk_score": 41.22,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.02,
+   "network": 100.0,
+   "fund_flow": 10.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 29 across 5 accounts (highest: 2776 at the 100th percentile)",
+   "Structure: fan_out (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0160",
+  "risk_score": 47.38,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 29.08,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 29 across 9 accounts (highest: 4691 at the 100th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "9 evidence transactions across 9 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0161",
+  "risk_score": 54.55,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 65.66,
+   "network": 90.0,
+   "fund_flow": 20.0,
+   "persistence": 42.83
+  },
+  "top_factors": [
+   "Mean account score percentile 66 across 5 accounts (highest: 4374 at the 100th percentile)",
+   "Structure: layering (network completeness 90/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "4 evidence transactions across 5 accounts (0.80 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0162",
+  "risk_score": 41.14,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 19.95,
+   "network": 100.0,
+   "fund_flow": 20.0,
+   "persistence": 45.79
+  },
+  "top_factors": [
+   "Mean account score percentile 20 across 10 accounts (highest: 11827 at the 100th percentile)",
+   "Structure: layering (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: layering",
+   "9 evidence transactions across 10 accounts (0.90 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0163",
+  "risk_score": 42.22,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 57.23,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 57 across 3 accounts (highest: 1078 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0164",
+  "risk_score": 41.59,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 55.44,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 55 across 3 accounts (highest: 8462 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0165",
+  "risk_score": 35.65,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 38.46,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 38 across 3 accounts (highest: 1900 at the 96th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0166",
+  "risk_score": 40.88,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 40.36,
+   "network": 80.0,
+   "fund_flow": 10.0,
+   "persistence": 41.25
+  },
+  "top_factors": [
+   "Mean account score percentile 40 across 4 accounts (highest: 7668 at the 100th percentile)",
+   "Structure: fan_out (network completeness 80/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "3 evidence transactions across 4 accounts (0.75 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0167",
+  "risk_score": 39.3,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 48.9,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 49 across 3 accounts (highest: 9155 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0168",
+  "risk_score": 55.84,
+  "risk_level": "HIGH",
+  "score_components": {
+   "behavioural": 49.81,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 54.54
+  },
+  "top_factors": [
+   "Mean account score percentile 50 across 8 accounts (highest: 2869 at the 95th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "10 evidence transactions across 8 accounts (1.25 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0169",
+  "risk_score": 41.63,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 55.54,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 56 across 3 accounts (highest: 8900 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0170",
+  "risk_score": 48.16,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 31.31,
+   "network": 100.0,
+   "fund_flow": 30.0,
+   "persistence": 48.52
+  },
+  "top_factors": [
+   "Mean account score percentile 31 across 9 accounts (highest: 5419 at the 100th percentile)",
+   "Structure: circular_flow (network completeness 100/100)",
+   "Combines 1 pattern type(s); strongest: circular_flow",
+   "9 evidence transactions across 9 accounts (1.00 per account)"
+  ]
+ },
+ {
+  "candidate_ring_id": "RING0171",
+  "risk_score": 38.43,
+  "risk_level": "MODERATE",
+  "score_components": {
+   "behavioural": 46.4,
+   "network": 60.0,
+   "fund_flow": 10.0,
+   "persistence": 38.45
+  },
+  "top_factors": [
+   "Mean account score percentile 46 across 3 accounts (highest: 1241 at the 100th percentile)",
+   "Structure: fan_out (network completeness 60/100)",
+   "Combines 1 pattern type(s); strongest: fan_out",
+   "2 evidence transactions across 3 accounts (0.67 per account)"
+  ]
+ }
 ]

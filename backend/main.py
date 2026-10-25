@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 
 from backend.api.routes import router  # noqa: E402
+from backend.api.extras import router as extras_router  # noqa: E402
 
 app = FastAPI(
     title="Early-AML-Warning-System API",
@@ -34,6 +35,7 @@ app.add_middleware(
 )
 
 app.include_router(router, prefix="/api")
+app.include_router(extras_router, prefix="/api")
 
 
 @app.get("/")

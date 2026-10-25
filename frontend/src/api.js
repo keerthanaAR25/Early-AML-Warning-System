@@ -23,5 +23,12 @@ export const api = {
   patterns: (params) => get("/patterns", params),
   metrics: () => get("/metrics"),
   leadTime: () => get("/lead-time"),
+  warnings: () => get("/warnings"),
+  patternEvidence: () => get("/pattern-evidence"),
+  supportingPatterns: () => get("/supporting-patterns"),
+  scoreCalculation: (id) => get(`/score-calculation/${id}`),
   models: () => get("/models"),
+  pipelineStats: () => get("/pipeline-stats"),
+  evaluationContext: () => get("/evaluation-context"),
+  ringEarlyWarning: () => get("/ring-early-warning"),
 };

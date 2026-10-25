@@ -57,7 +57,7 @@ export default function WhyFlagged() {
     data: rings,
     loading: ringsLoading,
     error: ringsError,
-  } = useApi(() => api.rings({ limit: 142 }), []);
+  } = useApi(() => api.rings({ limit: 1000 }), []);
 
   const [selected, setSelected] = React.useState(null);
 
