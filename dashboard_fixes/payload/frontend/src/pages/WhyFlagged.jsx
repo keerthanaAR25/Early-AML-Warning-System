@@ -1,5 +1,6 @@
 import React from "react";
 import { api } from "../api.js";
+import { AlertBadge, alertMapOf, alertTitle } from "../components/warnings.jsx";
 import {
   Card,
   Loading,
@@ -30,9 +31,10 @@ function ScoreBar({ label, value, weight }) {
         </span>
       </div>
 
-      <div className="h-2 rounded-full bg-border overflow-hidden">
+      <div className="h-2 rounded-full bg-slate-200 overflow-hidden" data-testid="score-track">
         <div
-          className="h-full rounded-full"
+          className="h-full rounded-full bg-accent"
+          data-testid="score-fill"
           style={{
             width: `${Math.min(
               100,
@@ -58,6 +60,8 @@ export default function WhyFlagged() {
     loading: ringsLoading,
     error: ringsError,
   } = useApi(() => api.rings({ limit: 1000 }), []);
+  const { data: warn } = useApi(() => api.warnings(), []);
+  const alertMap = React.useMemo(() => alertMapOf(warn), [warn]);
 
   const [selected, setSelected] = React.useState(null);
 
@@ -117,6 +121,7 @@ export default function WhyFlagged() {
               onClick={() =>
                 setSelected(r.candidate_ring_id)
               }
+              title={alertTitle(alertMap[r.candidate_ring_id])}
               className={`px-3 py-1.5 rounded-md text-xs border ${
                 selected === r.candidate_ring_id
                   ? "border-accent text-accent bg-accent/5"
@@ -124,6 +129,7 @@ export default function WhyFlagged() {
               }`}
             >
               {r.candidate_ring_id}
+              {alertMap[r.candidate_ring_id] && <span className="ml-1 text-orange-500" data-alerted-chip="true" aria-label="alert given">{"\u25CF"}</span>}
             </button>
           ))}
 
@@ -167,6 +173,8 @@ export default function WhyFlagged() {
                   }
                 />
               </div>
+
+              <AlertBadge warn={warn} id={selected} />
 
             </Card>
 
@@ -269,7 +277,7 @@ export default function WhyFlagged() {
 
                     <div className="text-sm leading-relaxed">
                       {typeof factor === "string"
-                        ? factor
+                        ? factor.replace(/_/g, " ")
                         : factor?.description ||
                           factor?.name ||
                           JSON.stringify(factor)}

@@ -483,3 +483,32 @@ def test_supporting_patterns_file_agrees_with_the_candidates():
         assert c["n_types"] == len(c["types"])
         for t in c["types"]:
             assert t["pattern"] in core.OLD_VOCABULARY and t["also_in_candidate"] == (t["pattern"] in rc[rid]["patterns"]) and t["events"] >= 1
+
+
+# ------------------------------------------------------------------ fixes from the forensic review
+def test_each_alert_records_the_patterns_it_had_and_the_patterns_it_has_now():
+    from src.pipeline_v2 import warning_log
+    s = core.Settings(scored_from=10, alert_threshold=50.0)
+    import pandas as pd
+    cands = [{"tx": {"a1"}, "nodes": {"A", "B"}, "creation_day": 20}]
+    mk = lambda d, sc, pats: {"day": d, "score": sc, "level": core.risk_level(sc, s.thresholds), "components": {}, "patterns": pats, "n_nodes": 2, "n_tx": 1}
+    hist = [[mk(20, 55.0, ["partial_path"]), mk(25, 47.0, ["cycle_closure"])]]            # alerted while a chain, has since closed into a cycle
+    tx = pd.DataFrame({"day": [20, 30]})
+    per = {k: pd.DataFrame({"ring_id": ["7"], "typology": ["cycle"], "evaluable": [True], "detected": [False], "warning_day": [None], "lead_days": [None], "tx_coverage": [0.0]}) for k in ("production_all", "production_alerted")}
+    rings = pd.DataFrame({"ring_id": ["7"], "typology": ["cycle"], "first_day": [20], "last_day": [25], "observable_day": [25], "n_tx": [1]})
+    w = warning_log.build_warnings(cands, hist, {0: "RING0001"}, per, rings, {}, {"a1": 0}, {"a1": 20}, tx, pd.Timestamp("2017-01-01"), s, final_patterns={"RING0001": ["circular_flow"]})
+    a = w["alerts"][0]
+    assert a["patterns"] == ["layering"] and a["patterns_now"] == ["circular_flow"]           # why the log and the pattern table can count differently
+    w0 = warning_log.build_warnings(cands, hist, {0: "RING0001"}, per, rings, {}, {"a1": 0}, {"a1": 20}, tx, pd.Timestamp("2017-01-01"), s)
+    assert w0["alerts"][0]["patterns_now"] is None                                             # optional: older callers still work
+
+
+@needs_results
+def test_every_alerts_current_patterns_match_its_candidate_and_the_caveat_is_honest():
+    w = json.load(open(RES / "warnings.json")); rc = {c["candidate_ring_id"]: c["patterns"] for c in json.load(open(RES / "ring_candidates.json"))}
+    assert all(a["patterns_now"] == rc[a["candidate_ring_id"]] for a in w["alerts"])
+    lt = json.load(open(RES / "lead_time_summary.json"))
+    text = " ".join(lt["caveats"])
+    assert "after a ring has already started" in text and "arrive with the ring's first transactions" not in text
+    if lt["rings"]["lead_vs_first_tx_median"] is not None and lt["rings"]["lead_vs_first_tx_median"] < 0:
+        assert "after" in text                                                                 # the caveat agrees with the negative median it sits next to

@@ -1,3 +1,4 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
-export default defineConfig({ plugins: [react()], test: { environment: "jsdom", include: ["vtest/**/*.test.jsx"], testTimeout: 20000 } });
+export default defineConfig({ plugins: [react()], test: {
+    globalSetup: ["./vtest/tz-setup.js"], environment: "jsdom", include: ["vtest/**/*.test.jsx"], testTimeout: 20000 } });

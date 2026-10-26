@@ -1,6 +1,7 @@
 import React from "react";
 import { api } from "../api.js";
 import ScoreCalculationCard from "../components/ScoreCalculation.jsx";
+import { AlertBadge, alertFor, dateOf as alertDate } from "../components/warnings.jsx";
 import {
   Card,
   Loading,
@@ -52,7 +53,9 @@ export default function TemporalEvolution() {
   // calendar dates for window ids, from the window length and first window start stored in the database
   const windowDays = Number(pipeline?.window_days);
   const windowDate = (w) => {
-    const d0 = new Date(pipeline?.first_window_start);
+    // a timestamp without a timezone is UTC in the database; read as local time it shifted every date back a day east of UTC (India)
+    const raw = String(pipeline?.first_window_start ?? "");
+    const d0 = new Date(raw && !/(Z|[+-]\d{2}:?\d{2})$/.test(raw) ? `${raw}Z` : raw);
     if (Number.isNaN(d0.getTime()) || !Number.isFinite(windowDays) || !Number.isFinite(Number(w))) return null;
     return new Date(d0.getTime() + Number(w) * windowDays * 86400000).toISOString().slice(0, 10);
   };
@@ -87,6 +90,8 @@ export default function TemporalEvolution() {
         : Promise.resolve(null),
     [selectedRing]
   );
+
+  const { data: warn } = useApi(() => api.warnings(), []);
 
   // how the selected candidate's risk score was calculated (file written by scripts/rebuild_v2.py)
   const { data: calc } = useApi(
@@ -221,6 +226,7 @@ export default function TemporalEvolution() {
               <option key={id} value={id}>
                 {id} — Risk{" "}
                 {Number(item?.risk_score ?? 0).toFixed(1)}
+                {alertFor(warn, id) ? ` · Alert ${alertDate(alertFor(warn, id).alert_date)}` : ""}
               </option>
             );
           })}
@@ -252,6 +258,8 @@ export default function TemporalEvolution() {
           <div className="text-xs text-muted mt-1">
             / 100
           </div>
+
+          <AlertBadge warn={warn} id={selectedRing} />
         </div>
 
         <div className="rounded-lg border border-border p-4">

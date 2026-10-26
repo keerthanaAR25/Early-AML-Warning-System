@@ -64,7 +64,7 @@ describe("Ring Investigation (top-ranked candidate)", () => {
 
 describe("Temporal Evolution", () => {
   const ids = fx[`/api/rings/${RID}`].trajectory.event_window_ids;
-  const day = (w) => new Date(new Date(P.first_window_start).getTime() + w * P.window_days * 86400000).toISOString().slice(0, 10);
+  const day = (w) => new Date(new Date(`${P.first_window_start}Z`).getTime() + w * P.window_days * 86400000).toISOString().slice(0, 10);
   it("translates the window ids into calendar dates from the database's window length", async () => {
     const t = text(await renderPage(TemporalEvolution, { until: day(Math.max(...ids)) }));
     expect(t).toContain(day(Math.min(...ids))); expect(t).toContain(`one window = ${P.window_days} calendar day(s)`);
@@ -105,10 +105,12 @@ describe("Lead-Time page (one evaluation)", () => {
   });
   it("states the first-transaction caveat only when the data supports it", async () => {
     const t = text(await renderPage(LeadTimeAnalytics, { until: "Operating points" }));
-    expect(Number(LT.rings.lead_vs_first_tx_median)).toBeLessThanOrEqual(0); expect(t).toContain("Warnings arrive with a ring's first transactions");
+    const m = Number(LT.rings.lead_vs_first_tx_median);
+    expect(m).toBeLessThanOrEqual(0); expect(t).toContain(`Against the ring's first transaction the median lead is ${m.toFixed(1)} days`);
+    expect(t).toContain(m === 0 ? "on the same day as a ring starts" : `about ${Math.abs(m).toFixed(0)} day(s) after a ring starts`); expect(t).not.toContain("arrive with a ring's first transactions");
     const pos = JSON.parse(JSON.stringify(LT)); pos.rings.lead_vs_first_tx_median = 4;
     const t2 = text(await renderPage(LeadTimeAnalytics, { override: { "/api/lead-time": pos }, until: "Operating points" }));
-    expect(t2).not.toContain("Warnings arrive with a ring's first transactions");
+    expect(t2).not.toContain("a ring starts, so the lead above");
   });
   it("shows the retraining ranges from the data, and no stability section without them", async () => {
     const st = LT.stability;
@@ -268,7 +270,7 @@ describe("Warning given on a candidate, and the Investigate links", () => {
   });
   it("opens the candidate named in the link instead of always the top-ranked one", async () => {
     const r = await renderPage(RingInvestigation, { url: `/rings?id=${RID2}`, until: "Warning given" });
-    const btn = (id) => [...r.container.querySelectorAll("button")].find((b) => b.textContent.trim() === id);
+    const btn = (id) => [...r.container.querySelectorAll("button")].find((b) => b.textContent.replace("\u25CF", "").trim() === id);   // alerted candidates carry a mark
     expect(btn(RID2)).toBeTruthy(); expect(btn(RID)).toBeTruthy();
     expect(btn(RID2).className).not.toBe(btn(RID).className);                              // the linked candidate is highlighted, the top-ranked one is not
   });
@@ -389,5 +391,140 @@ describe("Patterns visible", () => {
     expect(q.container.querySelectorAll('[data-testid="supporting-line"]').length).toBe(0); expect(rowsOf(q)).toBe(QUEUE.length);
     const r = await renderPage(RingInvestigation, { override: NO_SP, until: "Warning given" });
     expect(text(r)).not.toContain("Other patterns seen on these accounts");
+  });
+});
+
+
+// ---------------------------------------------------------------------------------------------- fixes from the forensic review
+import { ScoreSpark } from "../src/components/warnings.jsx";
+
+describe("Fixes from the review", () => {
+  it("the test environment really runs in India time", () => {
+    expect(new Date("2017-01-01T00:00:00").toISOString()).toBe("2016-12-31T18:30:00.000Z");   // if this fails, the date tests below prove nothing
+  });
+  it("Temporal Evolution shows the right calendar day for a window in India time (window 395 is 31 Jan 2018)", async () => {
+    const ids = fx[`/api/rings/${RID}`].trajectory.event_window_ids;
+    const ring = JSON.parse(JSON.stringify(fx["/api/rings?limit=1000"]));
+    const stats = { ...P, first_window_start: "2017-01-01T00:00:00", window_days: 1 };
+    const t = text(await renderPage(TemporalEvolution, { override: { "/api/pipeline-stats": stats }, until: "In this run one window" }));
+    const want = (w) => new Date(Date.UTC(2017, 0, 1 + Number(w))).toISOString().slice(0, 10);
+    expect(t).toContain(want(Math.min(...ids)));                                                 // the old code printed the day before
+    expect(want(395)).toBe("2018-01-31");
+  });
+  it("the risk and component bars are coloured and proportional, so 30 and 100 look different", async () => {
+    const q = await renderPage(AlertQueue, { until: "candidates" });
+    const fills = [...q.container.querySelectorAll('[data-testid="risk-fill"]')];
+    expect(fills.length).toBe(QUEUE.length);
+    QUEUE.slice(0, 5).forEach((row, i) => expect(fills[i].style.width).toBe(`${Math.min(100, Number(row.risk_score))}%`));
+    expect(fills[0].className).toContain("bg-accent"); expect(q.container.querySelector('[data-testid="risk-track"]').className).not.toContain("bg-border");
+    expect(new Set(fills.map((f) => f.style.width)).size).toBeGreaterThan(5);                  // not all the same length
+    const r = await renderPage(RingInvestigation, { until: "Explainable Risk Breakdown" });
+    const widths = [...r.container.querySelectorAll('[data-testid="score-fill"]')].map((f) => f.style.width);
+    const comp = fx[`/api/rings/${RID}/explanation`].score_components;
+    expect(widths.length).toBe(4); expect(new Set(widths).size).toBeGreaterThan(1);
+    for (const k of ["behavioural", "network", "fund_flow", "persistence"]) expect(widths).toContain(`${Math.min(100, Number(comp[k]))}%`);
+  });
+  it("Warning Timeline says 'No alert' for rings that never raised one", async () => {
+    const r = await renderPage(WarningTimeline, { until: "Every evaluable ring" });
+    const t = text(r);
+    expect(t).toContain("No alert given"); expect(t).toContain("No alert");
+    const opts = [...r.container.querySelectorAll("#alert-filter option")].map((o) => o.textContent);
+    expect(opts).toContain("No alert"); expect(opts).not.toContain("Not seen");
+    expect((r.container.textContent.match(/No alert/g) || []).length).toBeGreaterThanOrEqual(WN.summary.alert.not_seen);
+  });
+  it("Ablations prints a small false-candidate rate with four decimals, not 0.00", async () => {
+    const small = fx["/api/ring-early-warning"].production_evaluation.ablations.production_alerted.false_candidates_per_day;
+    expect(small).toBeGreaterThan(0); expect(small).toBeLessThan(0.01);
+    const t = text(await renderPage(RingEarlyWarning, { until: "Controls: is the model needed?" }));
+    expect(t).toContain(Number(small).toFixed(4));
+  });
+  it("the Overview funnel says what each stage counts", async () => {
+    const t = text(await renderPage(Overview, { until: "Detection Pipeline" }));
+    expect(t).toContain("Pattern events (on the candidates)"); expect(t).toContain("Episodes considered (incl. single first-time transfers)");
+  });
+  it("Pattern Analytics lists only what it finds and names the original patterns it does not detect", async () => {
+    const r = await renderPage(PatternAnalytics, { until: "Pattern Interpretation" });
+    const present = new Set(fx["/api/patterns?limit=50000"].map((e) => e.pattern_type));
+    const ORIG = ["fan_in", "fan_out", "layering", "split_merge", "circular_flow", "rapid_pass_through", "repeated_intermediary", "escalating_connectivity"];
+    const missing = ORIG.filter((x) => !present.has(x)).map((x) => x.replace(/_/g, " "));
+    const nd = r.container.querySelector('[data-testid="not-detected"]').textContent;
+    expect(nd).toContain(missing.join(", ")); for (const p of present) expect(nd).not.toContain(String(p).replace(/_/g, " "));
+    expect(text(r)).not.toContain("Circular flows, rapid pass-through, repeated intermediaries");
+  });
+  it("a candidate with one day of evidence gets a sentence, not a lone dot", async () => {
+    const t = text(await renderPage(RingInvestigation, { until: "Warning given" }));
+    expect(t).toContain("Scored on one day only");
+    const one = render(<ScoreSpark history={[[10, 62.1]]} threshold={50} alertDay={10} firstDate="2017-01-01T00:00:00+00:00" />).container;
+    expect(one.querySelector("svg")).toBeNull(); expect(one.textContent).toContain("Scored on one day only: 62.1 on 11 Jan 2017");
+    const many = render(<ScoreSpark history={[[10, 62.1], [11, 40]]} threshold={50} alertDay={10} firstDate="2017-01-01T00:00:00+00:00" />).container;
+    expect(many.querySelector("svg")).not.toBeNull();
+  });
+  it("the Alert Log shows the patterns at the alert and, when they changed, the patterns now", async () => {
+    const r = await renderPage(AlertLog, { until: "Every alert" });
+    const changed = WN.alerts.filter((a) => a.patterns_now && a.patterns_now.join() !== a.patterns.join());
+    expect(changed.length).toBeGreaterThan(0);
+    expect(r.container.querySelectorAll('[data-testid="patterns-now"]').length).toBe(changed.length);
+    expect(text(r)).toContain("Patterns at alert");
+  });
+  it("Pattern names read as words in the explanation lists", async () => {
+    const t = text(await renderPage(RingInvestigation, { until: "Investigator Interpretation" }));
+    expect(t).not.toMatch(/Observed patterns:\s*\w+_\w+/);
+  });
+});
+
+// ---------------------------------------------------------------------------------------------- the alert on every candidate page
+import WhyFlagged from "../src/pages/WhyFlagged.jsx";
+
+describe("Alert shown on every candidate page", () => {
+  const A = WN.alerts.find((a) => a.candidate_ring_id === RID);
+  const LIST = fx["/api/rings?limit=1000"];
+  const lines = (a) => [`Alert ${dateOf(a.alert_date)}`, `score ${Number(a.score_at_alert).toFixed(1)} at alert`];
+  const without = (id) => { const w = JSON.parse(JSON.stringify(WN)); w.alerts = w.alerts.filter((a) => a.candidate_ring_id !== id); return w; };
+  const alertedInList = WN.alerts.filter((a) => LIST.some((r) => r.candidate_ring_id === a.candidate_ring_id)).length;
+
+  it("the top-ranked candidate in the fixtures has an alert", () => { expect(A).toBeTruthy(); });
+
+  for (const [name, Page, until] of [["Ring Investigation", RingInvestigation, "Warning given"], ["Why Flagged", WhyFlagged, "Overall Risk Score"], ["Temporal Evolution", TemporalEvolution, "Score calculation"]]) {
+    it(`${name} shows 'Alert <date> / score <x> at alert' for the selected candidate`, async () => {
+      const r = await renderPage(Page, { until });
+      const b = r.container.querySelector('[data-testid="alert-badge"]');
+      expect(b).not.toBeNull(); expect(b.getAttribute("data-alerted")).toBe("true");
+      for (const l of lines(A)) expect(b.textContent).toContain(l);
+    });
+  }
+  it("it says exactly what the Alert Queue says for the same candidate", async () => {
+    const q = await renderPage(AlertQueue, { until: "candidates" });
+    const row = [...q.container.querySelectorAll("tbody tr")].find((tr) => tr.textContent.includes(RID));
+    const norm = (t) => t.replace(/\s+/g, " ").trim();
+    const fromQueue = norm(row.querySelector('[data-testid="alert-cell"]').textContent);
+    const r = await renderPage(RingInvestigation, { until: "Warning given" });
+    expect(norm(r.container.querySelector('[data-testid="alert-badge"]').textContent)).toBe(fromQueue);
+  });
+  it("the candidate pickers mark every candidate that raised an alert, with its date on hover", async () => {
+    for (const Page of [RingInvestigation, WhyFlagged]) {
+      const r = await renderPage(Page, { until: Page === RingInvestigation ? "Warning given" : "Overall Risk Score" });
+      expect(r.container.querySelectorAll("[data-alerted-chip]").length).toBe(alertedInList);
+      const btn = [...r.container.querySelectorAll("button")].find((b) => b.textContent.trim().startsWith(RID));
+      expect(btn.getAttribute("title")).toContain(dateOf(A.alert_date)); expect(btn.getAttribute("title")).toContain(Number(A.score_at_alert).toFixed(1));
+    }
+  });
+  it("Temporal Evolution's picker lists the alert date beside an alerted candidate", async () => {
+    const r = await renderPage(TemporalEvolution, { until: "Score calculation" });
+    expect(r.container.querySelector(`option[value="${RID}"]`).textContent).toContain(`Alert ${dateOf(A.alert_date)}`);
+  });
+  it("a candidate with no alert says so, and loses its mark", async () => {
+    for (const [Page, until] of [[RingInvestigation, "Warning given"], [WhyFlagged, "Overall Risk Score"], [TemporalEvolution, "Score calculation"]]) {
+      const r = await renderPage(Page, { override: { "/api/warnings": without(RID) }, until });
+      const b = r.container.querySelector('[data-testid="alert-badge"]');
+      expect(b.getAttribute("data-alerted")).toBe("false"); expect(b.textContent).toBe("No alert");
+    }
+    const r = await renderPage(RingInvestigation, { override: { "/api/warnings": without(RID) }, until: "Warning given" });
+    expect(r.container.querySelectorAll("[data-alerted-chip]").length).toBe(alertedInList - 1);
+  });
+  it("shows nothing, rather than a false 'No alert', when the warnings are not available", async () => {
+    for (const [Page, until] of [[RingInvestigation, "Risk Score"], [WhyFlagged, "Overall Risk Score"], [TemporalEvolution, "Formation Stage"]]) {
+      const r = await renderPage(Page, { override: NO_WARN, until });
+      expect(r.container.querySelector('[data-testid="alert-badge"]')).toBeNull(); expect(r.container.querySelectorAll("[data-alerted-chip]").length).toBe(0);
+    }
   });
 });

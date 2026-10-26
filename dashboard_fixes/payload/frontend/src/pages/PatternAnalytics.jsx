@@ -87,6 +87,12 @@ export default function PatternAnalytics() {
     temporalTypes.includes(p?.pattern_type)
   ).length;
 
+  // describe what this pipeline actually finds, from the data
+  const presentTypes = new Set(events.map((p) => p?.pattern_type));
+  const plain = (t) => String(t).replace(/_/g, " ");
+  const foundIn = (types) => types.filter((t) => presentTypes.has(t)).map(plain).join(", ") || "none";
+  const notDetected = [...structuralTypes, ...temporalTypes].filter((t) => !presentTypes.has(t)).map(plain).join(", ");
+
   return (
     <div className="space-y-5">
 
@@ -346,8 +352,8 @@ export default function PatternAnalytics() {
             </div>
 
             <p className="text-xs text-muted mt-2 leading-relaxed">
-              Fan-in, fan-out, layering and split/merge patterns describe
-              how accounts are structurally connected through transaction
+              Found here: {foundIn(structuralTypes)}. These describe how
+              accounts are structurally connected through transaction
               flows.
             </p>
 
@@ -360,14 +366,19 @@ export default function PatternAnalytics() {
             </div>
 
             <p className="text-xs text-muted mt-2 leading-relaxed">
-              Circular flows, rapid pass-through, repeated intermediaries
-              and connectivity escalation capture suspicious behaviour
-              that evolves over time.
+              Found here: {foundIn(temporalTypes)}. These capture
+              suspicious behaviour that evolves over time.
             </p>
 
           </div>
 
         </div>
+
+        {notDetected && (
+          <p className="text-xs text-muted mt-3" data-testid="not-detected">
+            Original patterns this pipeline does not detect: {notDetected}.
+          </p>
+        )}
 
       </Card>
 

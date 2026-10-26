@@ -165,8 +165,8 @@ export default function LeadTimeAnalytics() {
         />
         {startWarn && (
           <p className="text-sm leading-relaxed">
-            Warnings arrive with a ring's first transactions (median {num(r.lead_vs_first_tx_median)} days against the ring's first transaction), so the lead above is measured against ring
-            completion, not against a ring's start.
+            Against the ring's first transaction the median lead is {num(r.lead_vs_first_tx_median)} days: warnings come {Number(r.lead_vs_first_tx_median) === 0 ? "on the same day as" : `about ${num(Math.abs(Number(r.lead_vs_first_tx_median)), 0)} day(s) after`} a ring starts,
+            so the lead above is measured against ring completion, not against a ring's start.
           </p>
         )}
       </Section>

@@ -35,7 +35,7 @@ def _py(v):
     return v
 
 
-def build_warnings(cands, history, index, per_ring, rings, ring_of, label_of, day_of, tx, day0, s):
+def build_warnings(cands, history, index, per_ring, rings, ring_of, label_of, day_of, tx, day0, s, final_patterns=None):
     thr, max_day = s.alert_threshold, int(tx["day"].max())
     ring_info = {str(r.ring_id): r for r in rings.itertuples()}
     # ring ids are text in memory and numbers once read back from CSV; every lookup below uses text so the two cannot disagree
@@ -67,7 +67,7 @@ def build_warnings(cands, history, index, per_ring, rings, ring_of, label_of, da
         evaluable = bool(pq.loc[str(rid), "evaluable"]) if rid is not None and str(rid) in pq.index else False
         alerts.append({
             "candidate_ring_id": index[ci], "alert_day": int(a), "alert_date": iso(day0, a), "score_at_alert": float(h["score"]), "level_at_alert": h["level"],
-            "final_score": float(history[ci][-1]["score"]), "created_day": int(c["creation_day"]), "created_date": iso(day0, c["creation_day"]),
+            "final_score": float(history[ci][-1]["score"]), "patterns_now": (final_patterns or {}).get(index[ci]), "created_day": int(c["creation_day"]), "created_date": iso(day0, c["creation_day"]),
             "days_creation_to_alert": int(a - c["creation_day"]), "patterns": old_names(h["patterns"]), "n_accounts": int(h["n_nodes"]), "n_transactions": int(h["n_tx"]),
             "contains_ring_tx": rid is not None, "ring_id": None if rid is None else int(rid), "ring_type": None if info is None else info.typology,
             "ring_tx_in_candidate": None if rid is None else int(rr[rid]), "ring_evaluable": evaluable,

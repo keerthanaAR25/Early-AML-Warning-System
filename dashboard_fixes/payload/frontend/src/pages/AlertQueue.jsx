@@ -12,9 +12,10 @@ function riskBar(score) {
 
   return (
     <div className="w-24">
-      <div className="h-1.5 rounded-full bg-border overflow-hidden">
+      <div className="h-1.5 rounded-full bg-slate-200 overflow-hidden" data-testid="risk-track">
         <div
-          className="h-full rounded-full"
+          className="h-full rounded-full bg-accent"
+          data-testid="risk-fill"
           style={{ width: `${Math.min(100, Math.max(0, value))}%` }}
         />
       </div>

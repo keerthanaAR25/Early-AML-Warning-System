@@ -41,3 +41,10 @@ These context patterns come from the original detectors' events (kept in `result
 scoring code does not read them). On this data they show up on 170 of 171 candidates, but candidates that contain ring transactions show **fewer** of them than the others
 (2.1 types against 2.6 on average), and a ring transaction's sender shows one less often than a normal transaction's (43% against 56%). So they make several patterns visible, but they are
 context and not evidence of a ring, and the panel says so with those numbers.
+
+## The alert on every candidate page
+
+The Alert Queue's **"Alert 31 Jan 2018 / score 62.1 at alert"** (or "No alert") is now shown on the pages that focus on one candidate: **Ring Investigation** and **Why Flagged**
+(under the risk score), and **Temporal Evolution** (in the summary). In all three candidate pickers, a candidate that raised an alert has an orange mark (hover for the date and score); in
+Temporal Evolution's drop-down the alert date is written beside the candidate. Nothing is shown until the warnings have loaded, so a page never says "No alert" by mistake. A test checks the badge
+says exactly what the Alert Queue says for the same candidate.

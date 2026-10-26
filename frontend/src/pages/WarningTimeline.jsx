@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api.js";
 import { Loading, ErrorBox, useApi } from "../components/ui.jsx";
-import { Stat, Panel, Unavailable, BUILD_COMMAND, num, pct, dateOf, isNum, DASH, STATUS_LABEL, STATUS_TONE } from "../components/warnings.jsx";
+import { Stat, Panel, Unavailable, BUILD_COMMAND, num, pct, dateOf, isNum, DASH, STATUS_LABEL, ALERT_STATUS_LABEL, STATUS_TONE } from "../components/warnings.jsx";
 
 const median = (xs) => {
   const a = xs.filter(isNum).map(Number).sort((p, q) => p - q);
@@ -86,7 +86,7 @@ export default function WarningTimeline() {
         <Stat label="Warned before completion" value={S.alert.before} sub={`by alerts; the queue: ${S.queue.before} of ${n}`} />
         <Stat label="Warned at completion" value={S.alert.at} sub={`by alerts; the queue: ${S.queue.at}`} />
         <Stat label="Warned after completion" value={S.alert.after} sub={`by alerts; the queue: ${S.queue.after}`} />
-        <Stat label="Not seen" value={S.alert.not_seen} sub={`by alerts; the queue: ${S.queue.not_seen}`} />
+        <Stat label="No alert given" value={S.alert.not_seen} sub={`rings the queue never saw: ${S.queue.not_seen}`} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <Stat label="Median lead of the queue" value={`${num(medQ)} days`} sub="candidate created, before the ring completes" />
@@ -102,7 +102,7 @@ export default function WarningTimeline() {
           <label htmlFor="alert-filter" className="text-muted">Alert status</label>
           <select id="alert-filter" value={filter} onChange={(e) => setFilter(e.target.value)} className="rounded-md border border-border bg-transparent px-2 py-1">
             <option value="all">All</option>
-            {Object.entries(STATUS_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+            {Object.entries(ALERT_STATUS_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
           </select>
           <span className="text-xs text-muted">{shown.length} of {ev.length} rings</span>
         </div>
@@ -120,7 +120,7 @@ export default function WarningTimeline() {
                   <td className="px-3 py-2">{dateOf(r.completion_date)}</td>
                   <td className="px-3 py-2">{r.queue.seen ? <>{dateOf(r.queue.warning_date)} ({num(r.queue.lead_days, 0)} d) {r.queue.candidate && <Link className="underline text-accent" to={`/rings?id=${r.queue.candidate}`}>{r.queue.candidate}</Link>}</> : DASH}</td>
                   <td className="px-3 py-2">{r.alert.seen ? <>{dateOf(r.alert.warning_date)} ({num(r.alert.lead_days, 0)} d) {r.alert.candidate && <Link className="underline text-accent" to={`/rings?id=${r.alert.candidate}`}>{r.alert.candidate}</Link>}</> : DASH}</td>
-                  <td className={`px-3 py-2 ${STATUS_TONE[r.alert.status] || ""}`}>{STATUS_LABEL[r.alert.status]}</td>
+                  <td className={`px-3 py-2 ${STATUS_TONE[r.alert.status] || ""}`}>{ALERT_STATUS_LABEL[r.alert.status]}</td>
                   <td className="px-3 py-2">{pct(r.queue.tx_coverage)} / {pct(r.alert.tx_coverage)}</td>
                 </tr>
               ))}

@@ -116,6 +116,6 @@ def lead_time_summary(summaries, ranking, alerts, s, n_rings_total, stability=No
         "caveats": [
             "AMLSim-specific shortcut: ring members are drawn from otherwise-dormant accounts, so first-time accounts are unusually informative here.",
             "Only cycle rings are fully evaluable: fan rings take longer than the data allows to start and finish inside the scored period.",
-            "Warnings arrive with the ring's first transactions, so lead is measured against ring completion, not against a ring's start.",
+            "Alerts arrive after a ring has already started (see the median lead against the ring's first transaction), so lead is measured against ring completion, not against a ring's start.",
             "Labels are used only to train earlier blocks and to evaluate; never to build candidates or scores."],
     }

@@ -9,6 +9,7 @@ const isNum = (x) => x !== null && x !== undefined && Number.isFinite(Number(x))
 const num = (x, d = 1) => (isNum(x) ? Number(x).toFixed(d) : DASH);
 const pct = (x, d = 0) => (isNum(x) ? `${(Number(x) * 100).toFixed(d)}%` : DASH);
 const range = (r, d = 2) => (Array.isArray(r) && isNum(r[0]) && isNum(r[1]) ? `${num(r[0], d)} to ${num(r[1], d)}` : "n too small");
+const fcd = (x) => (isNum(x) ? (Number(x) > 0 && Number(x) < 0.01 ? Number(x).toFixed(4) : Number(x).toFixed(2)) : DASH);
 const rate = (x) => (isNum(x) ? (Number(x) > 0 && Number(x) < 0.0001 ? Number(x).toExponential(1) : Number(x).toFixed(4)) : DASH);
 
 const SOURCE_LABELS = {
@@ -97,7 +98,7 @@ export default function RingEarlyWarning() {
             rows={sources.map(([label, r]) => {
               const g = r.by_typology?.all || {};
               return [label, r.n_candidates, pct(r.ring_tx_share_of_evidence, 1), `${g.n_with_any_tx_in_candidate ?? DASH} of ${g.n_evaluable_rings ?? DASH}`, g.n_warned_before_observable ?? DASH,
-                      num(g.lead_days_median), num(g.lead_vs_first_tx_median), num(r.false_candidates_per_day, 2)];
+                      num(g.lead_days_median), num(g.lead_vs_first_tx_median), fcd(r.false_candidates_per_day)];
             })}
           />
         </Section>

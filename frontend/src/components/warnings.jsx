@@ -11,8 +11,27 @@ export const dateOf = (iso) => {
   const d = new Date(iso);
   return iso && !Number.isNaN(d.getTime()) ? d.toLocaleDateString("en-GB", { timeZone: "UTC", day: "2-digit", month: "short", year: "numeric" }) : DASH;
 };
+export const ALERT_STATUS_LABEL = { before: "Before completion", at: "At completion", after: "After completion", not_seen: "No alert" };
 export const STATUS_LABEL = { before: "Before completion", at: "At completion", after: "After completion", not_seen: "Not seen" };
 export const STATUS_TONE = { before: "text-emerald-500", at: "text-amber-500", after: "text-red-500", not_seen: "text-muted" };
+
+export const alertFor = (warn, id) => (warn?.alerts || []).find((a) => a.candidate_ring_id === id) || null;
+export const alertMapOf = (warn) => Object.fromEntries((warn?.alerts || []).map((a) => [a.candidate_ring_id, a]));
+export const alertTitle = (a) => (a ? `Alert ${dateOf(a.alert_date)}, score ${num(a.score_at_alert)} at alert` : undefined);
+
+// "Alert 31 Jan 2018 / score 62.1 at alert" for one candidate, or "No alert". Renders nothing until the warnings are loaded.
+export function AlertBadge({ warn, id }) {
+  if (!warn?.alerts || !id) return null;
+  const a = alertFor(warn, id);
+  return a ? (
+    <div className="text-xs mt-3" data-testid="alert-badge" data-alerted="true">
+      <div className="font-semibold text-orange-500">Alert {dateOf(a.alert_date)}</div>
+      <div className="text-muted">score {num(a.score_at_alert)} at alert</div>
+    </div>
+  ) : (
+    <div className="text-xs mt-3 text-muted" data-testid="alert-badge" data-alerted="false">No alert</div>
+  );
+}
 
 export function Stat({ label, value, sub }) {
   return (
@@ -67,6 +86,10 @@ export function WarningCards({ warn }) {
 export function ScoreSpark({ history, threshold, alertDay, firstDate }) {
   const pts = (history || []).filter((h) => isNum(h?.[0]) && isNum(h?.[1]));
   if (!pts.length) return null;
+  if (pts.length === 1) {                                                // one day of evidence: a lone dot says nothing, so say it in words
+    const when = dateOf(new Date(Date.parse(firstDate) + Number(pts[0][0]) * 86400000).toISOString());
+    return <p className="text-sm" data-testid="score-single">Scored on one day only: <b>{num(pts[0][1])}</b> on {when} (alert threshold {threshold}).</p>;
+  }
   const W = 520, H = 120, P = 28;
   const days = pts.map((h) => Number(h[0]));
   const d0 = Math.min(...days), d1 = Math.max(...days);

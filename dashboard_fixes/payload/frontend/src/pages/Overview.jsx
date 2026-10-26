@@ -304,7 +304,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xs text-muted mt-1">
-              Pattern events
+              Pattern events (on the candidates)
             </div>
           </div>
 
@@ -318,7 +318,7 @@ export default function Overview() {
             </div>
 
             <div className="text-xs text-muted mt-1">
-              Temporal trajectories
+              Episodes considered (incl. single first-time transfers)
             </div>
           </div>
 

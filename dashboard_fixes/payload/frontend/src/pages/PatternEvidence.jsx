@@ -71,7 +71,7 @@ export default function PatternEvidence() {
             `${r.contain_ring_tx} (${pct(r.share_containing_ring_tx)})`, num(r.mean_evidence_tx)])} />
       </Panel>
 
-      <Panel title="By pattern type: what makes up the score" note="Mean of each score component (0 to 100). The component weights are shown in the header.">
+      <Panel title="By pattern type: what makes up the score" note="Mean of each score component (0 to 100). Candidates are grouped by their latest patterns, so an alert given while a candidate was still layering is counted here under circular flow if it has since closed into a cycle; the Alert Log shows the patterns at the time of the alert.">
         <Table head={["Patterns", "Candidates", "Mean score", "Alerts given", `Behavioural (${pct(W.behavioural)})`, `Network (${pct(W.network)})`, `Fund flow (${pct(W.fund_flow)})`, `Persistence (${pct(W.persistence)})`, "Contain ring transactions"]}
           rows={P.by_set.map((r) => [label(r.patterns), r.candidates, num(r.mean_score), r.alerts_given, num(r.mean_behavioural), num(r.mean_network), num(r.mean_fund_flow), num(r.mean_persistence), `${r.contain_ring_tx} (${pct(r.share_containing_ring_tx)})`])} />
       </Panel>

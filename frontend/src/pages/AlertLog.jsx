@@ -73,7 +73,7 @@ export default function AlertLog() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead className="text-muted text-left"><tr>
-              {["Alert date", "Candidate", "Score at alert", "Current score", "Patterns", "Accounts", "Evidence transactions", "Days after creation", "Outcome"].map((h) => <th key={h} className="px-3 py-2 font-medium">{h}</th>)}
+              {["Alert date", "Candidate", "Score at alert", "Current score", "Patterns at alert", "Accounts", "Evidence transactions", "Days after creation", "Outcome"].map((h) => <th key={h} className="px-3 py-2 font-medium">{h}</th>)}
             </tr></thead>
             <tbody>
               {rows.map((a) => (
@@ -82,7 +82,8 @@ export default function AlertLog() {
                   <td className="px-3 py-2"><Link className="underline text-accent" to={`/rings?id=${a.candidate_ring_id}`}>{a.candidate_ring_id}</Link></td>
                   <td className="px-3 py-2"><div className="flex items-center gap-2"><div className="h-2 w-16 rounded bg-white/10"><div className="h-2 rounded bg-orange-500" style={{ width: `${Math.min(100, a.score_at_alert)}%` }} /></div>{num(a.score_at_alert)}</div></td>
                   <td className="px-3 py-2">{num(a.final_score)}{a.final_score < thr && <span className="text-xs text-muted"> (below {thr})</span>}</td>
-                  <td className="px-3 py-2">{(a.patterns || []).join(", ").replace(/_/g, " ")}</td>
+                  <td className="px-3 py-2">{(a.patterns || []).join(", ").replace(/_/g, " ")}
+                    {Array.isArray(a.patterns_now) && a.patterns_now.join() !== (a.patterns || []).join() && <div className="text-xs text-muted" data-testid="patterns-now">now: {a.patterns_now.join(", ").replace(/_/g, " ")}</div>}</td>
                   <td className="px-3 py-2">{a.n_accounts}</td>
                   <td className="px-3 py-2">{a.n_transactions}</td>
                   <td className="px-3 py-2">{a.days_creation_to_alert}</td>

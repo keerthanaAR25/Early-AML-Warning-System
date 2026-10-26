@@ -1,7 +1,7 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api.js";
-import { WarningGivenCard } from "../components/warnings.jsx";
+import { WarningGivenCard, AlertBadge, alertMapOf, alertTitle } from "../components/warnings.jsx";
 import { SupportingPatternsCard } from "../components/SupportingPatterns.jsx";
 import {
   Card,
@@ -63,9 +63,10 @@ function ScoreBar({ label, value, weight }) {
         </span>
       </div>
 
-      <div className="h-2 rounded-full bg-border overflow-hidden">
+      <div className="h-2 rounded-full bg-slate-200 overflow-hidden" data-testid="score-track">
         <div
-          className="h-full rounded-full"
+          className="h-full rounded-full bg-accent"
+          data-testid="score-fill"
           style={{
             width: `${Math.min(100, Math.max(0, score || 0))}%`,
           }}
@@ -149,6 +150,7 @@ export default function RingInvestigation() {
 
   const { data: warn } = useApi(() => api.warnings(), []);
   const { data: sp } = useApi(() => api.supportingPatterns(), []);
+  const alertMap = React.useMemo(() => alertMapOf(warn), [warn]);
   const { data: evid } = useApi(() => (selected ? api.ringEvidence(selected) : Promise.resolve(null)), [selected]);
 
   const {
@@ -240,6 +242,7 @@ export default function RingInvestigation() {
               onClick={() =>
                 setSelected(r.candidate_ring_id)
               }
+              title={alertTitle(alertMap[r.candidate_ring_id])}
               className={`px-3 py-1.5 rounded-md text-xs border transition-colors ${
                 selected === r.candidate_ring_id
                   ? "border-accent text-accent bg-accent/5"
@@ -247,6 +250,7 @@ export default function RingInvestigation() {
               }`}
             >
               {r.candidate_ring_id}
+              {alertMap[r.candidate_ring_id] && <span className="ml-1 text-orange-500" data-alerted-chip="true" aria-label="alert given">{"\u25CF"}</span>}
             </button>
           ))}
 
@@ -285,6 +289,8 @@ export default function RingInvestigation() {
                   }
                 />
               </div>
+
+              <AlertBadge warn={warn} id={selected} />
             </Card>
 
             <Card title="Formation Stage">
@@ -633,7 +639,7 @@ export default function RingInvestigation() {
                   Observed patterns:
                 </span>{" "}
                 {patterns.length > 0
-                  ? patterns.join(", ")
+                  ? patterns.join(", ").replace(/_/g, " ")
                   : "None available"}
               </div>
 

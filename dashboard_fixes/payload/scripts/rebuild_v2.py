@@ -184,7 +184,8 @@ def stage_export(a, s):
     summaries, per_ring, ranking, alerts = evaluate.evaluate_all(cands, hist, tx, rings, ring_of, label_of, day_of, s, bak / "ring_candidates.json")
     art = export.build_artifacts(cands, hist, info, day_of, flags, day0, s, raw)
     dump = lambda name, obj: json.dump(obj, open(res / name, "w"), indent=1, default=_json_default)
-    wl = warning_log.build_warnings(cands, hist, art["index"], per_ring, rings, ring_of, label_of, day_of, tx, day0, s)
+    wl = warning_log.build_warnings(cands, hist, art["index"], per_ring, rings, ring_of, label_of, day_of, tx, day0, s,
+                                    final_patterns={c["candidate_ring_id"]: c["patterns"] for c in art["ring_candidates"]})
     dump("warnings.json", wl)
     dump("score_calculation.json", score_calculation.build_all(cands, hist, art["index"], day0, s))
     if (bak / "pattern_events.json").exists():                       # the original detectors' events, kept by the rebuild; shown for context only
